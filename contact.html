@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f8f7" id="themeColorMeta">
+  <title>Contact Us – Speech Time Calculator</title>
+  <meta name="description" content="Contact the Speech Time Calculator team with feedback, questions, or support requests. We read every message.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://speechtimercalculator.com/contact.html">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://speechtimercalculator.com/contact.html">
+  <meta property="og:title" content="Contact Us – Speech Time Calculator">
+  <meta property="og:description" content="Send feedback, questions, or support requests to the Speech Time Calculator team.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://speechtimercalculator.com/"},
+      {"@type": "ListItem", "position": 2, "name": "Contact Us", "item": "https://speechtimercalculator.com/contact.html"}
+    ]
+  }
+  </script>
+  <script>try{if(localStorage.getItem('stc-theme')==='dark'||(!localStorage.getItem('stc-theme')&&matchMedia('(prefers-color-scheme: dark)').matches)){document.documentElement.dataset.theme='dark';document.documentElement.style.colorScheme='dark';document.querySelector('#themeColorMeta').content='#000000'}}catch{}</script>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body class="stc-app">
+  <header class="stc-header">
+    <a class="stc-brand" href="/" aria-label="Speech Timer Calculator home"><span class="stc-brand-mark" aria-hidden="true">S</span><span>speechtimercalculator<span class="stc-brand-light">.com</span></span></a>
+    <div class="stc-header-actions"><button class="stc-theme-toggle" id="themeToggle" type="button" aria-label="Switch to dark mode" aria-pressed="false"><span class="stc-theme-icon" aria-hidden="true">☾</span><span class="stc-theme-label">Dark</span></button></div>
+  </header>
+
+  <main class="stc-page">
+    <a class="stc-page-back" href="/">← Back to the calculator</a>
+    <h1>Contact Us</h1>
+    <p class="stc-updated">Questions, feedback, or feature ideas — we read every message.</p>
+    <div class="stc-page-card">
+      <h2>Email us directly</h2>
+      <p>Send a message to <a href="mailto:ashusuyavanshi@gmail.com">ashusuyavanshi@gmail.com</a>. We aim to reply within a few business days.</p>
+      <h2>Or use the form</h2>
+      <p>Fill in the form below and it will open your email app with everything pre-filled — nothing is sent or stored by this website.</p>
+      <form class="stc-contact-form" id="contactForm">
+        <label for="contactName">Your name<input id="contactName" name="name" type="text" autocomplete="name" required></label>
+        <label for="contactEmail">Your email<input id="contactEmail" name="email" type="email" autocomplete="email" required></label>
+        <label for="contactMessage">Message<textarea id="contactMessage" name="message" required></textarea></label>
+        <button class="stc-button stc-button-primary" type="submit">Send message</button>
+      </form>
+    </div>
+  </main>
+
+  <footer class="stc-footer"><a class="stc-brand" href="/"><span class="stc-brand-mark" aria-hidden="true">S</span><span>speechtimercalculator<span class="stc-brand-light">.com</span></span></a><nav class="stc-footer-links" aria-label="Footer"><a href="/about.html">About Us</a><a href="/contact.html">Contact Us</a><a href="/terms.html">Terms &amp; Conditions</a></nav><span>© 2026 Speech Timer Calculator. All rights reserved.</span></footer>
+  <script>(function(){var b=document.getElementById('themeToggle');function paint(t){b.setAttribute('aria-pressed',String(t==='dark'));b.setAttribute('aria-label','Switch to '+(t==='dark'?'light':'dark')+' mode');b.querySelector('.stc-theme-icon').textContent=t==='dark'?'☀':'☾';b.querySelector('.stc-theme-label').textContent=t==='dark'?'Light':'Dark';}function set(t){try{localStorage.setItem('stc-theme',t)}catch(e){}document.documentElement.dataset.theme=t;document.documentElement.style.colorScheme=t;document.getElementById('themeColorMeta').content=t==='dark'?'#000000':'#f7f8f7';paint(t);}b.addEventListener('click',function(){set(document.documentElement.dataset.theme==='dark'?'light':'dark')});paint(document.documentElement.dataset.theme==='dark'?'dark':'light')})();</script>
+  <script>document.getElementById('contactForm').addEventListener('submit',function(e){e.preventDefault();var n=document.getElementById('contactName').value.trim();var m=document.getElementById('contactEmail').value.trim();var g=document.getElementById('contactMessage').value.trim();window.location.href='mailto:ashusuyavanshi@gmail.com?subject='+encodeURIComponent('Website contact from '+n)+'&body='+encodeURIComponent(g+'\n\n— '+n+' ('+m+')')});</script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+# Redirect /en/ to root
+/en    /    301
+/en/   /    301
+
+# Fallback for 404
+/*    /404.html    404

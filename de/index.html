@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="de" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f8f7" id="themeColorMeta">
+  <title>Redezeit-Rechner | 100 % privat, kostenlos &amp; ohne Anmeldung</title>
+  <meta name="description" content="Unser Redezeit-Rechner schätzt die Sprechzeit deines Skripts und rechnet Wörter in Minuten um. Wie lange dauert deine Rede oder Präsentation?">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://speechtimercalculator.com/de/">
+  <link rel="alternate" hreflang="en" href="https://speechtimercalculator.com/">
+  <link rel="alternate" hreflang="hi" href="https://speechtimercalculator.com/hi/">
+  <link rel="alternate" hreflang="de" href="https://speechtimercalculator.com/de/">
+  <link rel="alternate" hreflang="es" href="https://speechtimercalculator.com/es/">
+  <link rel="alternate" hreflang="pt" href="https://speechtimercalculator.com/pt/">
+  <link rel="alternate" hreflang="x-default" href="https://speechtimercalculator.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://speechtimercalculator.com/de/">
+  <meta property="og:title" content="Redezeit-Rechner | 100 % privat, kostenlos &amp; ohne Anmeldung">
+  <meta property="og:description" content="Unser Redezeit-Rechner schätzt die Sprechzeit deines Skripts und rechnet Wörter in Minuten um. Wie lange dauert deine Rede oder Präsentation?">
+  <meta property="og:locale" content="de_DE">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <script>try{if(localStorage.getItem('stc-theme')==='dark'||(!localStorage.getItem('stc-theme')&&matchMedia('(prefers-color-scheme: dark)').matches)){document.documentElement.dataset.theme='dark';document.documentElement.style.colorScheme='dark';document.querySelector('#themeColorMeta').content='#000000'}}catch{}</script>
+  <link rel="stylesheet" href="/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {"@type":"WebApplication","name":"Redezeit-Rechner","description":"Kostenloser Redezeit-Rechner und Sprechzeit-Schätzer: Wörter in Minuten umrechnen und privat im Browser üben. Keine Anmeldung erforderlich.","url":"https://speechtimercalculator.com/de/","applicationCategory":"UtilitiesApplication","operatingSystem":"All","browserRequirements":"Requires JavaScript","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}},
+      {"@type":"FAQPage","mainEntity":[
+        {"@type":"Question","name":"Wie viele Wörter hat eine 5-minütige Rede?","acceptedAnswer":{"@type":"Answer","text":"Bei durchschnittlichem Sprechtempo von 130 Wörtern pro Minute (WPM) hat eine 5-minütige Rede ca. 650 Wörter. Langsamer Vortrag (100 WPM) nutzt ca. 500 Wörter, schneller (160 WPM) ca. 800 Wörter."}},
+        {"@type":"Question","name":"Wie lange dauert es, 1.000 Wörter zu sprechen?","acceptedAnswer":{"@type":"Answer","text":"Bei normalem Gesprächstempo von 130 WPM dauert es ca. 7 Minuten und 42 Sekunden, 1.000 Wörter zu sprechen."}},
+        {"@type":"Question","name":"Wie lang ist eine 500-Wörter-Rede?","acceptedAnswer":{"@type":"Answer","text":"Eine 500-Wörter-Rede dauert ca. 5 Minuten bei 100 Wörtern pro Minute, 3 Minuten und 51 Sekunden bei 130 WPM oder 3 Minuten und 8 Sekunden bei 160 WPM."}},
+        {"@type":"Question","name":"Wie viele Wörter hat eine 10-minütige Rede?","acceptedAnswer":{"@type":"Answer","text":"Bei durchschnittlich 130 Wörtern pro Minute hat eine 10-minütige Rede ca. 1.300 Wörter. Je nach Tempo plane ca. 1.000 Wörter bei 100 WPM oder 1.600 Wörter bei 160 WPM."}},
+        {"@type":"Question","name":"Wie schätzt ein Redezeit-Rechner die Sprechzeit?","acceptedAnswer":{"@type":"Answer","text":"Er teilt die Wortanzahl deines Skripts durch das gewählte Sprechtempo in Wörtern pro Minute. Wähle ein Tempo, um deine Wörter in eine geschätzte Sprechdauer umzurechnen."}},
+        {"@type":"Question","name":"Wie wird die Redezeit berechnet?","acceptedAnswer":{"@type":"Answer","text":"Teile die Wortanzahl durch dein Sprechtempo in Wörtern pro Minute und multipliziere mit 60, um die Dauer in Sekunden zu erhalten. Pausen und Betonung verändern die tatsächliche Zeit."}},
+        {"@type":"Question","name":"Wie viele Wörter pro Minute sind ein gutes Sprechtempo?","acceptedAnswer":{"@type":"Answer","text":"Für viele Sprecher sind 120 bis 150 Wörter pro Minute klar und angenehm. 130 WPM ist ein guter Startwert, doch das beste Tempo hängt von Publikum und Thema ab."}}
+      ]}
+    ]
+  }
+  </script>
+  <script>
+  window.STC_STRINGS = {
+    emptyTarget: 'Gib einen Text ein, um dein Timing zu prüfen.',
+    underTarget: (left) => `Unter dem Ziel · noch ${left} übrig.`,
+    optimalRange: (mins) => `Optimaler Bereich · innerhalb von 5 % deines ${mins}-Minuten-Ziels.`,
+    overTarget: (n, unit) => `Über dem Ziel · kürze um ca. ${n} ${unit}.`,
+    unitWords: 'Wörter',
+    unitChars: 'Zeichen',
+    unitWordsShort: 'Wörter',
+    unitCharsShort: 'Zeichen',
+    wordBudget: 'Wortbudget',
+    charBudget: 'Zeichenbudget',
+    noteAloud: 'Schätzungen sind ein Richtwert; Pausen und Vortrag beeinflussen deine tatsächliche Zeit.',
+    noteSilent: (rate) => `Stille-Lese-Schätzung bei ${rate} WPM; das tatsächliche Tempo variiert je nach Leser.`,
+    noteCjk: 'Zeichenbasierte Schätzung; das tatsächliche Tempo variiert je nach Sprache und Sprecher.',
+    modeWords: 'Wörter pro Minute',
+    modeChars: 'Zeichen pro Minute',
+    kickerSpeak: 'SPRECHTEMPO',
+    kickerRead: 'LESETEMPO',
+    kickerCjk: 'ZEICHENTEMPO',
+    scenarioAloud: 'Szenario',
+    scenarioSilent: 'Lesestil',
+    labelAloud: 'Laut gesprochen',
+    labelSilent: 'Still gelesen',
+    paceDeliberate: 'Ein bedächtiges, leicht zu folgendes Tempo',
+    paceComfortable: 'Ein angenehmes, gesprächiges Tempo',
+    paceEnergetic: 'Ein energisches, selbstbewusstes Tempo',
+    paceFast: 'Ein schnelles Tempo – denk ans Atmen',
+    paceCjk: 'Zeichenbasiertes Sprechtempo',
+    readLeisurely: 'Ein entspanntes, gemütliches Lesetempo',
+    readAverage: 'Ein angenehmes, durchschnittliches Lesetempo',
+    readBrisk: 'Ein zügiges, konzentriertes Lesetempo',
+    readSkim: 'Überfliege-Tempo – zum Erfassen der Kernpunkte',
+    toastEmpty: 'Es gibt noch keinen Text zum Kopieren.',
+    toastCopyFail: 'Kopieren ist in diesem Browser nicht verfügbar.',
+    toastClearEmpty: 'Dein Skript ist bereits leer.',
+    toastCleared: 'Skript gelöscht.',
+    toastCopied: 'Skript in die Zwischenablage kopiert.',
+    toastNoSummary: 'Füge Text hinzu, um eine Zeitzusammenfassung zu erstellen.',
+    toastNoSummaryCount: 'Gib eine Wortanzahl ein, um eine Zeitzusammenfassung zu erstellen.',
+    toastSummaryCopied: 'Zeitzusammenfassung kopiert.',
+    toastNoExport: 'Füge erst ein Skript hinzu, bevor du exportierst.',
+    toastExported: 'Skript mit Zeitmarken heruntergeladen.',
+    toastCountEmpty: 'Die Wortanzahl ist bereits leer.',
+    toastCountCleared: 'Wortanzahl gelöscht.',
+    toastCopyTextCount: 'Im Wortanzahl-Modus gibt es nichts zu kopieren. Nutze „Zusammenfassung kopieren“.',
+    toastExportCount: 'Wechsle zu „Text einfügen“, um ein Skript mit Zeitmarken zu laden.',
+    timerStart: 'Start',
+    timerPause: 'Pause',
+    timerResume: 'Weiter',
+    copyAloud: (words, dur, rate) => `Meine Rede mit ${words} Wörtern dauert ca. ${dur} bei ${rate} WPM.`,
+    copySilent: (words, dur, rate) => `Mein Text mit ${words} Wörtern dauert ca. ${dur} Lesezeit bei ${rate} WPM.`,
+    copyCjk: (units, dur, rate) => `Mein Skript mit ${units} Zeichen dauert ca. ${dur} bei ${rate} CPM.`,
+    focusEmpty: 'Dein Skript erscheint hier.',
+    focusCount: 'Wortanzahl-Modus ist aktiv. Wechsle zu „Text einfügen“, um mit dem Teleprompter zu üben.',
+    scrollStart: 'Scrollen starten',
+    scrollPause: 'Scrollen pausieren',
+    ariaElapsed: (dur) => `Verstrichene Übungszeit: ${dur}`,
+    ariaToLight: 'Zum hellen Modus wechseln',
+    ariaToDark: 'Zum dunklen Modus wechseln',
+    themeLight: 'Hell',
+    themeDark: 'Dunkel',
+    ariaProgressWords: 'Anzahl der gesprochenen Wörter während des Übens',
+    ariaProgressChars: 'Anzahl der gesprochenen Zeichen während des Übens',
+    progressWords: 'Gesprochene Wörter',
+    progressChars: 'Gesprochene Zeichen',
+    wordsLabel: 'Wörter',
+    charsLabel: 'Zeichen',
+    ariaPaceW: (pace) => `${pace} in Wörtern pro Minute`,
+    ariaPaceC: (pace) => `${pace} in Zeichen pro Minute`,
+    ariaSliderW: (pace) => `${pace} anpassen, 60 bis 400 Wörter pro Minute`,
+    ariaSliderC: (pace) => `${pace} anpassen, 60 bis 400 Zeichen pro Minute`,
+    paceNameSpeak: 'Sprechtempo',
+    paceNameRead: 'Lesetempo',
+    paceNameCjk: 'Zeichentempo',
+    tableWords: (n) => `${n} Wörter`,
+    lap: (n) => `Runde ${n}`,
+    minShort: 'Min.',
+    secShort: 'Sek.',
+    tHr: 'Std.',
+    tMin: 'Min.',
+    tSec: 'Sek.',
+    customPace: 'Eigenes Tempo…',
+    scenariosAloud: [['TED-Talk · 150 WPM', 150], ['Geschäftspräsentation · 130 WPM', 130], ['Vorlesung · 115 WPM', 115], ['Hochzeitsrede · 100 WPM', 100], ['Podcast / Storytelling · 140 WPM', 140], ['Elevator Pitch · 160 WPM', 160], ['Werbung / Voice-over · 1 Wort/Sek.', 60]],
+    scenariosSilent: [['Entspanntes Lesen · 200 WPM', 200], ['Durchschnittsleser · 230 WPM', 230], ['Schnelles Lesen · 300 WPM', 300], ['Überfliegen · 400 WPM', 400]]
+  };
+  </script>
+  <script src="/app.js" defer></script>
+</head>
+<body class="stc-app">
+  <header class="stc-header">
+    <a class="stc-brand" href="/de/" aria-label="Redezeit-Rechner Startseite"><span class="stc-brand-mark" aria-hidden="true">S</span><span>speechtimercalculator<span class="stc-brand-light">.com</span></span></a>
+    <div class="stc-header-actions"><details class="stc-lang-menu"><summary aria-label="Sprache"><span aria-hidden="true">🌐</span> DE <span class="stc-lang-arrow" aria-hidden="true">▾</span></summary><div class="stc-lang-list"><a href="/">English</a><a href="/hi/">हिन्दी</a><a href="/de/" aria-current="true">Deutsch</a><a href="/es/">Español</a><a href="/pt/">Português</a></div></details><button class="stc-theme-toggle" id="themeToggle" type="button" aria-label="Zum dunklen Modus wechseln" aria-pressed="false"><span class="stc-theme-icon" aria-hidden="true">☾</span><span class="stc-theme-label">Dunkel</span></button></div>
+  </header>
+
+  <main class="stc-main">
+    <section class="stc-hero" aria-labelledby="page-title">
+      <h1 id="page-title">Redezeit-Rechner</h1>
+      <p class="stc-intro">Unser Redezeit-Rechner schätzt die Sprechzeit deines Skripts und rechnet Wörter in Minuten um. Wie lange dauert deine Rede oder Präsentation?</p>
+      <div class="stc-trust-badges" aria-label="Vorteile des Tools"><span><b aria-hidden="true">✓</b> Kostenlos</span><span><b aria-hidden="true">⌑</b> 100 % privat</span><span><b aria-hidden="true">↗</b> Keine Anmeldung</span></div>
+
+      <div class="stc-workspace">
+        <section class="stc-card stc-script-card" aria-label="Dein Skript">
+          <div class="stc-card-heading">
+            <div class="stc-section-kicker">DAS SKRIPT</div>
+            <span class="stc-private-tag"><span aria-hidden="true">●</span> Bleibt auf diesem Gerät</span>
+          </div>
+          <div class="stc-input-toggle" role="group" aria-label="Eingabetyp wählen">
+            <button class="stc-input-toggle-btn stc-toggle-active" type="button" data-inputmode="text">Text einfügen</button>
+            <button class="stc-input-toggle-btn" type="button" data-inputmode="count">Wortanzahl</button>
+          </div>
+          <label class="stc-sr-only" for="scriptInput">Rede- oder Lesetext eingeben oder einfügen</label>
+          <div class="stc-editor-wrap" id="editorWrap">
+            <pre class="stc-line-numbers" id="lineNumbers" aria-hidden="true">1</pre>
+            <textarea id="scriptInput" spellcheck="true" placeholder="Füge deine Rede, Präsentation oder dein Lesematerial hier ein…&#10;&#10;Deine Schätzung aktualisiert sich beim Tippen." aria-describedby="editor-hint" autocapitalize="sentences"></textarea>
+          </div>
+          <div class="stc-count-wrap" id="countWrap" hidden>
+            <label for="wordCountInput">Wie viele Wörter hat dein Skript?</label>
+            <input id="wordCountInput" type="number" min="0" max="1000000" step="1" inputmode="numeric" placeholder="z. B. 650" aria-describedby="countHint">
+            <p id="countHint">Kennst du die Wortanzahl? Gib sie für eine sofortige Schätzung ein – ganz ohne Einfügen.</p>
+          </div>
+          <div class="stc-editor-footer">
+            <span id="editor-hint">Tipp: Füge dein komplettes Skript für die genaueste Schätzung ein.</span>
+            <div class="stc-inline-actions"><button class="stc-text-button" id="copyTextBtn" type="button">Text kopieren</button><span class="stc-action-divider"></span><button class="stc-text-button stc-danger-button" id="clearBtn" type="button">Löschen</button></div>
+          </div>
+          <div class="stc-metrics" aria-label="Textstatistiken">
+            <div class="stc-metric"><span class="stc-metric-icon">W</span><div><strong id="wordCount">0</strong><span id="wordsMetricLabel">Wörter</span></div></div>
+            <div class="stc-metric"><span class="stc-metric-icon">#</span><div><strong id="charCount">0</strong><span>Zeichen</span><span class="stc-submetric">Ohne Leerz.: <b id="charNoSpaceCount">0</b></span></div></div>
+            <div class="stc-metric"><span class="stc-metric-icon">¶</span><div><strong id="sentenceCount">0</strong><span>Sätze</span></div></div>
+            <div class="stc-metric"><span class="stc-metric-icon">↵</span><div><strong id="paragraphCount">0</strong><span>Absätze</span></div></div>
+            <div class="stc-metric"><span class="stc-metric-icon">≡</span><div><strong id="lineCount">0</strong><span>Gesch. Zeilen</span></div></div>
+          </div>
+          <div class="stc-pace-control">
+            <div class="stc-scenario-row" id="scenarioRow"><label for="scenarioSelect" id="scenarioLabel">Szenario</label><select id="scenarioSelect"><option value="150">TED-Talk · 150 WPM</option><option value="130" selected>Geschäftspräsentation · 130 WPM</option><option value="115">Vorlesung · 115 WPM</option><option value="100">Hochzeitsrede · 100 WPM</option><option value="140">Podcast / Storytelling · 140 WPM</option><option value="160">Elevator Pitch · 160 WPM</option><option value="60">Werbung / Voice-over · 1 Wort/Sek.</option><option value="custom">Eigenes Tempo…</option></select></div>
+            <div class="stc-pace-label"><div><span class="stc-section-kicker" id="paceKicker">SPRECHTEMPO</span><strong id="paceCaption">Ein angenehmes, gesprächiges Tempo</strong></div><label class="stc-wpm-input-wrap"><input id="wpmInput" type="number" min="60" max="400" value="130" inputmode="numeric" aria-label="Sprechtempo in Wörtern pro Minute"><span id="paceUnit">WPM</span></label></div>
+            <input class="stc-range" id="wpmSlider" type="range" min="60" max="400" value="130" aria-label="Sprechtempo anpassen, 60 bis 400 Wörter pro Minute">
+            <div class="stc-range-labels"><span>60 · Bedächtig</span><span>400 · Sehr schnell</span></div>
+            <div class="stc-mode-row"><label for="languageMode">Sprache &amp; Schrift</label><select id="languageMode"><option value="words">Wortbasiert · WPM</option><option value="cjk">Chinesisch · CPM</option><option value="japanese">Japanisch · CPM</option><option value="korean">Koreanisch · CPM</option></select><span class="stc-mode-note" id="modeNote">Wörter pro Minute</span></div>
+          </div>
+        </section>
+
+        <aside class="stc-results-column" aria-label="Zeitschätzungen und Übungstools">
+          <section class="stc-card stc-results-card" aria-labelledby="results-heading">
+            <div class="stc-card-heading stc-results-heading"><div><div class="stc-section-kicker">DEINE SCHÄTZUNG</div><h2 id="results-heading">Das Timing</h2></div><span class="stc-live-tag"><span></span> LIVE</span></div>
+            <div class="stc-readmode" id="readModeWrap" role="group" aria-label="Lesemodus wählen">
+              <button class="stc-readmode-btn stc-readmode-active" type="button" data-readmode="aloud" aria-pressed="true">Vorlesen</button>
+              <button class="stc-readmode-btn" type="button" data-readmode="silent" aria-pressed="false">Still lesen</button>
+            </div>
+            <div class="stc-time-result stc-primary-result"><div class="stc-result-icon stc-mic-icon" id="primaryIcon" aria-hidden="true">◖</div><div class="stc-result-main"><span id="primaryLabel">Laut gesprochen</span><strong id="speakingTime">0 <small>Min.</small> 00 <small>Sek.</small></strong></div></div>
+            <div class="stc-result-divider"></div>
+            <div class="stc-time-result"><div class="stc-result-icon stc-book-icon" id="secondaryIcon" aria-hidden="true">▤</div><div class="stc-result-main"><span id="secondaryLabel">Still gelesen <em id="readingRateLabel">· 230 WPM</em></span><strong id="readingTime">0 <small>Min.</small> 00 <small>Sek.</small></strong></div></div>
+            <p class="stc-estimate-note" id="estimateNote">Schätzungen sind ein Richtwert; Pausen und Vortrag beeinflussen die tatsächliche Zeit.</p>
+            <button class="stc-button stc-button-outline stc-copy-summary" id="copySummaryBtn" type="button"><span aria-hidden="true">▣</span> <span class="stc-copy-label">Zusammenfassung kopieren</span></button>
+          </section>
+
+          <section class="stc-card stc-target-card" aria-labelledby="target-heading">
+            <div class="stc-card-heading stc-target-heading"><div><div class="stc-section-kicker">ZEITBUDGET</div><h2 id="target-heading">Triff dein Ziel</h2></div><span class="stc-target-icon" aria-hidden="true">◷</span></div>
+            <div class="stc-target-select-row"><label for="targetMinutes">Ich habe</label><select id="targetMinutes"><option value="3">3 Minuten</option><option value="5" selected>5 Minuten</option><option value="10">10 Minuten</option><option value="15">15 Minuten</option><option value="20">20 Minuten</option><option value="custom">Benutzerdefiniert…</option></select><label class="stc-custom-time" id="customTimeWrap" for="customMinutes" hidden><input id="customMinutes" type="number" min="1" max="180" value="5" aria-label="Benutzerdefinierte Zielzeit in Minuten"><span>Min.</span></label></div>
+            <div class="stc-budget-row"><span><span id="budgetUnitLabel">Wortbudget</span> bei <strong id="budgetPace">130 WPM</strong></span><strong id="wordBudget">650 Wörter</strong></div>
+            <div class="stc-target-meter" aria-hidden="true"><span id="targetMeterFill"></span></div>
+            <div class="stc-target-status" id="targetStatus" role="status" aria-live="polite"><span class="stc-status-symbol">●</span><span>Gib einen Text ein, um dein Timing zu prüfen.</span></div>
+          </section>
+
+          <section class="stc-card stc-practice-card" aria-labelledby="practice-heading">
+            <div class="stc-practice-top"><div><div class="stc-section-kicker">LAUT ÜBEN</div><h2 id="practice-heading">Übungsmodus</h2></div><span class="stc-practice-icon" aria-hidden="true">◉</span></div>
+            <div class="stc-stopwatch" id="stopwatch" role="timer" aria-label="Verstrichene Übungszeit">00:00</div>
+            <div class="stc-practice-buttons"><button class="stc-button stc-button-primary" id="timerStartBtn" type="button"><span aria-hidden="true">▶</span> Start</button><button class="stc-button stc-button-soft" id="timerResetBtn" type="button">Zurücksetzen</button><button class="stc-button stc-button-soft stc-lap-button" id="timerLapBtn" type="button" disabled>Runde</button></div>
+            <div class="stc-live-speed"><label for="progressUnits"><span><span class="stc-speed-dot"></span><span id="progressLabel">Gesprochene Wörter</span></span><input id="progressUnits" type="number" min="0" value="0" inputmode="numeric" aria-label="Anzahl der gesprochenen Wörter während des Übens"></label><strong id="liveSpeed">— <small>WPM</small></strong></div>
+            <div class="stc-laps" id="lapList" aria-live="polite"></div>
+            <button class="stc-focus-button" id="focusBtn" type="button"><span aria-hidden="true">⛶</span> Teleprompter öffnen</button>
+          </section>
+        </aside>
+      </div>
+      <div class="stc-export-row"><span>Bereit zum Üben?</span><span class="stc-export-copy">Dein Entwurf wird automatisch in diesem Browser gespeichert.</span><button class="stc-text-button" id="exportBtn" type="button">Skript mit Zeitmarken laden <span aria-hidden="true">↗</span></button></div>
+    </section>
+
+    <section class="stc-features" aria-labelledby="features-heading">
+      <div class="stc-features-intro"><div class="stc-section-kicker">MEHR ALS EIN WORTZÄHLER</div><h2 id="features-heading">Warum speechtimercalculator.com für die Wort-zu-Zeit-Berechnung?</h2><p>Ein kompletter Redezeit-Rechner und Sprechzeit-Schätzer – vom ersten Entwurf bis zur letzten Probe.</p></div>
+      <div class="stc-feature-grid">
+        <article class="stc-feature-card"><span class="stc-feature-icon" aria-hidden="true">◷</span><h3>Sofortige Redezeit</h3><p>Sieh beim Tippen, wie lange lautes Sprechen und stilles Lesen dauern. Nutze es als Redelängen-Rechner oder Text-zu-Zeit-Schätzer.</p></article>
+        <article class="stc-feature-card"><span class="stc-feature-icon" aria-hidden="true">↗</span><h3>Dein Tempo, deine Wahl</h3><p>Wähle TED-Talk, Präsentation, Vorlesung, Hochzeitsrede, Storytelling, Pitch oder Voice-over. Stelle 60 bis 400 WPM fein ein.</p></article>
+        <article class="stc-feature-card"><span class="stc-feature-icon" aria-hidden="true">◎</span><h3>Wortbudget für dein Zeitlimit</h3><p>Setze ein Ziel von 3 bis 20 Minuten oder gib ein eigenes Limit ein. Erhalte dein Wortbudget und sieh, ob ein Skript passt, zu kurz oder zu lang ist.</p></article>
+        <article class="stc-feature-card"><span class="stc-feature-icon" aria-hidden="true">▶</span><h3>Übungs-Timer &amp; Tempo</h3><p>Starte, pausiere, setze zurück und markiere Runden. Verfolge gesprochene Wörter und vergleiche dein echtes Tempo mit der Schätzung.</p></article>
+        <article class="stc-feature-card"><span class="stc-feature-icon" aria-hidden="true">▤</span><h3>Ablenkungsfreier Teleprompter</h3><p>Probe dein Skript im Fokus-Modus mit einstellbarer Textgröße und freihändigem Scrolltempo.</p></article>
+        <article class="stc-feature-card"><span class="stc-feature-icon" aria-hidden="true">文</span><h3>Wörter, Zeichen &amp; Zähler</h3><p>Prüfe Wort-, Zeichen-, Satz-, Absatz- und Zeilenzahlen. Wechsle zu CPM für chinesische, japanische oder koreanische Texte.</p></article>
+        <article class="stc-feature-card"><span class="stc-feature-icon" aria-hidden="true">⇩</span><h3>Kopieren &amp; Exportieren</h3><p>Kopiere eine Zeitzusammenfassung oder lade dein Skript mit eingefügten Zeitmarken zwischen Absätzen herunter.</p></article>
+        <article class="stc-feature-card"><span class="stc-feature-icon" aria-hidden="true">⌑</span><h3>Privates automatisches Speichern</h3><p>Dein Skript bleibt in deinem Browser und wird auf diesem Gerät gespeichert. Kein Konto, keine Anmeldung, kein Upload nötig.</p></article>
+      </div>
+    </section>
+
+    <section class="stc-content" aria-labelledby="duration-heading">
+      <div class="stc-content-heading"><div class="stc-section-kicker">SICHER PLANEN</div><h2 id="duration-heading">Wie viele Wörter haben übliche Rededauern?</h2><p>Nutze diese Schätzungen als Ausgangspunkt. Eine Pause zur Betonung, Publikumsreaktionen oder ein Folienwechsel können einen Live-Vortrag verlängern.</p></div>
+      <h2 class="stc-matrix-heading">Wörter-zu-Zeit-Matrix</h2>
+      <div class="stc-table-wrap"><table class="stc-reference-table"><thead><tr><th scope="col">Wortanzahl</th><th scope="col">Langsam<br><span>100 WPM</span></th><th scope="col">Durchschnitt<br><span>130 WPM</span></th><th scope="col">Schnell<br><span>160 WPM</span></th><th scope="col">Stilles Lesen<br><span>230 WPM</span></th></tr></thead><tbody id="referenceTableBody"></tbody></table></div>
+      <div class="stc-info-grid">
+        <article class="stc-info-card"><div class="stc-info-number">01</div><h2>So berechnest du die Redezeit genau</h2><p>Teile die Wortanzahl deines Skripts durch dein Sprechtempo. Zum Beispiel dauern 650 Wörter bei 130 Wörtern pro Minute etwa fünf Minuten. Nutze diesen Sprechzeit-Rechner als Orientierung und probe dann, um Pausen, Übergänge und deinen natürlichen Rhythmus zu berücksichtigen.</p><div class="stc-formula">Zeit in Minuten <span>=</span> Wörter <span>÷</span> WPM</div></article>
+        <article class="stc-info-card"><div class="stc-info-number">02</div><h2>Sprechtempo verstehen</h2><p>Viele Präsentationen liegen bei 120–150 WPM. Langsamerer Vortrag (100–120 WPM) macht komplexe Ideen leichter verständlich; erzählend kann es schneller sein. Publikum und Thema zählen ebenso wie die Zahl.</p><div class="stc-speed-chips"><span>100 <small>Langsam</small></span><span>130 <small>Durchschnitt</small></span><span>160 <small>Schnell</small></span></div></article>
+        <article class="stc-info-card"><div class="stc-info-number">03</div><h2>Redezeiten in verschiedenen Sprachen</h2><p>Das Sprechtempo variiert je nach Sprache und Sprecher. Schätzungen für Englisch, Spanisch, Deutsch, Portugiesisch und Hindi nutzen Wörter pro Minute. Für chinesische, japanische oder koreanische Texte wechsle in den Zeichen-pro-Minute-Modus.</p><div class="stc-language-tags"><span>Englisch · WPM</span><span>中文 · CPM</span><span>日本語 · CPM</span><span>한국어 · CPM</span></div></article>
+      </div>
+      <section class="stc-faq" aria-labelledby="faq-heading"><div class="stc-section-kicker">GUT ZU WISSEN</div><h2 id="faq-heading">Häufige Fragen</h2>
+        <div class="stc-faq-tabs" role="group" aria-label="Fragen nach Thema filtern">
+          <button class="stc-faq-tab stc-faq-tab-active" type="button" data-faqtab="all" aria-pressed="true">Alle</button>
+          <button class="stc-faq-tab" type="button" data-faqtab="getting-started" aria-pressed="false">Erste Schritte</button>
+          <button class="stc-faq-tab" type="button" data-faqtab="timing" aria-pressed="false">Redezeiten</button>
+          <button class="stc-faq-tab" type="button" data-faqtab="features" aria-pressed="false">Funktionen</button>
+          <button class="stc-faq-tab" type="button" data-faqtab="privacy" aria-pressed="false">Datenschutz</button>
+        </div>
+        <details data-cat="timing"><summary>Wie viele Wörter hat eine 5-minütige Rede?</summary><p>Bei 130 WPM hat eine 5-minütige Rede ca. 650 Wörter. Bei 100 WPM plane ca. 500 Wörter, bei 160 WPM ca. 800 Wörter.</p></details>
+        <details data-cat="timing"><summary>Wie lange dauert es, 1.000 Wörter zu sprechen?</summary><p>Bei 130 WPM dauern 1.000 Wörter ca. 7 Minuten und 42 Sekunden. Langsamere 100 WPM brauchen 10 Minuten, 160 WPM nur 6 Minuten und 15 Sekunden.</p></details>
+        <details data-cat="timing"><summary>Wie lang ist eine 500-Wörter-Rede?</summary><p>Eine 500-Wörter-Rede dauert bei durchschnittlichen 130 WPM ca. 3 Minuten und 51 Sekunden. Bei 100 WPM sind es 5 Minuten, bei 160 WPM ca. 3 Minuten und 8 Sekunden.</p></details>
+        <details data-cat="timing"><summary>Wie viele Wörter hat eine 10-minütige Rede?</summary><p>Bei 130 Wörtern pro Minute hat eine 10-minütige Rede ca. 1.300 Wörter. Nutze den Redezeit-Rechner oben, um dein eigenes Tempo einzustellen und die genaue Schätzung zu prüfen.</p></details>
+        <details data-cat="timing"><summary>Wie viele Wörter hat eine 2-minütige Rede?</summary><p>Bei 130 Wörtern pro Minute hat eine 2-minütige Rede ca. 260 Wörter. Bei langsameren 100 WPM plane 200 Wörter, bei 160 WPM ca. 320 Wörter.</p></details>
+        <details data-cat="timing"><summary>Wie viele Wörter hat eine 3-minütige Rede?</summary><p>Bei 130 Wörtern pro Minute hat eine 3-minütige Rede ca. 390 Wörter. Langsame 100 WPM brauchen ca. 300 Wörter, schnelle 160 WPM ca. 480 Wörter.</p></details>
+        <details data-cat="timing"><summary>Wie viele Wörter hat eine 15-minütige Rede?</summary><p>Bei 130 Wörtern pro Minute hat eine 15-minütige Rede ca. 1.950 Wörter. Plane ca. 1.500 Wörter bei 100 WPM oder 2.400 Wörter bei 160 WPM.</p></details>
+        <details data-cat="features"><summary>Wie schätzt ein Redezeit-Rechner die Sprechzeit?</summary><p>Er teilt die Wortanzahl deines Skripts durch das gewählte Sprechtempo in Wörtern pro Minute. Wähle ein Szenario aus der Liste oder stelle mit dem Regler ein eigenes Tempo ein, um Wörter in Minuten umzurechnen.</p></details>
+        <details data-cat="features"><summary>Kann ich das als Sprechzeit-Rechner oder Wörter-zu-Minuten-Rechner nutzen?</summary><p>Ja. Füge ein Skript ein oder tippe es, um Wortanzahl und geschätzte Sprechzeit zu sehen. Wähle ein Tempo, um die Wortanzahl in Minuten umzurechnen, oder setze ein Zeitlimit für dein Ziel-Wortbudget.</p></details>
+        <details data-cat="getting-started"><summary>Was ist der Unterschied zwischen Sprechzeit und stiller Lesezeit?</summary><p>Die Sprechzeit ergibt sich aus deinem Sprechtempo, üblicherweise ca. 130 Wörter pro Minute bei Präsentationen. Stilles Lesen ist meist schneller, daher nutzt der Rechner durchschnittlich 230 Wörter pro Minute für die Lesezeit-Schätzung.</p></details>
+        <details data-cat="getting-started"><summary>Was ist ein gutes Sprechtempo für eine Präsentation?</summary><p>Für viele Sprecher sind 120–150 Wörter pro Minute klar und angenehm. Starte mit 130 WPM und passe das Tempo an Publikum, Thema und deinen Stil an.</p></details>
+        <details data-cat="privacy"><summary>Speichert oder lädt dieser Rechner meinen Text hoch?</summary><p>Nein. Alle Berechnungen laufen in deinem Browser. Dein Entwurf wird nur im lokalen Speicher dieses Geräts abgelegt, damit du später weiterarbeiten kannst.</p></details>
+      </section>
+    </section>
+  </main>
+
+  <footer class="stc-footer"><a class="stc-brand" href="/de/"><span class="stc-brand-mark" aria-hidden="true">S</span><span>speechtimercalculator<span class="stc-brand-light">.com</span></span></a><nav class="stc-footer-links" aria-label="Fußzeile"><a href="/about.html">Über uns</a><a href="/contact.html">Kontakt</a><a href="/terms.html">AGB</a></nav><span>Einfaches Timing für Worte, die zählen.</span><a href="#page-title">Nach oben ↑</a></footer>
+
+  <dialog class="stc-focus-dialog" id="focusDialog" aria-labelledby="focusTitle">
+    <div class="stc-focus-toolbar"><div><span class="stc-focus-brand">SPEECHTIMER <span>· FOKUS-MODUS</span></span><span class="stc-focus-clock" id="focusClock">00:00</span></div><div class="stc-focus-tools"><label for="fontSizeControl">Textgröße <input id="fontSizeControl" type="range" min="20" max="52" value="32" aria-label="Teleprompter-Schriftgröße"></label><label for="scrollSpeed">Scrolltempo <input id="scrollSpeed" type="range" min="20" max="180" value="65" aria-label="Teleprompter-Scrolltempo"></label><button class="stc-focus-close" id="focusCloseBtn" type="button" aria-label="Fokus-Modus schließen">×</button></div></div>
+    <div class="stc-focus-content"><h2 id="focusTitle" class="stc-sr-only">Teleprompter-Probe</h2><div class="stc-focus-text" id="focusText">Dein Skript erscheint hier.</div></div>
+    <div class="stc-focus-bottom"><span>Das Scrolltempo folgt deinem Sprechtempo</span><button class="stc-button stc-button-primary" id="scrollToggleBtn" type="button">Scrollen starten</button></div>
+  </dialog>
+  <div class="stc-toast" id="toast" role="status" aria-live="polite"></div>
+  <div class="stc-mobile-dock" aria-label="Live-Schätzung"><span class="stc-dock-units"><strong id="mobileWordCount">0</strong><small id="mobileUnitLabel">Wörter</small></span><span class="stc-dock-time"><small>Sprechen</small><strong id="mobileSpeakingTime">0:00</strong></span><span class="stc-dock-time stc-dock-reading"><small>Lesen</small><strong id="mobileReadingTime">0:00</strong></span><button id="mobileDockCopy" type="button" aria-label="Zusammenfassung kopieren">Kopieren</button></div>
+</body>
+</html>
