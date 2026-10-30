@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f7f8f7" id="themeColorMeta">
-  <title>Speech Time Calculator | 100% Private, Free &amp; No Sign-Ups</title>
-  <meta name="description" content="Use our speech time calculator to estimate speaking time from your script and convert words to minutes. Know how long will it take to read a speech or presentation?">
+  <title>Speech Time Calculator: Convert Words to Minutes (Free Speaking Timer)</title>
+  <meta name="description" content="Free speech time calculator and words to minutes converter. Paste your script or enter a word count to estimate speaking time, target word budget, and rehearse with a live teleprompter.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://speechtimercalculator.com/">
   <link rel="alternate" hreflang="en" href="https://speechtimercalculator.com/">
@@ -16,8 +16,11 @@
   <link rel="alternate" hreflang="x-default" href="https://speechtimercalculator.com/">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://speechtimercalculator.com/">
-  <meta property="og:title" content="Speech Time Calculator | 100% Private, Free &amp; No Sign-Ups">
-  <meta property="og:description" content="Use our speech time calculator to estimate speaking time from your script and convert words to minutes. Know how long will it take to read a speech or presentation?">
+  <meta property="og:title" content="Speech Time Calculator: Convert Words to Minutes (Free Speaking Timer)">
+  <meta property="og:description" content="Free speech time calculator and words to minutes converter. Paste your script or enter a word count to estimate speaking time, target word budget, and rehearse with a live teleprompter.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Speech Time Calculator: Convert Words to Minutes (Free Speaking Timer)">
+  <meta name="twitter:description" content="Free speech time calculator and words to minutes converter. Paste your script or enter a word count to estimate speaking time, target word budget, and rehearse with a live teleprompter.">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <script>try{if(localStorage.getItem('stc-theme')==='dark'||(!localStorage.getItem('stc-theme')&&matchMedia('(prefers-color-scheme: dark)').matches)){document.documentElement.dataset.theme='dark';document.documentElement.style.colorScheme='dark';document.querySelector('#themeColorMeta').content='#000000'}}catch{}</script>
   <link rel="stylesheet" href="/style.css">
@@ -25,16 +28,129 @@
   {
     "@context": "https://schema.org",
     "@graph": [
-      {"@type":"WebApplication","name":"Speech Time Calculator","description":"Free to use speech time calculator online and speaking time estimator to convert words to minutes and rehearse privately in your browser. No sign-up required.","url":"https://speechtimercalculator.com/","applicationCategory":"UtilitiesApplication","operatingSystem":"All","browserRequirements":"Requires JavaScript","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}},
-      {"@type":"FAQPage","mainEntity":[
-        {"@type":"Question","name":"How many words are in a 5-minute speech?","acceptedAnswer":{"@type":"Answer","text":"At an average speaking pace of 130 words per minute (WPM), a 5-minute speech requires approximately 650 words. Slow delivery (100 WPM) uses about 500 words, while fast delivery (160 WPM) uses about 800 words."}},
-        {"@type":"Question","name":"How long does it take to speak 1,000 words?","acceptedAnswer":{"@type":"Answer","text":"At a standard conversational rate of 130 WPM, speaking 1,000 words takes approximately 7 minutes and 42 seconds."}},
-        {"@type":"Question","name":"How long is a 500-word speech?","acceptedAnswer":{"@type":"Answer","text":"A 500-word speech takes about 5 minutes at 100 words per minute, 3 minutes and 51 seconds at 130 WPM, or 3 minutes and 8 seconds at 160 WPM."}},
-        {"@type":"Question","name":"How many words are in a 10-minute speech?","acceptedAnswer":{"@type":"Answer","text":"At an average pace of 130 words per minute, a 10-minute speech is about 1,300 words. Depending on pace, plan for about 1,000 words at 100 WPM or 1,600 words at 160 WPM."}},
-        {"@type":"Question","name":"How does a speech time calculator estimate speaking time?","acceptedAnswer":{"@type":"Answer","text":"It divides a script's word count by the selected speaking pace in words per minute. Choose a pace to convert your words to an estimated speaking duration."}},
-        {"@type":"Question","name":"How is speech time calculated?","acceptedAnswer":{"@type":"Answer","text":"Divide the number of words by your speaking rate in words per minute, then multiply by 60 to get the duration in seconds. Your actual delivery may vary with pauses and emphasis."}},
-        {"@type":"Question","name":"How many words per minute is a good speaking pace?","acceptedAnswer":{"@type":"Answer","text":"A clear presentation often falls between 120 and 150 words per minute. A pace around 130 WPM is a useful starting estimate, but the best pace depends on the speaker, audience, and material."}}
-      ]}
+      {
+        "@type": "WebSite",
+        "@id": "https://speechtimercalculator.com/#website",
+        "url": "https://speechtimercalculator.com/",
+        "name": "Speech Time Calculator",
+        "description": "Free speech time calculator and words to minutes converter with a live speaking timer and teleprompter.",
+        "inLanguage": "en",
+        "publisher": { "@id": "https://speechtimercalculator.com/#organization" }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://speechtimercalculator.com/#organization",
+        "name": "Speech Time Calculator",
+        "url": "https://speechtimercalculator.com/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://speechtimercalculator.com/favicon.svg",
+          "contentUrl": "https://speechtimercalculator.com/favicon.svg",
+          "caption": "Speech Time Calculator logo"
+        },
+        "founder": { "@id": "https://speechtimercalculator.com/about.html#author" },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "email": "ashusuyavanshi@gmail.com",
+          "contactType": "customer support"
+        }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://speechtimercalculator.com/about.html#author",
+        "name": "Chetan Kumar",
+        "jobTitle": "Lead Digital Tool Architect & Public Speaking Timing Researcher",
+        "url": "https://speechtimercalculator.com/about.html",
+        "sameAs": ["https://github.com/22066ayushkumar-jpg"],
+        "worksFor": { "@id": "https://speechtimercalculator.com/#organization" }
+      },
+      {
+        "@type": "WebApplication",
+        "@id": "https://speechtimercalculator.com/#webapp",
+        "name": "Speech Time Calculator & Words to Minutes Converter",
+        "url": "https://speechtimercalculator.com/",
+        "description": "A free, private, browser-based speech time calculator that converts words to minutes, sets target word budgets, and includes a live practice timer and teleprompter.",
+        "applicationCategory": "UtilityApplication",
+        "operatingSystem": "All",
+        "browserRequirements": "Requires JavaScript",
+        "isAccessibleForFree": true,
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "featureList": [
+          "Words to minutes conversion",
+          "Target speech time word budget",
+          "Live practice speech timer",
+          "Interactive browser teleprompter",
+          "CJK character per minute (CPM) mode"
+        ],
+        "creator": { "@id": "https://speechtimercalculator.com/about.html#author" },
+        "publisher": { "@id": "https://speechtimercalculator.com/#organization" }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://speechtimercalculator.com/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How many words are in a 5-minute speech?",
+            "acceptedAnswer": { "@type": "Answer", "text": "At an average speaking pace of 130 WPM, a 5-minute speech is about 650 words. At 100 WPM, plan for around 500 words; at 160 WPM, around 800 words." }
+          },
+          {
+            "@type": "Question",
+            "name": "How long does it take to speak 1,000 words?",
+            "acceptedAnswer": { "@type": "Answer", "text": "At 130 WPM, 1,000 words takes approximately 7 minutes and 42 seconds. A slower 100 WPM pace takes 10 minutes, while 160 WPM takes 6 minutes and 15 seconds." }
+          },
+          {
+            "@type": "Question",
+            "name": "How long is a 500-word speech?",
+            "acceptedAnswer": { "@type": "Answer", "text": "A 500-word speech takes about 3 minutes and 51 seconds at the average 130 WPM pace. It takes 5 minutes at 100 WPM and about 3 minutes and 8 seconds at 160 WPM." }
+          },
+          {
+            "@type": "Question",
+            "name": "How many words are in a 10-minute speech?",
+            "acceptedAnswer": { "@type": "Answer", "text": "At 130 words per minute, a 10-minute speech is about 1,300 words. Use the speech time calculator above to set your own pace and check your script’s exact estimate." }
+          },
+          {
+            "@type": "Question",
+            "name": "How many words are in a 2-minute speech?",
+            "acceptedAnswer": { "@type": "Answer", "text": "At 130 words per minute, a 2-minute speech is about 260 words. At a slower 100 WPM pace, plan for 200 words; at 160 WPM, plan for about 320 words." }
+          },
+          {
+            "@type": "Question",
+            "name": "How many words are in a 3-minute speech?",
+            "acceptedAnswer": { "@type": "Answer", "text": "At 130 words per minute, a 3-minute speech is about 390 words. A slower 100 WPM delivery uses about 300 words, while a faster 160 WPM delivery uses about 480 words." }
+          },
+          {
+            "@type": "Question",
+            "name": "How many words are in a 15-minute speech?",
+            "acceptedAnswer": { "@type": "Answer", "text": "At 130 words per minute, a 15-minute speech is about 1,950 words. Plan for about 1,500 words at 100 WPM or 2,400 words at 160 WPM." }
+          },
+          {
+            "@type": "Question",
+            "name": "How does a speech time calculator estimate speaking time?",
+            "acceptedAnswer": { "@type": "Answer", "text": "It divides your script’s word count by your selected speaking speed in words per minute. Choose a scenario from the dropdown or set a custom pace with the slider to convert words to minutes." }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I use this as a speaking time calculator or words to minutes calculator?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. Paste or type a script to see its word count and estimated speaking time. Choose a pace to convert the word count to minutes, or set a time limit to see your target word budget." }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the difference between speech time and silent reading time?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Speech time is estimated from your speaking pace, commonly around 130 words per minute for a presentation. Silent reading usually moves faster, so this calculator uses an average of 230 words per minute for its reading-time estimate." }
+          },
+          {
+            "@type": "Question",
+            "name": "What is a good speaking pace for a presentation?",
+            "acceptedAnswer": { "@type": "Answer", "text": "For many speakers, 120–150 words per minute is clear and comfortable. Try 130 WPM as a starting point, then adjust for your audience, topic, and natural delivery." }
+          },
+          {
+            "@type": "Question",
+            "name": "Does this calculator save or upload my text?",
+            "acceptedAnswer": { "@type": "Answer", "text": "No. All calculations happen in your browser. Your draft is saved only in local storage on this device so you can return to it later." }
+          }
+        ]
+      }
     ]
   }
   </script>
@@ -49,7 +165,7 @@
   <main class="stc-main">
     <section class="stc-hero" aria-labelledby="page-title">
       <h1 id="page-title">Speech Time Calculator</h1>
-      <p class="stc-intro">Use our speech time calculator to estimate speaking time from your script and convert words to minutes. Know how long will it take to read a speech or presentation?</p>
+      <p class="stc-intro">Convert words to minutes instantly. Paste your script or enter your word count to calculate exact speaking time, silent reading time, and target word budgets.</p>
       <div class="stc-trust-badges" aria-label="Tool benefits"><span><b aria-hidden="true">✓</b> Free to use</span><span><b aria-hidden="true">⌑</b> 100% privacy</span><span><b aria-hidden="true">↗</b> No sign-ups</span></div>
 
       <div class="stc-workspace">
@@ -128,7 +244,7 @@
     </section>
 
     <section class="stc-features" aria-labelledby="features-heading">
-      <div class="stc-features-intro"><div class="stc-section-kicker">MORE THAN A WORD COUNTER</div><h2 id="features-heading">Why Choose speechtimercalculator.com for Word to time Calculation?</h2><p>A complete speech time calculator and speaking time estimator, from first draft to final rehearsal.</p></div>
+      <div class="stc-features-intro"><div class="stc-section-kicker">MORE THAN A WORD COUNTER</div><h2 id="features-heading">Words to Minutes Converter &amp; Live Speech Timer</h2><p>A complete speech time calculator and speaking time estimator, from first draft to final rehearsal.</p></div>
       <div class="stc-feature-grid">
         <article class="stc-feature-card"><span class="stc-feature-icon" aria-hidden="true">◷</span><h3>Instant speech time</h3><p>See speaking aloud and silent reading estimates update as you type. Use it as a speech length calculator or text-to-time speech estimator.</p></article>
         <article class="stc-feature-card"><span class="stc-feature-icon" aria-hidden="true">↗</span><h3>Your pace, your way</h3><p>Choose TED Talk, presentation, lecture, toast, storytelling, pitch, or voice-over scenarios. Fine-tune from 60 to 400 WPM.</p></article>
@@ -144,7 +260,20 @@
     <section class="stc-content" aria-labelledby="duration-heading">
       <div class="stc-content-heading"><div class="stc-section-kicker">PLAN WITH CONFIDENCE</div><h2 id="duration-heading">How many words in common speech durations?</h2><p>Use these estimates as a starting point. A pause for emphasis, audience response, or a slide change can add time to a live presentation.</p></div>
       <h2 class="stc-matrix-heading">Words to time conversion matrix</h2>
-      <div class="stc-table-wrap"><table class="stc-reference-table"><thead><tr><th scope="col">Word count</th><th scope="col">Slow<br><span>100 WPM</span></th><th scope="col">Average<br><span>130 WPM</span></th><th scope="col">Fast<br><span>160 WPM</span></th><th scope="col">Silent reading<br><span>230 WPM</span></th></tr></thead><tbody id="referenceTableBody"></tbody></table></div>
+      <div class="stc-table-wrap"><table class="stc-reference-table"><thead><tr><th scope="col">Word count</th><th scope="col">Slow<br><span>100 WPM</span></th><th scope="col">Average<br><span>130 WPM</span></th><th scope="col">Fast<br><span>160 WPM</span></th><th scope="col">Silent reading<br><span>230 WPM</span></th></tr></thead><tbody id="referenceTableBody">
+<tr><td>100 words</td><td>1 min 0 sec</td><td>46 sec</td><td>38 sec</td><td>26 sec</td></tr>
+<tr><td>250 words</td><td>2 min 30 sec</td><td>1 min 55 sec</td><td>1 min 34 sec</td><td>1 min 5 sec</td></tr>
+<tr><td>300 words</td><td>3 min 0 sec</td><td>2 min 18 sec</td><td>1 min 53 sec</td><td>1 min 18 sec</td></tr>
+<tr><td>500 words</td><td>5 min 0 sec</td><td>3 min 51 sec</td><td>3 min 8 sec</td><td>2 min 10 sec</td></tr>
+<tr><td>650 words</td><td>6 min 30 sec</td><td>5 min 0 sec</td><td>4 min 4 sec</td><td>2 min 50 sec</td></tr>
+<tr><td>750 words</td><td>7 min 30 sec</td><td>5 min 46 sec</td><td>4 min 41 sec</td><td>3 min 16 sec</td></tr>
+<tr><td>1,000 words</td><td>10 min 0 sec</td><td>7 min 42 sec</td><td>6 min 15 sec</td><td>4 min 21 sec</td></tr>
+<tr><td>1,300 words</td><td>13 min 0 sec</td><td>10 min 0 sec</td><td>8 min 8 sec</td><td>5 min 39 sec</td></tr>
+<tr><td>1,500 words</td><td>15 min 0 sec</td><td>11 min 32 sec</td><td>9 min 23 sec</td><td>6 min 31 sec</td></tr>
+<tr><td>2,000 words</td><td>20 min 0 sec</td><td>15 min 23 sec</td><td>12 min 30 sec</td><td>8 min 42 sec</td></tr>
+<tr><td>2,500 words</td><td>25 min 0 sec</td><td>19 min 14 sec</td><td>15 min 38 sec</td><td>10 min 52 sec</td></tr>
+<tr><td>3,000 words</td><td>30 min 0 sec</td><td>23 min 5 sec</td><td>18 min 45 sec</td><td>13 min 3 sec</td></tr>
+</tbody></table></div>
       <div class="stc-info-grid">
         <article class="stc-info-card"><div class="stc-info-number">01</div><h2>How to calculate speech time accurately</h2><p>Divide the number of words in your script by your speaking pace. For example, 650 words at 130 words per minute takes about five minutes. Use this speaking time calculator or speech time estimator as a guide, then rehearse to account for pauses, transitions, and your natural rhythm.</p><div class="stc-formula">Time in minutes <span>=</span> words <span>÷</span> WPM</div></article>
         <article class="stc-info-card"><div class="stc-info-number">02</div><h2>Understanding speaking speeds</h2><p>Many presentations land around 120–150 WPM. Slower delivery (100–120 WPM) can make complex ideas easier to follow; conversational storytelling may be quicker. Your audience and subject matter matter as much as the number.</p><div class="stc-speed-chips"><span>100 <small>Slow</small></span><span>130 <small>Average</small></span><span>160 <small>Fast</small></span></div></article>
@@ -158,23 +287,23 @@
           <button class="stc-faq-tab" type="button" data-faqtab="features" aria-pressed="false">Features</button>
           <button class="stc-faq-tab" type="button" data-faqtab="privacy" aria-pressed="false">Privacy</button>
         </div>
-        <details data-cat="timing"><summary>How many words are in a 5-minute speech?</summary><p>At an average speaking pace of 130 WPM, a 5-minute speech is about 650 words. At 100 WPM, plan for around 500 words; at 160 WPM, around 800 words.</p></details>
-        <details data-cat="timing"><summary>How long does it take to speak 1,000 words?</summary><p>At 130 WPM, 1,000 words takes approximately 7 minutes and 42 seconds. A slower 100 WPM pace takes 10 minutes, while 160 WPM takes 6 minutes and 15 seconds.</p></details>
-        <details data-cat="timing"><summary>How long is a 500-word speech?</summary><p>A 500-word speech takes about 3 minutes and 51 seconds at the average 130 WPM pace. It takes 5 minutes at 100 WPM and about 3 minutes and 8 seconds at 160 WPM.</p></details>
-        <details data-cat="timing"><summary>How many words are in a 10-minute speech?</summary><p>At 130 words per minute, a 10-minute speech is about 1,300 words. Use the speech time calculator above to set your own pace and check your script’s exact estimate.</p></details>
-        <details data-cat="timing"><summary>How many words are in a 2-minute speech?</summary><p>At 130 words per minute, a 2-minute speech is about 260 words. At a slower 100 WPM pace, plan for 200 words; at 160 WPM, plan for about 320 words.</p></details>
-        <details data-cat="timing"><summary>How many words are in a 3-minute speech?</summary><p>At 130 words per minute, a 3-minute speech is about 390 words. A slower 100 WPM delivery uses about 300 words, while a faster 160 WPM delivery uses about 480 words.</p></details>
-        <details data-cat="timing"><summary>How many words are in a 15-minute speech?</summary><p>At 130 words per minute, a 15-minute speech is about 1,950 words. Plan for about 1,500 words at 100 WPM or 2,400 words at 160 WPM.</p></details>
-        <details data-cat="features"><summary>How does a speech time calculator estimate speaking time?</summary><p>It divides your script’s word count by your selected speaking speed in words per minute. Choose a scenario from the dropdown or set a custom pace with the slider to convert words to minutes.</p></details>
-        <details data-cat="features"><summary>Can I use this as a speaking time calculator or words to minutes calculator?</summary><p>Yes. Paste or type a script to see its word count and estimated speaking time. Choose a pace to convert the word count to minutes, or set a time limit to see your target word budget.</p></details>
-        <details data-cat="getting-started"><summary>What is the difference between speech time and silent reading time?</summary><p>Speech time is estimated from your speaking pace, commonly around 130 words per minute for a presentation. Silent reading usually moves faster, so this calculator uses an average of 230 words per minute for its reading-time estimate.</p></details>
-        <details data-cat="getting-started"><summary>What is a good speaking pace for a presentation?</summary><p>For many speakers, 120–150 words per minute is clear and comfortable. Try 130 WPM as a starting point, then adjust for your audience, topic, and natural delivery.</p></details>
-        <details data-cat="privacy"><summary>Does this calculator save or upload my text?</summary><p>No. All calculations happen in your browser. Your draft is saved only in local storage on this device so you can return to it later.</p></details>
+        <details data-cat="timing" open><summary><h3 class="stc-faq-q">How many words are in a 5-minute speech?</h3></summary><p>At an average speaking pace of 130 WPM, a 5-minute speech is about 650 words. At 100 WPM, plan for around 500 words; at 160 WPM, around 800 words.</p></details>
+        <details data-cat="timing" open><summary><h3 class="stc-faq-q">How long does it take to speak 1,000 words?</h3></summary><p>At 130 WPM, 1,000 words takes approximately 7 minutes and 42 seconds. A slower 100 WPM pace takes 10 minutes, while 160 WPM takes 6 minutes and 15 seconds.</p></details>
+        <details data-cat="timing" open><summary><h3 class="stc-faq-q">How long is a 500-word speech?</h3></summary><p>A 500-word speech takes about 3 minutes and 51 seconds at the average 130 WPM pace. It takes 5 minutes at 100 WPM and about 3 minutes and 8 seconds at 160 WPM.</p></details>
+        <details data-cat="timing" open><summary><h3 class="stc-faq-q">How many words are in a 10-minute speech?</h3></summary><p>At 130 words per minute, a 10-minute speech is about 1,300 words. Use the speech time calculator above to set your own pace and check your script’s exact estimate.</p></details>
+        <details data-cat="timing"><summary><h3 class="stc-faq-q">How many words are in a 2-minute speech?</h3></summary><p>At 130 words per minute, a 2-minute speech is about 260 words. At a slower 100 WPM pace, plan for 200 words; at 160 WPM, plan for about 320 words.</p></details>
+        <details data-cat="timing" open><summary><h3 class="stc-faq-q">How many words are in a 3-minute speech?</h3></summary><p>At 130 words per minute, a 3-minute speech is about 390 words. A slower 100 WPM delivery uses about 300 words, while a faster 160 WPM delivery uses about 480 words.</p></details>
+        <details data-cat="timing"><summary><h3 class="stc-faq-q">How many words are in a 15-minute speech?</h3></summary><p>At 130 words per minute, a 15-minute speech is about 1,950 words. Plan for about 1,500 words at 100 WPM or 2,400 words at 160 WPM.</p></details>
+        <details data-cat="features"><summary><h3 class="stc-faq-q">How does a speech time calculator estimate speaking time?</h3></summary><p>It divides your script’s word count by your selected speaking speed in words per minute. Choose a scenario from the dropdown or set a custom pace with the slider to convert words to minutes.</p></details>
+        <details data-cat="features"><summary><h3 class="stc-faq-q">Can I use this as a speaking time calculator or words to minutes calculator?</h3></summary><p>Yes. Paste or type a script to see its word count and estimated speaking time. Choose a pace to convert the word count to minutes, or set a time limit to see your target word budget.</p></details>
+        <details data-cat="getting-started"><summary><h3 class="stc-faq-q">What is the difference between speech time and silent reading time?</h3></summary><p>Speech time is estimated from your speaking pace, commonly around 130 words per minute for a presentation. Silent reading usually moves faster, so this calculator uses an average of 230 words per minute for its reading-time estimate.</p></details>
+        <details data-cat="getting-started"><summary><h3 class="stc-faq-q">What is a good speaking pace for a presentation?</h3></summary><p>For many speakers, 120–150 words per minute is clear and comfortable. Try 130 WPM as a starting point, then adjust for your audience, topic, and natural delivery.</p></details>
+        <details data-cat="privacy"><summary><h3 class="stc-faq-q">Does this calculator save or upload my text?</h3></summary><p>No. All calculations happen in your browser. Your draft is saved only in local storage on this device so you can return to it later.</p></details>
       </section>
     </section>
   </main>
 
-  <footer class="stc-footer"><a class="stc-brand" href="/"><span class="stc-brand-mark" aria-hidden="true">S</span><span>speechtimercalculator<span class="stc-brand-light">.com</span></span></a><nav class="stc-footer-links" aria-label="Footer"><a href="/about.html">About Us</a><a href="/contact.html">Contact Us</a><a href="/terms.html">Terms &amp; Conditions</a></nav><span>Simple timing for the words that matter.</span><a href="#page-title">Back to top ↑</a></footer>
+  <footer class="stc-footer"><a class="stc-brand" href="/"><span class="stc-brand-mark" aria-hidden="true">S</span><span>speechtimercalculator<span class="stc-brand-light">.com</span></span></a><nav class="stc-footer-links" aria-label="Footer"><a href="/about.html">About Us</a><a href="/contact.html">Contact Us</a><a href="/terms.html">Terms &amp; Conditions</a></nav><span>Simple timing for the words that matter.</span><a class="stc-footer-top" href="#page-title">Back to top ↑</a><span class="stc-footer-trust">Created &amp; Reviewed by <a href="https://github.com/22066ayushkumar-jpg" rel="me noopener" target="_blank">Chetan Kumar</a> (Digital Tool Architect &amp; Public Speaking Timing Researcher) · Pacing benchmarks verified against standard rhetoric &amp; Toastmasters WPM guidelines.</span></footer>
 
   <dialog class="stc-focus-dialog" id="focusDialog" aria-labelledby="focusTitle">
     <div class="stc-focus-toolbar"><div><span class="stc-focus-brand">SPEECHTIMER <span>· FOCUS MODE</span></span><span class="stc-focus-clock" id="focusClock">00:00</span></div><div class="stc-focus-tools"><label for="fontSizeControl">Text size <input id="fontSizeControl" type="range" min="20" max="52" value="32" aria-label="Teleprompter font size"></label><label for="scrollSpeed">Scroll speed <input id="scrollSpeed" type="range" min="20" max="180" value="65" aria-label="Teleprompter scroll speed"></label><button class="stc-focus-close" id="focusCloseBtn" type="button" aria-label="Close focus mode">×</button></div></div>

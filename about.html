@@ -23,6 +23,46 @@
     ]
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://speechtimercalculator.com/#organization",
+        "name": "Speech Time Calculator",
+        "url": "https://speechtimercalculator.com/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://speechtimercalculator.com/favicon.svg",
+          "contentUrl": "https://speechtimercalculator.com/favicon.svg"
+        },
+        "founder": { "@id": "https://speechtimercalculator.com/about.html#author" }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://speechtimercalculator.com/about.html#author",
+        "name": "Chetan Kumar",
+        "jobTitle": "Lead Digital Tool Architect & Public Speaking Timing Researcher",
+        "url": "https://speechtimercalculator.com/about.html",
+        "sameAs": ["https://github.com/22066ayushkumar-jpg"],
+        "worksFor": { "@id": "https://speechtimercalculator.com/#organization" },
+        "knowsAbout": ["Public speaking pace", "Words to minutes conversion", "Speech timing benchmarks", "Character-per-minute rates", "Teleprompter ergonomics"]
+      },
+      {
+        "@type": "AboutPage",
+        "@id": "https://speechtimercalculator.com/about.html#webpage",
+        "url": "https://speechtimercalculator.com/about.html",
+        "name": "About Us – Speech Time Calculator",
+        "description": "The methodology, benchmarks, and creator behind the Speech Time Calculator words to minutes converter.",
+        "mainEntity": { "@id": "https://speechtimercalculator.com/about.html#author" },
+        "author": { "@id": "https://speechtimercalculator.com/about.html#author" },
+        "reviewedBy": { "@id": "https://speechtimercalculator.com/about.html#author" },
+        "publisher": { "@id": "https://speechtimercalculator.com/#organization" }
+      }
+    ]
+  }
+  </script>
   <script>try{if(localStorage.getItem('stc-theme')==='dark'||(!localStorage.getItem('stc-theme')&&matchMedia('(prefers-color-scheme: dark)').matches)){document.documentElement.dataset.theme='dark';document.documentElement.style.colorScheme='dark';document.querySelector('#themeColorMeta').content='#000000'}}catch{}</script>
   <link rel="stylesheet" href="/style.css">
 </head>
@@ -50,12 +90,32 @@
       </ul>
       <h2>Private by design</h2>
       <p>Every calculation happens in your browser. Your text never leaves your device, is never uploaded to a server, and no account or sign-up is required. Drafts are saved only in your own browser's local storage so you can pick up where you left off.</p>
+      <h2>How Our Speech Time Benchmarks Are Verified</h2>
+      <p>Speech time is calculated with a transparent formula: <strong>minutes = words ÷ words per minute (WPM)</strong>, then converted to minutes and seconds and rounded to the nearest second. The same method powers the reference matrix on the homepage and the live estimate in the calculator.</p>
+      <h3>Why 130 WPM is the default</h3>
+      <p>130 WPM is the midpoint of the 100–160 WPM reference band used for public speaking planning. It represents an average conversational presentation pace: clear enough for an audience to follow, but not so slow that a talk loses momentum. The calculator also offers 100 WPM (slow), 160 WPM (fast), and custom rates from 60 to 400 WPM so you can model your own delivery instead of relying on a single average.</p>
+      <h3>Presentation pacing vs. silent reading</h3>
+      <p>Toastmasters-style speeches and TED-style talks commonly land around 130–150 WPM, with deliberate pauses for emphasis, transitions, and audience response. Silent reading is much faster: this tool uses 230 WPM for reading time, which is why the silent-reading column is shorter than the spoken columns for the same word count. Reading estimates are for comprehension and study planning, not for rehearsal pacing.</p>
+      <h3>Character-per-minute (CPM) for Chinese, Japanese, and Korean</h3>
+      <p>Word boundaries differ across CJK writing systems, so word-per-minute maths is unreliable for those scripts. In CPM mode the tool counts CJK characters and divides by a character-per-minute rate: 300 CPM for Chinese and Japanese, and 350 CPM for Korean. The result is a character-based speaking estimate that can be compared directly with the spoken-time figures.</p>
+      <h3>Editorial standards</h3>
+      <p>Rates are presented as planning estimates, not guarantees. Actual delivery varies with pauses, emphasis, audience interaction, slide changes, and language. The reference tables are reviewed against standard rhetoric guidance and the 100–160 WPM speaking-rate benchmark band, alongside Toastmasters timing guidelines and the acoustic benchmarks used in professional speech work. All calculations run locally in your browser, so scripts are never uploaded or stored on a server.</p>
+      <h2>Created &amp; Reviewed By</h2>
+      <div class="stc-author-card">
+        <div class="stc-author-avatar" aria-hidden="true">CK</div>
+        <div>
+          <h3>Chetan Kumar</h3>
+          <p class="stc-author-role">Lead Digital Tool Architect &amp; Public Speaking Timing Researcher</p>
+          <p>Chetan Kumar is the creator and reviewer of Speech Time Calculator. A digital tool architect specializing in browser-first utility tools, speech pacing calculators, and real-time teleprompter ergonomics, he designed the tool's pace model, word-budget logic, and browser-based timer and teleprompter, and reviews the reference tables against published speaking-rate guidance.</p>
+          <p class="stc-author-links"><a href="https://github.com/22066ayushkumar-jpg" rel="me noopener" target="_blank">GitHub profile</a><a href="/contact.html">Contact the creator</a></p>
+        </div>
+      </div>
       <h2>Get started</h2>
       <p><a href="/">Try the free speech time calculator</a> — paste your first script and see your estimate in seconds.</p>
     </div>
   </main>
 
-  <footer class="stc-footer"><a class="stc-brand" href="/"><span class="stc-brand-mark" aria-hidden="true">S</span><span>speechtimercalculator<span class="stc-brand-light">.com</span></span></a><nav class="stc-footer-links" aria-label="Footer"><a href="/about.html">About Us</a><a href="/contact.html">Contact Us</a><a href="/terms.html">Terms &amp; Conditions</a></nav><span>© 2026 Speech Timer Calculator. All rights reserved.</span></footer>
+  <footer class="stc-footer"><a class="stc-brand" href="/"><span class="stc-brand-mark" aria-hidden="true">S</span><span>speechtimercalculator<span class="stc-brand-light">.com</span></span></a><nav class="stc-footer-links" aria-label="Footer"><a href="/about.html">About Us</a><a href="/contact.html">Contact Us</a><a href="/terms.html">Terms &amp; Conditions</a></nav><span>© 2026 Speech Timer Calculator. All rights reserved.</span><span class="stc-footer-trust">Created &amp; Reviewed by <a href="https://github.com/22066ayushkumar-jpg" rel="me noopener" target="_blank">Chetan Kumar</a> (Digital Tool Architect &amp; Public Speaking Timing Researcher) · Pacing benchmarks verified against standard rhetoric &amp; Toastmasters WPM guidelines.</span></footer>
   <script>(function(){var b=document.getElementById('themeToggle');function paint(t){b.setAttribute('aria-pressed',String(t==='dark'));b.setAttribute('aria-label','Switch to '+(t==='dark'?'light':'dark')+' mode');b.querySelector('.stc-theme-icon').textContent=t==='dark'?'☀':'☾';b.querySelector('.stc-theme-label').textContent=t==='dark'?'Light':'Dark';}function set(t){try{localStorage.setItem('stc-theme',t)}catch(e){}document.documentElement.dataset.theme=t;document.documentElement.style.colorScheme=t;document.getElementById('themeColorMeta').content=t==='dark'?'#000000':'#f7f8f7';paint(t);}b.addEventListener('click',function(){set(document.documentElement.dataset.theme==='dark'?'light':'dark')});paint(document.documentElement.dataset.theme==='dark'?'dark':'light')})();</script>
 </body>
 </html>

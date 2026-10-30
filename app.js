@@ -165,13 +165,13 @@
     return `${minutes} <small>${T.minShort}</small> ${String(remainder).padStart(2, '0')} <small>${T.secShort}</small>`;
   }
 
-  function plainDuration(seconds) {
+  function plainDuration(seconds, includeZeroSeconds = false) {
     const total = Math.max(0, Math.round(seconds));
     const h = Math.floor(total / 3600);
     const m = Math.floor((total % 3600) / 60);
     const s = total % 60;
-    if (h) return s ? `${h} ${T.tHr} ${m} ${T.tMin} ${s} ${T.tSec}` : (m ? `${h} ${T.tHr} ${m} ${T.tMin}` : `${h} ${T.tHr}`);
-    if (m) return s ? `${m} ${T.tMin} ${s} ${T.tSec}` : `${m} ${T.tMin}`;
+    if (h) return (s || includeZeroSeconds) ? `${h} ${T.tHr} ${m} ${T.tMin} ${s} ${T.tSec}` : (m ? `${h} ${T.tHr} ${m} ${T.tMin}` : `${h} ${T.tHr}`);
+    if (m) return (s || includeZeroSeconds) ? `${m} ${T.tMin} ${s} ${T.tSec}` : `${m} ${T.tMin}`;
     return `${s} ${T.tSec}`;
   }
 
@@ -480,11 +480,12 @@
   }
 
   function renderReferenceTable() {
-    const counts = [100, 250, 500, 750, 1000, 1250, 1500, 2000, 3000, 5000];
     const body = $('#referenceTableBody');
+    if (!body || body.children.length) return;
+    const counts = [100, 250, 300, 500, 650, 750, 1000, 1300, 1500, 2000, 2500, 3000];
     counts.forEach((count) => {
       const row = document.createElement('tr');
-      row.innerHTML = `<td>${T.tableWords(count.toLocaleString())}</td><td>${plainDuration(count / 100 * 60)}</td><td>${plainDuration(count / 130 * 60)}</td><td>${plainDuration(count / 160 * 60)}</td><td>${plainDuration(count / 230 * 60)}</td>`;
+      row.innerHTML = `<td>${T.tableWords(count.toLocaleString())}</td><td>${plainDuration(count / 100 * 60, true)}</td><td>${plainDuration(count / 130 * 60, true)}</td><td>${plainDuration(count / 160 * 60, true)}</td><td>${plainDuration(count / 230 * 60, true)}</td>`;
       body.append(row);
     });
   }

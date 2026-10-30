@@ -68,3 +68,20 @@
    Reduced motion
    ============================================================ */
 @media(prefers-reduced-motion:reduce){.stc-app,.stc-app *,.stc-app *::before,.stc-app *::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
+/* ============================================================
+   Semantic FAQ headings, footer trust line, author card
+   ============================================================ */
+.stc-faq summary h3{display:inline;margin:0;font:inherit;color:inherit;letter-spacing:inherit}
+.stc-footer{flex-wrap:wrap}
+.stc-footer .stc-footer-trust{flex:1 0 100%;order:5;padding-top:2px;text-align:center;color:var(--stc-muted);font-size:12px;line-height:1.45;font-weight:500}
+.stc-footer .stc-footer-trust a{color:var(--stc-accent);font-weight:600;text-decoration:none}
+.stc-footer .stc-footer-trust a:hover{text-decoration:underline}
+.stc-footer>a.stc-footer-top{color:var(--stc-accent);text-decoration:none;font-weight:700}
+.stc-page-card h3{margin:16px 0 6px;color:var(--stc-ink);font-size:17px;line-height:1.35;letter-spacing:-.2px}
+.stc-author-card{display:flex;align-items:flex-start;gap:14px;margin-top:10px;padding:16px;border:1px solid var(--stc-line);border-radius:10px;background:var(--stc-panel-muted)}
+.stc-author-avatar{flex:0 0 44px;width:44px;height:44px;display:grid;place-items:center;border-radius:50%;background:var(--stc-accent-soft);color:var(--stc-accent-strong);font-size:16px;font-weight:800}
+.stc-author-card>div{min-width:0}
+.stc-author-card h3{margin:0 0 3px;font-size:17px}
+.stc-page-card .stc-author-role{margin:0 0 7px;color:var(--stc-accent-strong);font-size:13px;font-weight:700}
+.stc-page-card .stc-author-links{display:flex;flex-wrap:wrap;gap:12px;margin:0;font-size:14px;font-weight:600}
+@media(max-width:520px){.stc-author-card{flex-direction:column}}
