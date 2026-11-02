@@ -1,0 +1,12 @@
+{
+  "name": "speech-time-calculator",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static site tooling for speechtimercalculator.com",
+  "type": "module",
+  "scripts": {
+    "silo:list": "node scripts/publish.mjs --list",
+    "silo:next": "node scripts/publish.mjs --next",
+    "silo:sync": "node scripts/publish.mjs --sync"
+  }
+}

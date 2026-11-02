@@ -85,3 +85,49 @@
 .stc-page-card .stc-author-role{margin:0 0 7px;color:var(--stc-accent-strong);font-size:13px;font-weight:700}
 .stc-page-card .stc-author-links{display:flex;flex-wrap:wrap;gap:12px;margin:0;font-size:14px;font-weight:600}
 @media(max-width:520px){.stc-author-card{flex-direction:column}}
+
+/* --- speech length silo pages + homepage guide links --- */
+.stc-breadcrumb{display:flex;flex-wrap:wrap;align-items:center;gap:7px;margin-bottom:14px;color:var(--stc-muted);font-size:13px;font-weight:650}
+.stc-breadcrumb a{color:var(--stc-accent);text-decoration:none}
+.stc-breadcrumb a:hover{text-decoration:underline}
+.stc-silo-hero{margin:0 0 20px;color:var(--stc-body);font-size:18px;line-height:1.65;text-align:left}
+.stc-silo-hero a{color:var(--stc-accent-strong);font-weight:700;text-decoration:none;border-bottom:1px solid var(--stc-accent-soft)}
+.stc-silo-hero a:hover{border-bottom-color:var(--stc-accent)}
+.stc-silo-calc{margin:24px 0;padding:18px}
+.stc-silo-calc .stc-card-heading h2{margin:0;font-size:19px;letter-spacing:-.3px}
+.stc-silo-calc-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.4fr);gap:16px;align-items:end;margin-top:14px}
+.stc-silo-field{display:grid;gap:8px;min-width:0;color:var(--stc-body);font-size:14px;font-weight:700}
+.stc-silo-field>span{display:flex;align-items:baseline;justify-content:space-between;gap:8px}
+.stc-silo-field em{color:var(--stc-muted);font-size:12px;font-style:normal;font-weight:600;white-space:nowrap}
+.stc-silo-field input[type="number"]{width:100%;min-height:38px;padding:8px 11px;border:1px solid var(--stc-line);border-radius:8px;background:var(--stc-panel-muted);color:var(--stc-ink);font:inherit;font-weight:600;font-variant-numeric:tabular-nums}
+.stc-silo-calc .stc-range{height:38px;margin:0}
+.stc-silo-field output{color:var(--stc-accent);font-weight:800}
+.stc-silo-readout{margin:14px 0 0;padding-top:12px;border-top:1px solid var(--stc-line);color:var(--stc-muted);font-size:14px;line-height:1.55}
+.stc-silo-readout strong{color:var(--stc-ink);font-variant-numeric:tabular-nums}
+.stc-silo-table{margin:26px 0}
+.stc-silo-table h2{margin:0 0 10px;font-size:21px;letter-spacing:-.4px}
+.stc-silo-table-el th[scope="row"]{background:transparent;color:var(--stc-ink);text-align:left;border-bottom:1px solid var(--stc-line)}
+.stc-silo-table-el tbody tr:last-child th,.stc-silo-table-el tbody tr:last-child td{border-bottom:0}
+.stc-silo-footnote{margin:9px 0 0;color:var(--stc-muted);font-size:13px;line-height:1.5}
+.stc-silo-buffer{margin:26px 0;text-align:left}
+.stc-silo-buffer h2{margin:6px 0 8px;font-size:19px}
+.stc-silo-buffer p{margin:0;color:var(--stc-body);font-size:16px;line-height:1.6}
+.stc-silo-buffer .stc-section-kicker{display:block;margin-bottom:8px}
+.stc-silo-faq{margin-top:34px}
+.stc-silo-related{margin:32px 0}
+.stc-silo-related h2{margin:0 0 10px;font-size:21px;letter-spacing:-.4px}
+.stc-related-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px;margin:0;padding:0;list-style:none}
+.stc-related-list li{padding:14px;border:1px solid var(--stc-line);border-radius:11px;background:var(--stc-panel)}
+.stc-related-list a{display:block;color:var(--stc-accent-strong);font-size:16px;font-weight:700;text-decoration:none}
+.stc-related-list a:hover{text-decoration:underline}
+.stc-related-list span{display:block;margin-top:3px;color:var(--stc-muted);font-size:13px}
+.stc-silo-cta h2{margin-top:0}
+.stc-guide-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:10px;margin-bottom:30px}
+.stc-guide-card{display:grid;gap:4px;padding:15px;border:1px solid var(--stc-line);border-radius:11px;background:var(--stc-panel);box-shadow:var(--stc-shadow);text-decoration:none;transition:transform .15s,border-color .15s}
+.stc-guide-card:hover{transform:translateY(-2px);border-color:var(--stc-accent)}
+.stc-guide-kicker{color:var(--stc-accent);font-size:10px;font-weight:800;letter-spacing:1.2px}
+.stc-guide-card strong{color:var(--stc-ink);font-size:17px}
+.stc-guide-meta{color:var(--stc-muted);font-size:13px}
+.stc-table-guide{color:var(--stc-accent-strong);text-decoration:none;border-bottom:1px solid var(--stc-accent-soft)}
+.stc-table-guide:hover{text-decoration:underline}
+@media(max-width:640px){.stc-silo-calc-grid{grid-template-columns:1fr;align-items:start}.stc-silo-buffer p{font-size:15px}}

@@ -1,0 +1,1904 @@
+{
+  "meta": {
+    "rates": [
+      {
+        "pace": "Slow",
+        "wpm": 100
+      },
+      {
+        "pace": "Academic",
+        "wpm": 115
+      },
+      {
+        "pace": "Business",
+        "wpm": 130
+      },
+      {
+        "pace": "Podcast",
+        "wpm": 145
+      },
+      {
+        "pace": "Fast TED",
+        "wpm": 160
+      },
+      {
+        "pace": "Silent reading",
+        "wpm": 230
+      }
+    ],
+    "businessWpm": 130,
+    "singleSpacedWordsPerPage": 500,
+    "doubleSpacedWordsPerPage": 250,
+    "stageBufferPercent": 85,
+    "updatedAt": "2026-11-02"
+  },
+  "pages": [
+    {
+      "slug": "2-minute-speech",
+      "type": "minutes",
+      "published": false,
+      "url": "/minutes/2-minute-speech/",
+      "title": "2-Minute Speech: Word Count, Timing & Free Calculator",
+      "metaDescription": "A 2-minute speech is about 260 words at 130 WPM. See the word budget at six speaking paces, the 85% stage buffer, a timed sample script, and rehearse it free in the browser.",
+      "h1": "2-Minute Speech",
+      "heroAnswer": "A 2-minute speech is about 260 words at the average presentation pace of 130 words per minute. Slow it down to a measured 100 WPM and 200 words is enough; speed up to a brisk 160 WPM and you can fit around 320 words. Aim for 220-260 written words so pauses, breathing, and audience reaction do not push you over the limit.",
+      "homepageAnchorForms": [
+        "2 minute speech word count",
+        "how long is a 2 minute speech",
+        "2 minute speech script"
+      ],
+      "durationMinutes": 2,
+      "wordCount": 260,
+      "sampleScriptWordCount": 278,
+      "sampleScriptIsComplete": true,
+      "sampleScriptNote": null,
+      "calculations": [
+        {
+          "pace": "Slow",
+          "wpm": 100,
+          "words": 200,
+          "time": "2 min 0 sec"
+        },
+        {
+          "pace": "Academic",
+          "wpm": 115,
+          "words": 230,
+          "time": "2 min 0 sec"
+        },
+        {
+          "pace": "Business",
+          "wpm": 130,
+          "words": 260,
+          "time": "2 min 0 sec"
+        },
+        {
+          "pace": "Podcast",
+          "wpm": 145,
+          "words": 290,
+          "time": "2 min 0 sec"
+        },
+        {
+          "pace": "Fast TED",
+          "wpm": 160,
+          "words": 320,
+          "time": "2 min 0 sec"
+        },
+        {
+          "pace": "Silent reading",
+          "wpm": 230,
+          "words": 460,
+          "time": "2 min 0 sec"
+        }
+      ],
+      "pageCounts": {
+        "singleSpaced": 0.5,
+        "doubleSpaced": 1,
+        "singleSpacedWordsPerPage": 500,
+        "doubleSpacedWordsPerPage": 250
+      },
+      "stageBuffer": {
+        "percent": 85,
+        "usableWords": 221,
+        "usableTime": "1 min 42 sec",
+        "fullTime": "2 min 0 sec"
+      },
+      "sampleScript": [
+        {
+          "at": "0:00",
+          "words": 67,
+          "text": "Welcome to the eight-week onboarding review for the customer support team, and I want to start with the number that shaped this whole programme. In January, the average first response on a ticket was forty-one hours. Last week it was under nine. Nothing about the volume changed. Nineteen people still sit at the same desks, and the queue is actually heavier than it was in the spring."
+        },
+        {
+          "at": "0:31",
+          "words": 107,
+          "text": "So what moved? Three things, and each one took less effort than anyone expected. First, we stopped routing tickets by product and started routing them by urgency. A customer whose account is locked at midnight is not the same problem as someone asking about a invoice PDF, and the old queue treated them identically. Second, we wrote down the twelve answers we give most often, in plain language, and made them one keystroke away. Third, and this is the part I care about most, we agreed that no one has to solve a ticket on the first touch, but everyone has to acknowledge it within the hour."
+        },
+        {
+          "at": "1:20",
+          "words": 37,
+          "text": "That third rule is why the number moved. Acknowledgement costs ninety seconds. It buys the customer a name, a timeline, and a reason to stay calm, and it buys you the time to fix the thing properly."
+        },
+        {
+          "at": "1:37",
+          "words": 56,
+          "text": "Here is the ask, and it is small. From Monday, the second shift takes the same three habits: acknowledge inside the hour, use the saved answers without apologising for using them, and flag urgency out loud instead of letting the queue decide. If the second shift matches the first, this becomes how the whole department works."
+        },
+        {
+          "at": "2:03",
+          "words": 11,
+          "text": "Thank you for the last eight weeks. The numbers are yours."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "How many words is a 2-minute speech?",
+          "a": "About 260 words at 130 words per minute, which is the pace most presenters settle into when they are speaking clearly to an audience. Plan 200 words if you speak slowly or expect applause, and up to 320 words if you talk quickly."
+        },
+        {
+          "q": "Is 2 minutes enough time to say something meaningful?",
+          "a": "Yes, if you make one point. A two-minute slot fits a claim, one piece of evidence, and a next step, which is exactly the shape of a toast, a stand-up update, or an elevator pitch. Two competing points in two minutes usually leaves the audience with neither."
+        },
+        {
+          "q": "How much of my 2 minutes should the script fill?",
+          "a": "Around 85 percent, so about 1 minute 50 seconds of pure reading and 220 words. The remaining time absorbs pauses, a slide change, a laugh, or a question you answer on stage."
+        }
+      ],
+      "wordsForTargetTime": {
+        "wpm": 130,
+        "words": 260
+      },
+      "translations": {}
+    },
+    {
+      "slug": "3-minute-speech",
+      "type": "minutes",
+      "published": false,
+      "publishedAt": null,
+      "url": "/minutes/3-minute-speech/",
+      "title": "3-Minute Speech: How Many Words and How to Time It",
+      "metaDescription": "A 3-minute speech is about 390 words at 130 WPM. Compare six speaking paces, get the page count, use the 85% buffer rule, and rehearse a timed sample script in a free teleprompter.",
+      "h1": "3-Minute Speech",
+      "heroAnswer": "A 3-minute speech is about 390 words at an average pace of 130 words per minute. At a slow, formal 100 WPM you need roughly 300 words; at 160 WPM, close to 480. Write about 330-390 words and you will land inside three minutes even with natural pauses.",
+      "homepageAnchorForms": [
+        "3 minute speech word count",
+        "how many words in a 3 minute speech",
+        "3 minute speech example"
+      ],
+      "durationMinutes": 3,
+      "wordCount": 390,
+      "sampleScriptWordCount": 349,
+      "sampleScriptIsComplete": false,
+      "sampleScriptNote": "Timed opening block: 349 of the 390 words your full script needs. Rehearse this in the teleprompter, then extend each announced section to the complete budget.",
+      "calculations": [
+        {
+          "pace": "Slow",
+          "wpm": 100,
+          "words": 300,
+          "time": "3 min 0 sec"
+        },
+        {
+          "pace": "Academic",
+          "wpm": 115,
+          "words": 345,
+          "time": "3 min 0 sec"
+        },
+        {
+          "pace": "Business",
+          "wpm": 130,
+          "words": 390,
+          "time": "3 min 0 sec"
+        },
+        {
+          "pace": "Podcast",
+          "wpm": 145,
+          "words": 435,
+          "time": "3 min 0 sec"
+        },
+        {
+          "pace": "Fast TED",
+          "wpm": 160,
+          "words": 480,
+          "time": "3 min 0 sec"
+        },
+        {
+          "pace": "Silent reading",
+          "wpm": 230,
+          "words": 690,
+          "time": "3 min 0 sec"
+        }
+      ],
+      "pageCounts": {
+        "singleSpaced": 0.8,
+        "doubleSpaced": 1.6,
+        "singleSpacedWordsPerPage": 500,
+        "doubleSpacedWordsPerPage": 250
+      },
+      "stageBuffer": {
+        "percent": 85,
+        "usableWords": 332,
+        "usableTime": "2 min 33 sec",
+        "fullTime": "3 min 0 sec"
+      },
+      "sampleScript": [
+        {
+          "at": "0:00",
+          "words": 55,
+          "text": "My name is Priya, I am joining the analytics team, and you will probably see my name on the Friday revenue report by the end of this month. Three minutes is not enough to tell you my whole career, so I will use it on the two things that actually change how we work together."
+        },
+        {
+          "at": "0:25",
+          "words": 92,
+          "text": "The first is where I come from. I spent five years in operations reporting, which sounds dull and is not, because it taught me that a number nobody trusts is worse than no number at all. I have rebuilt dashboards that people ignored, and I have sat in rooms where a decision stalled because two teams were quoting different versions of the same fact. So I ask uncomfortable questions about definitions before I build anything. If that makes me slightly annoying in the first fortnight, that is the job working as intended."
+        },
+        {
+          "at": "1:08",
+          "words": 74,
+          "text": "The second thing is how I like to work. I would rather show you a rough draft on day two than a polished answer on day ten. Most reporting mistakes are scope mistakes, and they are cheap to fix early and expensive to fix after the chart is on a slide in front of a director. Come and tell me what you actually need from a report, not what the ticket says you need."
+        },
+        {
+          "at": "1:42",
+          "words": 75,
+          "text": "One practical offer, because introductions should be useful rather than merely accurate. If you have a question that has been sitting in your inbox because the answer needs four tables and a judgement call, bring it to me in the first month. Those are the questions I took on this job for, and I would rather learn the business through something people actually need decided than through a tour of the dashboards that already work."
+        },
+        {
+          "at": "2:17",
+          "words": 53,
+          "text": "One small ask. If you have a metric everyone uses but nobody can define cleanly, send it to me this week. Those are the interesting problems, and I would rather inherit them now than discover them in a board pack in December. Thanks for the warm start, and see you in the channel."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "How many words should a 3-minute speech be?",
+          "a": "Write about 390 words if you speak at the common 130 WPM presentation pace. Slow speakers at 100 WPM need around 300 words, while fast speakers at 160 WPM can reach 480 before three minutes is up."
+        },
+        {
+          "q": "How long is a 3-minute speech when read silently?",
+          "a": "The same 390 words take roughly 1 minute 42 seconds to read silently at 230 WPM, which is why reading your script to yourself always feels shorter than performing it."
+        },
+        {
+          "q": "What fits into three minutes?",
+          "a": "Three minutes comfortably holds an introduction, two supporting points, and a closing ask, or a self-introduction with one story. It is also the standard length for a table-topic speech in Toastmasters clubs."
+        }
+      ],
+      "wordsForTargetTime": {
+        "wpm": 130,
+        "words": 390
+      },
+      "translations": {}
+    },
+    {
+      "slug": "5-minute-speech",
+      "type": "minutes",
+      "published": true,
+      "publishedAt": "2026-11-02",
+      "url": "/minutes/5-minute-speech/",
+      "title": "5-Minute Speech: Word Count, Timing Chart & Free Teleprompter Rehearsal",
+      "metaDescription": "A 5-minute speech is about 650 words at 130 WPM. See exact timings at six speaking paces, page counts, the 85% stage buffer, then rehearse a real timed script in the free browser teleprompter.",
+      "h1": "5-Minute Speech",
+      "heroAnswer": "A 5-minute speech is about 650 words at a steady 130 words per minute — the pace most presenters use when they want an audience to follow without leaning forward. Speak slowly at 100 WPM and 500 words fills the slot; talk at a fast TED-style 160 WPM and you can use around 800 words. Write 550-650 words so applause, breathing room, and a slide change still fit inside five minutes.",
+      "homepageAnchorForms": [
+        "5 minute speech word count",
+        "how many words is a 5 minute speech",
+        "5 minute speech script example"
+      ],
+      "durationMinutes": 5,
+      "wordCount": 650,
+      "sampleScriptWordCount": 643,
+      "sampleScriptIsComplete": true,
+      "sampleScriptNote": null,
+      "calculations": [
+        {
+          "pace": "Slow",
+          "wpm": 100,
+          "words": 500,
+          "time": "5 min 0 sec"
+        },
+        {
+          "pace": "Academic",
+          "wpm": 115,
+          "words": 575,
+          "time": "5 min 0 sec"
+        },
+        {
+          "pace": "Business",
+          "wpm": 130,
+          "words": 650,
+          "time": "5 min 0 sec"
+        },
+        {
+          "pace": "Podcast",
+          "wpm": 145,
+          "words": 725,
+          "time": "5 min 0 sec"
+        },
+        {
+          "pace": "Fast TED",
+          "wpm": 160,
+          "words": 800,
+          "time": "5 min 0 sec"
+        },
+        {
+          "pace": "Silent reading",
+          "wpm": 230,
+          "words": 1150,
+          "time": "5 min 0 sec"
+        }
+      ],
+      "pageCounts": {
+        "singleSpaced": 1.3,
+        "doubleSpaced": 2.6,
+        "singleSpacedWordsPerPage": 500,
+        "doubleSpacedWordsPerPage": 250
+      },
+      "stageBuffer": {
+        "percent": 85,
+        "usableWords": 553,
+        "usableTime": "4 min 15 sec",
+        "fullTime": "5 min 0 sec"
+      },
+      "sampleScript": [
+        {
+          "at": "0:00",
+          "words": 63,
+          "text": "Five minutes is not a short speech. It is exactly long enough to change what one person does tomorrow morning, and it is the length that separates people who have something to say from people who can prove it. So let me use these five minutes on the only skill I think matters more than slides, voice, or vocabulary: the first sixty seconds."
+        },
+        {
+          "at": "0:29",
+          "words": 70,
+          "text": "Here is what happens in a room when you start talking. Within about a minute, your audience has made three decisions that they will barely revisit. Are you worth listening to. Do they trust you. And what will happen if they keep their attention on you instead of on their phones. None of those decisions are about your conclusion. They are made while you are still standing where you started."
+        },
+        {
+          "at": "1:01",
+          "words": 71,
+          "text": "I learned this badly. At a team offsite a few years ago I opened with apologies, which is the single fastest way to tell a room that your time is optional. I said I was not really prepared, that I would be quick, that the numbers were a mess. I got through it. Nobody remembered the numbers. What they remembered was that I had already told them it did not matter."
+        },
+        {
+          "at": "1:34",
+          "words": 88,
+          "text": "The next year I ran an experiment. Same content, same slides, one change. I removed every apology and started with a fact the room did not already have. Not a joke, not a quote, just one number, one contradiction, or one question that made the rest of the talk unavoidable. Attendance did not change, and neither did the deck. What changed was minute four. In the apology version, minute four was where people looked at their laptops. In the fact version, minute four was where the questions started."
+        },
+        {
+          "at": "2:15",
+          "words": 64,
+          "text": "That is the mechanism, and it is worth naming plainly. Your opening minute buys you the attention of your closing minute. A strong start creates a debt: the audience stays because you have already paid something, and they want to know where it goes. A weak start spends that credit before you have earned it, and everything after is an uphill argument for relevance."
+        },
+        {
+          "at": "2:44",
+          "words": 112,
+          "text": "There is a third thing, and it is the part nobody rehearses. The first sixty seconds sets your own physiology as much as theirs. When you open on a fact you are certain of, your shoulders drop, your pitch settles, and you stop scanning the room for permission. When you open on an apology, you are telling your body that you are in danger, and then your voice does the rest of the damage for you. I have watched experienced speakers lose a good five minutes to a bad first sentence, not because the audience was harsh but because the speaker had already decided the talk was a favour they were asking."
+        },
+        {
+          "at": "3:36",
+          "words": 72,
+          "text": "So here is what I would like you to do this week, and it takes ten minutes. Write down your first sentence as it stands today. Then cross out anything that apologises, hedges, or introduces your credentials. Replace it with one specific thing your audience does not already know, stated in under fifteen words. Read it aloud twice. If the second reading makes you want to keep going, you have an opening."
+        },
+        {
+          "at": "4:09",
+          "words": 83,
+          "text": "Two cautions, because this is not a trick. Do not open with a fact you cannot pay off, or you have bought attention with a loan you will not repay. And do not perform enthusiasm you do not feel; audiences smell that faster than they smell apologies. Curiosity works. Certainty that you have earned works. Rehearsal is what tells them apart, so say the first sixty seconds out loud five times, and let the rest of the five minutes take care of itself."
+        },
+        {
+          "at": "4:48",
+          "words": 20,
+          "text": "You have more than enough time. You only have to spend the first minute like you know it. Thank you."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "How many words is a 5-minute speech?",
+          "a": "About 650 words at the average presentation pace of 130 words per minute. Slower, formal delivery at 100 WPM needs around 500 words, and an energetic TED-style 160 WPM carries roughly 800 words in the same five minutes."
+        },
+        {
+          "q": "Can I read 650 words in 5 minutes?",
+          "a": "Yes, but you should plan for less. Applying the 85 percent stage buffer means writing about 550 words, which leaves 45 seconds inside your five minutes for pauses, breathing, slide changes, and audience reaction."
+        },
+        {
+          "q": "How many pages is a 5-minute speech?",
+          "a": "A 650-word script is about 1.3 pages single-spaced or 2.6 pages double-spaced in standard manuscript formatting. Most speakers read one double-spaced page in just under two minutes at a normal pace."
+        }
+      ],
+      "wordsForTargetTime": {
+        "wpm": 130,
+        "words": 650
+      },
+      "translations": {
+        "hi": {
+          "title": "5 मिनट का भाषण: शब्द संख्या, समय और मुफ़्त कैलकुलेटर",
+          "metaDescription": "130 WPM पर 5 मिनट का भाषण लगभग 650 शब्द होता है। छह गतियों पर सटीक समय, पेज संख्या और 85% स्टेज बफ़र देखें, फिर मुफ़्त ब्राउज़र टेलीप्रॉम्प्टर में अभ्यास करें।",
+          "h1": "5-मिनट का भाषण",
+          "heroAnswer": "130 शब्द प्रति मिनट की औसत गति पर 5 मिनट का भाषण लगभग 650 शब्द होता है — यही गति प्रस्तुतकर्ता दर्शकों को आसानी से फ़ॉलो कराने के लिए चुनते हैं। धीमी 100 WPM पर 500 शब्द काफ़ी हैं; तेज़ TED-स्टाइल 160 WPM पर आप लगभग 800 शब्द बोल सकते हैं। 550-650 शब्द लिखें ताकि ठहराव, साँस और स्लाइड बदलना भी पाँच मिनट में समा जाए।",
+          "anchorForms": [
+            "5 मिनट भाषण शब्द संख्या",
+            "5 मिनट भाषण में कितने शब्द",
+            "5 मिनट भाषण उदाहरण"
+          ],
+          "faqs": [
+            {
+              "q": "5 मिनट के भाषण में कितने शब्द होते हैं?",
+              "a": "औसत प्रस्तुति गति 130 शब्द प्रति मिनट पर लगभग 650 शब्द। धीमी, औपचारिक 100 WPM पर लगभग 500 शब्द चाहिए, और ऊर्जावान TED-शैली के 160 WPM पर उतने ही समय में लगभग 800 शब्द आ जाते हैं।"
+            },
+            {
+              "q": "क्या 650 शब्द 5 मिनट में पढ़े जा सकते हैं?",
+              "a": "हाँ, लेकिन कम लिखें। 85 प्रतिशत स्टेज बफ़र लगाने का मतलब है लगभग 550 शब्द, जिससे आपके पाँच मिनट में 45 सेकंड ठहराव, साँस, स्लाइड बदलने और दर्शकों की प्रतिक्रिया के लिए बच जाते हैं।"
+            },
+            {
+              "q": "5 मिनट के भाषण में कितने पेज होते हैं?",
+              "a": "650 शब्द की स्क्रिप्ट सिंगल-स्पेस में लगभग 1.3 पेज और डबल-स्पेस में 2.6 पेज होती है। आम गति पर एक डबल-स्पेस पेज पढ़ने में दो मिनट से थोड़ा कम समय लगता है।"
+            }
+          ]
+        },
+        "de": {
+          "title": "5-Minuten-Rede: Wortanzahl, Zeitbedarf & kostenloser Teleprompter",
+          "metaDescription": "Eine 5-Minuten-Rede hat etwa 650 Wörter bei 130 WPM. Exakte Zeiten bei sechs Sprechtempen, Seitenzahlen, die 85%-Bühnenpuffer-Regel — und ein echter Timed-Script zum kostenlosen Üben im Browser.",
+          "h1": "5-Minuten-Rede",
+          "heroAnswer": "Eine 5-Minuten-Rede umfasst etwa 650 Wörter bei gleichmäßigen 130 Wörtern pro Minute — dem Tempo, mit dem Zuhörer ohne Anstrengung folgen. Langsam bei 100 WPM genügen 500 Wörter; im schnellen TED-Stil mit 160 WPM sind es rund 800. Schreibe 550–650 Wörter, damit Applaus, Atempausen und ein Folienwechsel noch in die fünf Minuten passen.",
+          "anchorForms": [
+            "5 Minuten Rede Wortanzahl",
+            "wie viele Wörter in 5 Minuten",
+            "5-Minuten-Rede Beispiel"
+          ],
+          "faqs": [
+            {
+              "q": "Wie viele Wörter hat eine 5-Minuten-Rede?",
+              "a": "Beim durchschnittlichen Vortragstempo von 130 WPM sind es etwa 650 Wörter. Langsame, formelle Rede bei 100 WPM braucht rund 500 Wörter, energischer TED-Stil mit 160 WPM trägt etwa 800 Wörter in denselben fünf Minuten."
+            },
+            {
+              "q": "Kann ich 650 Wörter in 5 Minuten sprechen?",
+              "a": "Ja, aber plane weniger ein. Mit dem 85-Prozent-Bühnenpuffer schreibst du etwa 550 Wörter; das hält 45 Sekunden deiner fünf Minuten für Pausen, Atemzüge, Folienwechsel und Publikumsreaktionen frei."
+            },
+            {
+              "q": "Wie viele Seiten sind eine 5-Minuten-Rede?",
+              "a": "Ein 650-Wörter-Skript sind etwa 1,3 Seiten einzeilig oder 2,6 Seiten zweizeilig in Standard-Manuskriptformat. Eine zweizeilige Seite liest du in normalem Tempo in knapp zwei Minuten."
+            }
+          ]
+        },
+        "es": {
+          "title": "Discurso de 5 minutos: palabras, tiempo y teleprompter gratuito",
+          "metaDescription": "Un discurso de 5 minutos tiene unas 650 palabras a 130 WPM. Consulta los tiempos exactos a seis ritmos, el número de páginas, el margen del 85% y ensaya un guion real con marcas de tiempo en el teleprompter gratuito.",
+          "h1": "Discurso de 5 minutos",
+          "heroAnswer": "Un discurso de 5 minutos tiene unas 650 palabras a un ritmo estable de 130 palabras por minuto, la velocidad que eligen la mayoría de ponentes para que el público siga el hilo sin esfuerzo. A un ritmo lento de 100 WPM bastan 500 palabras; a un ritmo TED de 160 WPM caben alrededor de 800. Escribe entre 550 y 650 palabras para que las pausas, la respiración y un cambio de diapositiva entren dentro de los cinco minutos.",
+          "anchorForms": [
+            "palabras en un discurso de 5 minutos",
+            "cuántas palabras tiene un discurso de 5 minutos",
+            "ejemplo de guion de 5 minutos"
+          ],
+          "faqs": [
+            {
+              "q": "¿Cuántas palabras tiene un discurso de 5 minutos?",
+              "a": "Unas 650 palabras al ritmo medio de presentación de 130 WPM. Una lectura lenta y formal a 100 WPM necesita alrededor de 500 palabras, y un estilo ágil tipo TED a 160 WPM lleva unas 800 en los mismos cinco minutos."
+            },
+            {
+              "q": "¿Puedo leer 650 palabras en 5 minutos?",
+              "a": "Sí, pero conviene planificar menos. Aplicar el margen de escenario del 85% significa escribir unas 550 palabras, lo que deja 45 segundos de tus cinco minutos para pausas, respiración, cambios de diapositiva y reacción del público."
+            },
+            {
+              "q": "¿Cuántas páginas ocupa un discurso de 5 minutos?",
+              "a": "Un guion de 650 palabras ocupa unas 1,3 páginas a espacio sencillo o 2,6 páginas a doble espacio en formato manuscrito estándar. Una página a doble espacio se lee en poco menos de dos minutos a ritmo normal."
+            }
+          ]
+        },
+        "pt": {
+          "title": "Discurso de 5 minutos: palavras, tempo e teleprompter grátis",
+          "metaDescription": "Um discurso de 5 minutos tem cerca de 650 palavras a 130 WPM. Veja os tempos exatos em seis ritmos, a contagem de páginas, a regra do buffer de 85% e ensaie um roteiro real com marcações de tempo no teleprompter gratuito.",
+          "h1": "Discurso de 5 minutos",
+          "heroAnswer": "Um discurso de 5 minutos tem cerca de 650 palavras a um ritmo constante de 130 palavras por minuto — a velocidade que a maioria dos apresentadores usa para o público acompanhar sem esforço. Devagar, a 100 WPM, 500 palavras bastam; no estilo TED acelerado de 160 WPM cabem por volta de 800. Escreva entre 550 e 650 palavras para que pausas, respiração e uma troca de slide caibam nos cinco minutos.",
+          "anchorForms": [
+            "palavras em um discurso de 5 minutos",
+            "quantas palavras tem um discurso de 5 minutos",
+            "exemplo de roteiro de 5 minutos"
+          ],
+          "faqs": [
+            {
+              "q": "Quantas palavras tem um discurso de 5 minutos?",
+              "a": "Cerca de 650 palavras ao ritmo médio de apresentação de 130 WPM. Uma entrega lenta e formal a 100 WPM pede por volta de 500 palavras, e um estilo TED enérgico a 160 WPM leva umas 800 nos mesmos cinco minutos."
+            },
+            {
+              "q": "Consigo ler 650 palavras em 5 minutos?",
+              "a": "Sim, mas planeje menos. Aplicar o buffer de palco de 85% significa escrever cerca de 550 palavras, o que sobra 45 segundos dos seus cinco minutos para pausas, respiração, troca de slides e reação da plateia."
+            },
+            {
+              "q": "Quantas páginas tem um discurso de 5 minutos?",
+              "a": "Um roteiro de 650 palavras ocupa aproximadamente 1,3 página em espaço simples ou 2,6 páginas em espaço duplo no formato manuscrito padrão. Uma página em espaço duplo leva pouco menos de dois minutos para ser lida em ritmo normal."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "slug": "7-minute-speech",
+      "type": "minutes",
+      "published": false,
+      "publishedAt": null,
+      "url": "/minutes/7-minute-speech/",
+      "title": "7-Minute Speech: How Many Words and How to Pace It",
+      "metaDescription": "A 7-minute speech runs about 910 words at 130 WPM. Compare six paces, check page counts, apply the 85% buffer, and rehearse a timed sample pitch script free in the browser.",
+      "h1": "7-Minute Speech",
+      "heroAnswer": "A 7-minute speech is about 910 words at 130 words per minute. Slow delivery at 100 WPM needs roughly 700 words; a fast 160 WPM delivery can carry about 1,120. Written to the 85% stage buffer, plan on 770 words so transitions and questions stay inside your slot.",
+      "homepageAnchorForms": [
+        "7 minute speech word count",
+        "how long is a 7 minute pitch",
+        "7 minute speech structure"
+      ],
+      "durationMinutes": 7,
+      "wordCount": 910,
+      "sampleScriptWordCount": 294,
+      "sampleScriptIsComplete": false,
+      "sampleScriptNote": "Timed opening block: 294 of the 910 words your full script needs. Rehearse this in the teleprompter, then extend each announced section to the complete budget.",
+      "calculations": [
+        {
+          "pace": "Slow",
+          "wpm": 100,
+          "words": 700,
+          "time": "7 min 0 sec"
+        },
+        {
+          "pace": "Academic",
+          "wpm": 115,
+          "words": 805,
+          "time": "7 min 0 sec"
+        },
+        {
+          "pace": "Business",
+          "wpm": 130,
+          "words": 910,
+          "time": "7 min 0 sec"
+        },
+        {
+          "pace": "Podcast",
+          "wpm": 145,
+          "words": 1015,
+          "time": "7 min 0 sec"
+        },
+        {
+          "pace": "Fast TED",
+          "wpm": 160,
+          "words": 1120,
+          "time": "7 min 0 sec"
+        },
+        {
+          "pace": "Silent reading",
+          "wpm": 230,
+          "words": 1610,
+          "time": "7 min 0 sec"
+        }
+      ],
+      "pageCounts": {
+        "singleSpaced": 1.8,
+        "doubleSpaced": 3.6,
+        "singleSpacedWordsPerPage": 500,
+        "doubleSpacedWordsPerPage": 250
+      },
+      "stageBuffer": {
+        "percent": 85,
+        "usableWords": 774,
+        "usableTime": "5 min 57 sec",
+        "fullTime": "7 min 0 sec"
+      },
+      "sampleScript": [
+        {
+          "at": "0:00",
+          "words": 68,
+          "text": "Thank you for the seven minutes. I am going to use the first one on the problem, because if the problem is not real, nothing I show you after that matters. Last quarter, this company spent nine hundred and forty hours on manual reconciliation. That is almost half a full-time person, spent on work that exists only because two systems disagree about what a customer name looks like."
+        },
+        {
+          "at": "0:31",
+          "words": 62,
+          "text": "The second minute is about why the obvious fixes fail. We tried a spreadsheet of record in 2024. It worked for eleven days, then three teams quietly kept local copies, because a spreadsheet cannot be the source of truth when the cost of being wrong is higher than the cost of duplicating work. Rules do not survive when breaking them is free."
+        },
+        {
+          "at": "1:00",
+          "words": 52,
+          "text": "What we are proposing is unglamorous on purpose. A single matching service, one place where the identity rules live, and every downstream system asking the same question in the same way. No new interface for anyone to learn, no data migration in phase one, and a rollback that is one configuration flag."
+        },
+        {
+          "at": "1:24",
+          "words": 63,
+          "text": "Two numbers, and then I will hand over to questions. First, the reconciliation hours drop by an estimated sixty percent in the quarter after launch, which returns roughly five hundred and sixty hours to the finance team. Second, and the reason the CFO signed on: our dispute rate has a floor we have never broken, and it moves only when the identifiers move."
+        },
+        {
+          "at": "1:53",
+          "words": 49,
+          "text": "What we need from this room is a decision and two named engineers. If we start in three weeks, we ship before the year-end close, and the close itself is the proof. After that, this is not a project, it is infrastructure, and we will ask for nothing again."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "How many words are in a 7-minute speech?",
+          "a": "Around 910 words at 130 words per minute. At a slower 100 WPM, plan 700 words, and at a fast 160 WPM plan up to 1,120 words for the same seven minutes."
+        },
+        {
+          "q": "Is 7 minutes a common presentation length?",
+          "a": "Yes. Seven minutes is the standard length of a pitch-meeting founder slot and of many conference lightning talks, which is long enough for problem, solution, evidence and ask, but too short for background you have not edited."
+        },
+        {
+          "q": "How should I split seven minutes of content?",
+          "a": "A reliable shape is one minute on the problem, two on why alternatives fail, two on your solution, one on evidence, and one on the ask. Keeping the final minute for a single request is what makes the talk feel like it was worth attending."
+        }
+      ],
+      "wordsForTargetTime": {
+        "wpm": 130,
+        "words": 910
+      },
+      "translations": {}
+    },
+    {
+      "slug": "10-minute-speech",
+      "type": "minutes",
+      "published": false,
+      "publishedAt": null,
+      "url": "/minutes/10-minute-speech/",
+      "title": "10-Minute Speech: Word Count, Page Count & Timing Chart",
+      "metaDescription": "A 10-minute speech is about 1,300 words at 130 WPM. See timings at six paces, single and double-spaced page counts, the 85% buffer rule, and a timed sample lecture script.",
+      "h1": "10-Minute Speech",
+      "heroAnswer": "A 10-minute speech is about 1,300 words at 130 words per minute. At a slow 100 WPM you need roughly 1,000 words, and at a fast 160 WPM about 1,600. Write to the 85% buffer — about 1,100 words — so the last minute belongs to your ending rather than to your typing speed.",
+      "homepageAnchorForms": [
+        "10 minute speech word count",
+        "how many words in 10 minutes",
+        "10 minute presentation script"
+      ],
+      "durationMinutes": 10,
+      "wordCount": 1300,
+      "sampleScriptWordCount": 371,
+      "sampleScriptIsComplete": false,
+      "sampleScriptNote": "Timed opening block of a 10-minute lecture — load it into the teleprompter, then extend the three announced sections to the full 1,300-word budget.",
+      "calculations": [
+        {
+          "pace": "Slow",
+          "wpm": 100,
+          "words": 1000,
+          "time": "10 min 0 sec"
+        },
+        {
+          "pace": "Academic",
+          "wpm": 115,
+          "words": 1150,
+          "time": "10 min 0 sec"
+        },
+        {
+          "pace": "Business",
+          "wpm": 130,
+          "words": 1300,
+          "time": "10 min 0 sec"
+        },
+        {
+          "pace": "Podcast",
+          "wpm": 145,
+          "words": 1450,
+          "time": "10 min 0 sec"
+        },
+        {
+          "pace": "Fast TED",
+          "wpm": 160,
+          "words": 1600,
+          "time": "10 min 0 sec"
+        },
+        {
+          "pace": "Silent reading",
+          "wpm": 230,
+          "words": 2300,
+          "time": "10 min 0 sec"
+        }
+      ],
+      "pageCounts": {
+        "singleSpaced": 2.6,
+        "doubleSpaced": 5.2,
+        "singleSpacedWordsPerPage": 500,
+        "doubleSpacedWordsPerPage": 250
+      },
+      "stageBuffer": {
+        "percent": 85,
+        "usableWords": 1105,
+        "usableTime": "8 min 30 sec",
+        "fullTime": "10 min 0 sec"
+      },
+      "sampleScript": [
+        {
+          "at": "0:00",
+          "words": 95,
+          "text": "Before we start, I want to tell you about a study that is almost certainly wrong, and which is still the best introduction to this topic that anyone has written. In the early 2000s a group of researchers followed a set of students through an exam preparation cycle and concluded that the students who studied in one consistent place remembered more than the students who moved around. The finding was intuitive, it was quoted for a decade, and when people tried to reproduce it they got a much smaller effect, sometimes no effect at all."
+        },
+        {
+          "at": "0:44",
+          "words": 61,
+          "text": "I start here for two reasons. The first is honest: half of what you will read about study technique is a correlation that has been sold back to you as a rule. The second is more interesting. Where the real effect lives is not in the location, it is in what the brain was forced to do while it was there."
+        },
+        {
+          "at": "1:12",
+          "words": 76,
+          "text": "So today I want to cover three things. What memory actually requires, which is retrieval rather than exposure. Why the feeling of fluency is such a reliable liar. And how to build a practice session that takes the same hour you already spend but produces roughly twice the retention. I will keep each block to about three minutes, and I will leave the last minute for questions, which is not a courtesy, it is a demonstration."
+        },
+        {
+          "at": "1:47",
+          "words": 76,
+          "text": "Retrieval means pulling an answer out, not looking at it. Every time you reread a page, the recognition system tells you that you know it, because the words look familiar. Familiarity is not the same capacity as recall, and the difference shows up exactly once: under pressure, later, when the page is not in front of you. This is why the students who highlighted most often report the highest confidence and produce the least durable learning."
+        },
+        {
+          "at": "2:22",
+          "words": 63,
+          "text": "The practical version is uncomfortable and simple. Close the book, write what you remember, then check. The gap between what you wrote and what the page says is the actual size of what you did not learn, and it is usually larger than people expect. That gap is not failure. It is the only honest measurement available to you at eleven at night."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "How many words is a 10-minute speech?",
+          "a": "Approximately 1,300 words at 130 words per minute. Slower speakers at 100 WPM should plan about 1,000 words, and faster speakers at 160 WPM about 1,600 words."
+        },
+        {
+          "q": "How many pages is a 10-minute speech?",
+          "a": "About 2.6 pages single-spaced or 5.2 pages double-spaced in standard formatting, using 500 and 250 words per page respectively. Five double-spaced pages is a good rule of thumb for a ten-minute talk."
+        },
+        {
+          "q": "Does 10 minutes of speaking feel as long as 10 minutes of reading?",
+          "a": "No. Silent reading of 1,300 words takes about 5 minutes 39 seconds at 230 WPM, so the same script feels twice as long when spoken. Always rehearse aloud rather than judging length by reading."
+        }
+      ],
+      "wordsForTargetTime": {
+        "wpm": 130,
+        "words": 1300
+      },
+      "translations": {}
+    },
+    {
+      "slug": "12-minute-speech",
+      "type": "minutes",
+      "published": false,
+      "publishedAt": null,
+      "url": "/minutes/12-minute-speech/",
+      "title": "12-Minute Speech: Words, Pages and Speaking Pace",
+      "metaDescription": "A 12-minute speech is about 1,560 words at 130 WPM. Compare six paces, get page counts and the 85% stage buffer, and rehearse a timed conference-talk excerpt free.",
+      "h1": "12-Minute Speech",
+      "heroAnswer": "A 12-minute speech is about 1,560 words at 130 words per minute. At 100 WPM, roughly 1,200 words will fill the time; at 160 WPM, about 1,920. The 85% stage buffer points you to about 1,330 written words, which is what actually survives contact with a live room.",
+      "homepageAnchorForms": [
+        "12 minute speech word count",
+        "how many words is a 12 minute talk",
+        "12 minute conference talk length"
+      ],
+      "durationMinutes": 12,
+      "wordCount": 1560,
+      "sampleScriptWordCount": 373,
+      "sampleScriptIsComplete": false,
+      "sampleScriptNote": "Timed opening block of a 12-minute conference talk — continue the announced sections to reach the full 1,560-word budget.",
+      "calculations": [
+        {
+          "pace": "Slow",
+          "wpm": 100,
+          "words": 1200,
+          "time": "12 min 0 sec"
+        },
+        {
+          "pace": "Academic",
+          "wpm": 115,
+          "words": 1380,
+          "time": "12 min 0 sec"
+        },
+        {
+          "pace": "Business",
+          "wpm": 130,
+          "words": 1560,
+          "time": "12 min 0 sec"
+        },
+        {
+          "pace": "Podcast",
+          "wpm": 145,
+          "words": 1740,
+          "time": "12 min 0 sec"
+        },
+        {
+          "pace": "Fast TED",
+          "wpm": 160,
+          "words": 1920,
+          "time": "12 min 0 sec"
+        },
+        {
+          "pace": "Silent reading",
+          "wpm": 230,
+          "words": 2760,
+          "time": "12 min 0 sec"
+        }
+      ],
+      "pageCounts": {
+        "singleSpaced": 3.1,
+        "doubleSpaced": 6.2,
+        "singleSpacedWordsPerPage": 500,
+        "doubleSpacedWordsPerPage": 250
+      },
+      "stageBuffer": {
+        "percent": 85,
+        "usableWords": 1326,
+        "usableTime": "10 min 12 sec",
+        "fullTime": "12 min 0 sec"
+      },
+      "sampleScript": [
+        {
+          "at": "0:00",
+          "words": 60,
+          "text": "I want to talk about the least glamorous change in my working life, which is that I stopped writing meeting notes for people and started writing them for the meeting. That sounds like a word game, so let me make it concrete with a story about a remote team, a document, and a decision that took four months to reverse."
+        },
+        {
+          "at": "0:28",
+          "words": 78,
+          "text": "In 2019 the team I led moved from a shared office to distributed work, and we did what every distributed team does: we documented everything. By the end of the year we had a note for every meeting, and the notes were beautiful. Two thousand words, careful headings, everyone who spoke credited. They were also completely ignored, and the proof that they were ignored was that the same arguments happened every six weeks, in exactly the same order."
+        },
+        {
+          "at": "1:04",
+          "words": 58,
+          "text": "The change came when we cut the note format to three lines. What was decided. Who owns it. When we will revisit it. Nothing else. Writing got worse as a record and dramatically better as a tool, because a document that nobody reads is not a record, it is a monument, and monuments do not hold anyone accountable."
+        },
+        {
+          "at": "1:30",
+          "words": 62,
+          "text": "Now the reversal I mentioned. There was a decision in March about who handled vendor escalations. The decision was made in a meeting with nine people, and the note said, in a paragraph, that the group agreed the on-call engineer would handle it with support from the product lead. Nobody disagreed, so everyone assumed the other person had written it down properly."
+        },
+        {
+          "at": "1:59",
+          "words": 61,
+          "text": "Four months later we were doing twice the on-call load we had planned for, and it turned out that the paragraph had never been read as a commitment by the person it named, because it had been written as a description of a discussion rather than as an instruction. A three-line note would have forced that sentence to be chosen deliberately."
+        },
+        {
+          "at": "2:27",
+          "words": 54,
+          "text": "I will spend the rest of this time on what we learned from that, because the lesson is not really about notes. It is about the fact that distributed teams do not fail from missing information. They fail from information that is present, plausible, and never converted into a decision someone has to own."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "How many words is a 12-minute speech?",
+          "a": "About 1,560 words at the standard 130 words per minute. Plan 1,200 words at a slow 100 WPM and up to 1,920 words at a fast 160 WPM."
+        },
+        {
+          "q": "How long is a 12-minute speech in pages?",
+          "a": "Roughly 3.1 pages single-spaced or 6.2 pages double-spaced. Double-spaced scripts are the practical choice for rehearsal because they leave room for annotation without changing the timing."
+        },
+        {
+          "q": "Why should I write less than 1,560 words?",
+          "a": "Because live delivery is slower than solo rehearsal. The 85 percent buffer, about 1,330 words, leaves you nearly two minutes for pauses, transitions and audience reaction and keeps you from having to sprint through your conclusion."
+        }
+      ],
+      "wordsForTargetTime": {
+        "wpm": 130,
+        "words": 1560
+      },
+      "translations": {}
+    },
+    {
+      "slug": "15-minute-speech",
+      "type": "minutes",
+      "published": false,
+      "publishedAt": null,
+      "url": "/minutes/15-minute-speech/",
+      "title": "15-Minute Speech: How Many Words and Pages at Each Pace",
+      "metaDescription": "A 15-minute speech is about 1,950 words at 130 WPM. Full pace chart, page counts, 85% stage buffer, and a timed workshop-keynote excerpt you can rehearse in the free teleprompter.",
+      "h1": "15-Minute Speech",
+      "heroAnswer": "A 15-minute speech is about 1,950 words at 130 words per minute. A slower 100 WPM delivery needs around 1,500 words, and a fast 160 WPM delivery uses about 2,400. Fifteen minutes is long enough that structure matters more than wording, so write to about 1,660 words and let the shape carry the room.",
+      "homepageAnchorForms": [
+        "15 minute speech word count",
+        "how many words in 15 minutes",
+        "15 minute keynote structure"
+      ],
+      "durationMinutes": 15,
+      "wordCount": 1950,
+      "sampleScriptWordCount": 324,
+      "sampleScriptIsComplete": false,
+      "sampleScriptNote": "Timed opening block of a 15-minute workshop keynote — the announced case studies and exercise make up the remaining word budget.",
+      "calculations": [
+        {
+          "pace": "Slow",
+          "wpm": 100,
+          "words": 1500,
+          "time": "15 min 0 sec"
+        },
+        {
+          "pace": "Academic",
+          "wpm": 115,
+          "words": 1725,
+          "time": "15 min 0 sec"
+        },
+        {
+          "pace": "Business",
+          "wpm": 130,
+          "words": 1950,
+          "time": "15 min 0 sec"
+        },
+        {
+          "pace": "Podcast",
+          "wpm": 145,
+          "words": 2175,
+          "time": "15 min 0 sec"
+        },
+        {
+          "pace": "Fast TED",
+          "wpm": 160,
+          "words": 2400,
+          "time": "15 min 0 sec"
+        },
+        {
+          "pace": "Silent reading",
+          "wpm": 230,
+          "words": 3450,
+          "time": "15 min 0 sec"
+        }
+      ],
+      "pageCounts": {
+        "singleSpaced": 3.9,
+        "doubleSpaced": 7.8,
+        "singleSpacedWordsPerPage": 500,
+        "doubleSpacedWordsPerPage": 250
+      },
+      "stageBuffer": {
+        "percent": 85,
+        "usableWords": 1658,
+        "usableTime": "12 min 45 sec",
+        "fullTime": "15 min 0 sec"
+      },
+      "sampleScript": [
+        {
+          "at": "0:00",
+          "words": 64,
+          "text": "Give me fifteen minutes and I will only ask one thing of you afterwards, which is that you notice the next time you describe a failure and a mistake as the same word. They are not the same thing, the conflation is extremely common, and it is quietly responsible for how much risk most of us are willing to take in a working year."
+        },
+        {
+          "at": "0:30",
+          "words": 77,
+          "text": "A mistake is a deviation from a known correct answer. You typed the wrong figure, you sent the email to the wrong person, you quoted a deadline you had misread. Mistakes are cheap, they are usually fixed by a correction, and the right response to one is a better checklist. Nobody should build an identity around avoiding mistakes, and yet most of us have been trained to do exactly that, because school grades mistakes rather than decisions."
+        },
+        {
+          "at": "1:05",
+          "words": 75,
+          "text": "A failure is something else. A failure is when the decision was reasonable given what you knew, the bet was honest about what it might cost, and the world simply did not cooperate. You launched the thing nobody wanted. You hired the person who turned out to be wrong for the stage the company was in. You spent a year optimising a metric that turned out not to measure the value you thought it did."
+        },
+        {
+          "at": "1:40",
+          "words": 57,
+          "text": "The reason the distinction matters out loud is that each one teaches a different lesson, and the lesson only lands if you run the right experiment afterwards. Mistakes are corrected with process. Failure is corrected with better models of the world, and better models of the world come from having paid attention while the thing fell apart."
+        },
+        {
+          "at": "2:06",
+          "words": 51,
+          "text": "I am going to spend the middle of this session on three case studies, and then on a short exercise you can run with your team in half an hour. The case studies are chosen so that at least one of them will feel uncomfortably familiar, which is the intended effect."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "How many words is a 15-minute speech?",
+          "a": "Approximately 1,950 words at 130 words per minute. Use 1,500 words if you deliver slowly at 100 WPM, or about 2,400 words if you speak quickly at 160 WPM."
+        },
+        {
+          "q": "How many pages is a 15-minute talk?",
+          "a": "About 3.9 pages single-spaced, or 7.8 pages double-spaced at standard manuscript spacing. Most printed speaker notes for a 15-minute talk run to eight double-spaced pages."
+        },
+        {
+          "q": "What is the hardest part of a 15-minute speech?",
+          "a": "Minute nine, when the audience has absorbed your premise and is looking for payoff. Structure a 15-minute talk as three blocks of about five minutes each with a short recap between them so attention is refreshed rather than demanded."
+        }
+      ],
+      "wordsForTargetTime": {
+        "wpm": 130,
+        "words": 1950
+      },
+      "translations": {}
+    },
+    {
+      "slug": "20-minute-speech",
+      "type": "minutes",
+      "published": false,
+      "publishedAt": null,
+      "url": "/minutes/20-minute-speech/",
+      "title": "20-Minute Speech: Word Count, Pace Chart and Page Count",
+      "metaDescription": "A 20-minute speech is about 2,600 words at 130 WPM. Six-pace timing chart, single and double-spaced page counts, the 85% buffer rule and a timed community-talk excerpt.",
+      "h1": "20-Minute Speech",
+      "heroAnswer": "A 20-minute speech is about 2,600 words at 130 words per minute. Slow 100 WPM delivery uses around 2,000 words, and a fast 160 WPM delivery about 3,200. At the 85% stage buffer, write about 2,210 words and reserve the final three minutes for questions or a closing that does not need to be read at speed.",
+      "homepageAnchorForms": [
+        "20 minute speech word count",
+        "how many words is a 20 minute presentation",
+        "20 minute talk pages"
+      ],
+      "durationMinutes": 20,
+      "wordCount": 2600,
+      "sampleScriptWordCount": 362,
+      "sampleScriptIsComplete": false,
+      "sampleScriptNote": "Timed opening block of a 20-minute community talk — the four announced blocks complete the 2,600-word budget.",
+      "calculations": [
+        {
+          "pace": "Slow",
+          "wpm": 100,
+          "words": 2000,
+          "time": "20 min 0 sec"
+        },
+        {
+          "pace": "Academic",
+          "wpm": 115,
+          "words": 2300,
+          "time": "20 min 0 sec"
+        },
+        {
+          "pace": "Business",
+          "wpm": 130,
+          "words": 2600,
+          "time": "20 min 0 sec"
+        },
+        {
+          "pace": "Podcast",
+          "wpm": 145,
+          "words": 2900,
+          "time": "20 min 0 sec"
+        },
+        {
+          "pace": "Fast TED",
+          "wpm": 160,
+          "words": 3200,
+          "time": "20 min 0 sec"
+        },
+        {
+          "pace": "Silent reading",
+          "wpm": 230,
+          "words": 4600,
+          "time": "20 min 0 sec"
+        }
+      ],
+      "pageCounts": {
+        "singleSpaced": 5.2,
+        "doubleSpaced": 10.4,
+        "singleSpacedWordsPerPage": 500,
+        "doubleSpacedWordsPerPage": 250
+      },
+      "stageBuffer": {
+        "percent": 85,
+        "usableWords": 2210,
+        "usableTime": "17 min 0 sec",
+        "fullTime": "20 min 0 sec"
+      },
+      "sampleScript": [
+        {
+          "at": "0:00",
+          "words": 112,
+          "text": "I have been asked to speak about screens and children, so I will start by telling you what I am not going to say, because in this subject the not-saying is more useful than the advice. I am not going to tell you that a device causes a specific harm at a specific age, because the research genuinely does not support that sentence yet, and parents deserve better than a confident summary of an unsettled literature. I am also not going to tell you that it is fine, because that would require pretending that nobody in this room has ever watched a child lose forty minutes to something they had not chosen."
+        },
+        {
+          "at": "0:52",
+          "words": 79,
+          "text": "What the evidence does support is narrower and, I think, more actionable. Attention is allocable. That sounds obvious, but it has a consequence people dislike: time spent on a feed is not only time, it is time taken from the slow activities, and the slow activities are precisely the ones that build the capacity to sit with something difficult. Reading, drawing, arguing, practising an instrument badly. None of those are efficient, and efficiency is the value the feed optimises."
+        },
+        {
+          "at": "1:28",
+          "words": 80,
+          "text": "The second thing the evidence supports is that children copy the object, not the rule. If the household rule is that screens are limited, but the most conspicuous person in the house checks a phone every four minutes during a conversation, the child learns that the rule is a negotiation rather than a fact about how adults live. This is why the interventions that work in trials tend to be about the environment and the parents, not about the child."
+        },
+        {
+          "at": "2:05",
+          "words": 91,
+          "text": "So the rest of this talk is practical, and I will keep to four blocks of roughly four minutes. First, what to change in the house this week, which is one rule about mornings and one rule about the hallway. Second, how to talk to a ten-year-old about it without the conversation becoming a trial. Third, the two signs that genuinely warrant professional advice rather than a house rule. And fourth, what the honest open questions are, because you should leave here able to explain what we do not yet know."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "How many words is a 20-minute speech?",
+          "a": "About 2,600 words at 130 words per minute. At 100 WPM plan 2,000 words, and at 160 WPM plan around 3,200 for the same twenty minutes."
+        },
+        {
+          "q": "How many pages is a 20-minute presentation?",
+          "a": "Roughly 5.2 pages single-spaced or 10.4 pages double-spaced in standard formatting. At a normal speaking pace you will get through one double-spaced page in just under two minutes."
+        },
+        {
+          "q": "Should a 20-minute speech include questions?",
+          "a": "Yes, and it should be planned as 17 minutes of content plus 3 minutes of interaction. That is the 85 percent buffer in practice: 2,210 words, with room for a question you could not have predicted."
+        }
+      ],
+      "wordsForTargetTime": {
+        "wpm": 130,
+        "words": 2600
+      },
+      "translations": {}
+    },
+    {
+      "slug": "30-minute-speech",
+      "type": "minutes",
+      "published": false,
+      "publishedAt": null,
+      "url": "/minutes/30-minute-speech/",
+      "title": "30-Minute Speech: Words, Pages and Timing for a Half-Hour Talk",
+      "metaDescription": "A 30-minute speech is about 3,900 words at 130 WPM. See the six-pace chart, page counts, the 85% buffer and a timed seminar excerpt, then rehearse it in the free teleprompter.",
+      "h1": "30-Minute Speech",
+      "heroAnswer": "A 30-minute speech is about 3,900 words at 130 words per minute. A measured 100 WPM pace needs around 3,000 words; a fast 160 WPM pace uses about 4,800. At the 85% buffer you write roughly 3,315 words and build the talk as three ten-minute blocks, because attention in a half-hour room resets every ten minutes whether you plan for it or not.",
+      "homepageAnchorForms": [
+        "30 minute speech word count",
+        "how many words in a 30 minute presentation",
+        "30 minute seminar script"
+      ],
+      "durationMinutes": 30,
+      "wordCount": 3900,
+      "sampleScriptWordCount": 379,
+      "sampleScriptIsComplete": false,
+      "sampleScriptNote": "Timed opening block of a 30-minute seminar — the announced three ten-minute blocks complete the 3,900-word budget.",
+      "calculations": [
+        {
+          "pace": "Slow",
+          "wpm": 100,
+          "words": 3000,
+          "time": "30 min 0 sec"
+        },
+        {
+          "pace": "Academic",
+          "wpm": 115,
+          "words": 3450,
+          "time": "30 min 0 sec"
+        },
+        {
+          "pace": "Business",
+          "wpm": 130,
+          "words": 3900,
+          "time": "30 min 0 sec"
+        },
+        {
+          "pace": "Podcast",
+          "wpm": 145,
+          "words": 4350,
+          "time": "30 min 0 sec"
+        },
+        {
+          "pace": "Fast TED",
+          "wpm": 160,
+          "words": 4800,
+          "time": "30 min 0 sec"
+        },
+        {
+          "pace": "Silent reading",
+          "wpm": 230,
+          "words": 6900,
+          "time": "30 min 0 sec"
+        }
+      ],
+      "pageCounts": {
+        "singleSpaced": 7.8,
+        "doubleSpaced": 15.6,
+        "singleSpacedWordsPerPage": 500,
+        "doubleSpacedWordsPerPage": 250
+      },
+      "stageBuffer": {
+        "percent": 85,
+        "usableWords": 3315,
+        "usableTime": "25 min 30 sec",
+        "fullTime": "30 min 0 sec"
+      },
+      "sampleScript": [
+        {
+          "at": "0:00",
+          "words": 93,
+          "text": "Thirty minutes is long enough that I cannot hold you by being interesting, so I am going to try to be useful in a different way, which is to give you one framework and then argue with it in front of you. The framework is this: every learning problem is a retrieval problem before it is an attention problem. When something does not stick, we reach for focus, motivation, environment, talent. The evidence points somewhere less flattering, which is that we usually fail because we never practised pulling the idea out of ourselves."
+        },
+        {
+          "at": "0:43",
+          "words": 59,
+          "text": "I will spend the first ten minutes building that claim, the second ten testing it against three things it should explain but does not explain well, and the last ten on what to do about it on Monday morning, including the two experiments that are worth running on yourself and the one that is a waste of your week."
+        },
+        {
+          "at": "1:10",
+          "words": 89,
+          "text": "Start with the claim. When you read something, the experience is one of familiarity, and familiarity feels like knowledge from the inside. It is not the same state. Knowledge is the ability to produce the idea without the source in front of you, and production is a separate skill that has to be practised separately. This is why the student who rereads four times performs worse than the student who reads once and writes from memory twice, and it is why the second student usually reports enjoying it less."
+        },
+        {
+          "at": "1:51",
+          "words": 66,
+          "text": "Discomfort during study is information, not a warning light. The feeling of difficulty at the moment of retrieval is the moment the thing is being built. Everything about good learning design, including how you take notes, how you schedule a revision block, and what you do with the last ten minutes of a session, follows from that, and I will take each of them in turn."
+        },
+        {
+          "at": "2:22",
+          "words": 72,
+          "text": "Then I want to break it, because a framework that survives every question is usually not a framework but a belief. The first place retrieval theory gets thin is motivation. The second is very early childhood, where the idea of self-generated recall is partly a description of play rather than a study technique. The third is skill acquisition involving the body, where repetition of a correct pattern does things retrieval cannot do."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "How many words is a 30-minute speech?",
+          "a": "Approximately 3,900 words at 130 words per minute, which is the pace most trained speakers hold across a long session. Slow delivery at 100 WPM needs around 3,000 words and fast delivery at 160 WPM about 4,800."
+        },
+        {
+          "q": "How many pages is a 30-minute talk?",
+          "a": "About 7.8 pages single-spaced or 15.6 pages double-spaced. Many speakers print long talks as fifteen double-spaced pages and mark the ten-minute boundaries so they can check pace without looking at a clock."
+        },
+        {
+          "q": "How do I keep attention for 30 minutes?",
+          "a": "Split it into three ten-minute blocks with a one-sentence recap between them, apply the 85 percent buffer so you write about 3,315 words, and put an audience moment in the middle block where attention is statistically lowest."
+        }
+      ],
+      "wordsForTargetTime": {
+        "wpm": 130,
+        "words": 3900
+      },
+      "translations": {}
+    },
+    {
+      "slug": "250-words",
+      "type": "words",
+      "published": false,
+      "publishedAt": null,
+      "url": "/words/250-words/",
+      "title": "250 Words: How Long Does It Take to Say?",
+      "metaDescription": "250 words takes about 1 min 55 sec at 130 WPM. See timings at six paces, page counts, and the 85% buffer for a toast or short intro, plus a timed sample script.",
+      "h1": "250 Words",
+      "heroAnswer": "250 words takes about 1 minute 55 seconds to speak at 130 words per minute. At a slow, formal 100 WPM it runs 2 min 30 sec; at a fast 160 WPM it takes 1 min 34 sec, and it reads silently in roughly 1 min 5 sec. Two hundred and fifty words is a page double-spaced, and it is exactly the size of a toast or a self-introduction.",
+      "homepageAnchorForms": [
+        "250 words in minutes",
+        "how long does 250 words take to read aloud",
+        "250 word speech length"
+      ],
+      "durationMinutes": 1.9,
+      "wordCount": 250,
+      "sampleScriptWordCount": 219,
+      "sampleScriptIsComplete": false,
+      "sampleScriptNote": "Timed opening block: 219 of the 250 words your full script needs. Rehearse this in the teleprompter, then extend each announced section to the complete budget.",
+      "calculations": [
+        {
+          "pace": "Slow",
+          "wpm": 100,
+          "words": 250,
+          "time": "2 min 30 sec"
+        },
+        {
+          "pace": "Academic",
+          "wpm": 115,
+          "words": 250,
+          "time": "2 min 10 sec"
+        },
+        {
+          "pace": "Business",
+          "wpm": 130,
+          "words": 250,
+          "time": "1 min 55 sec"
+        },
+        {
+          "pace": "Podcast",
+          "wpm": 145,
+          "words": 250,
+          "time": "1 min 43 sec"
+        },
+        {
+          "pace": "Fast TED",
+          "wpm": 160,
+          "words": 250,
+          "time": "1 min 34 sec"
+        },
+        {
+          "pace": "Silent reading",
+          "wpm": 230,
+          "words": 250,
+          "time": "1 min 5 sec"
+        }
+      ],
+      "pageCounts": {
+        "singleSpaced": 0.5,
+        "doubleSpaced": 1,
+        "singleSpacedWordsPerPage": 500,
+        "doubleSpacedWordsPerPage": 250
+      },
+      "stageBuffer": {
+        "percent": 85,
+        "usableWords": 213,
+        "usableTime": "1 min 38 sec",
+        "fullTime": "1 min 55 sec"
+      },
+      "sampleScript": [
+        {
+          "at": "0:00",
+          "words": 98,
+          "text": "I have been asked to say a few words about Martin, and I am going to do what he would have wanted, which is to keep it short and get back to the food. Three hundred and sixty-four days a year, Martin is the person who notices the thing nobody else has noticed. Last February he noticed that the night shift had no way to say they needed help without calling a manager at home, and he built the rota board himself out of a whiteboard, a spreadsheet, and a stubbornness that most of us mistook for impatience."
+        },
+        {
+          "at": "0:45",
+          "words": 85,
+          "text": "He did it in a week, told nobody for a month, and when it finally came up he said it was not his idea because the night shift had obviously been asking for it for years. That is the part I want you to remember tonight. Not the board. The fact that he listened long enough to be embarrassed about the delay, and then fixed it without needing to be seen fixing it, which is a rarer combination than any of us admits out loud."
+        },
+        {
+          "at": "1:24",
+          "words": 36,
+          "text": "So: to Martin, who has retired from the building but not from noticing things. May the next forty years be as useful and as quiet as you would like them to be. Please raise a glass."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "How long does 250 words take to speak?",
+          "a": "About 1 minute 55 seconds at 130 words per minute, 2 minutes 30 seconds at a slow 100 WPM, and 1 minute 34 seconds at a fast 160 WPM."
+        },
+        {
+          "q": "How many pages is 250 words?",
+          "a": "Exactly one page double-spaced in standard manuscript format, or about half a page single-spaced. It is the length of a short letter, a wedding toast, or a 90-second broadcast item."
+        },
+        {
+          "q": "Is 250 words a good length for an assignment?",
+          "a": "It is a common abstract, executive summary, or short-answer limit. At that size, one idea plus one example is the maximum the word budget can honestly carry."
+        }
+      ],
+      "speakingTimeAtBusinessPace": "1 min 55 sec",
+      "translations": {}
+    },
+    {
+      "slug": "500-words",
+      "type": "words",
+      "published": false,
+      "publishedAt": null,
+      "url": "/words/500-words/",
+      "title": "500 Words: Speaking Time, Reading Time and Page Count",
+      "metaDescription": "500 words takes about 3 min 51 sec at 130 WPM and 5 min 0 sec at 100 WPM. Full pace chart, page counts, the 85% buffer and a timed 500-word sample speech.",
+      "h1": "500 Words",
+      "heroAnswer": "500 words takes about 3 minutes 51 seconds to speak at 130 words per minute. Slow delivery at 100 WPM fills a full 5 minutes, fast delivery at 160 WPM takes 3 min 8 sec, and the same 500 words read silently in about 2 min 10 sec. Written, it is one page single-spaced or two pages double-spaced.",
+      "homepageAnchorForms": [
+        "500 word speech length",
+        "how long is 500 words",
+        "500 words in minutes speaking"
+      ],
+      "durationMinutes": 3.8,
+      "wordCount": 500,
+      "sampleScriptWordCount": 421,
+      "sampleScriptIsComplete": false,
+      "sampleScriptNote": "Timed opening block: 421 of the 500 words your full script needs. Rehearse this in the teleprompter, then extend each announced section to the complete budget.",
+      "calculations": [
+        {
+          "pace": "Slow",
+          "wpm": 100,
+          "words": 500,
+          "time": "5 min 0 sec"
+        },
+        {
+          "pace": "Academic",
+          "wpm": 115,
+          "words": 500,
+          "time": "4 min 21 sec"
+        },
+        {
+          "pace": "Business",
+          "wpm": 130,
+          "words": 500,
+          "time": "3 min 51 sec"
+        },
+        {
+          "pace": "Podcast",
+          "wpm": 145,
+          "words": 500,
+          "time": "3 min 27 sec"
+        },
+        {
+          "pace": "Fast TED",
+          "wpm": 160,
+          "words": 500,
+          "time": "3 min 8 sec"
+        },
+        {
+          "pace": "Silent reading",
+          "wpm": 230,
+          "words": 500,
+          "time": "2 min 10 sec"
+        }
+      ],
+      "pageCounts": {
+        "singleSpaced": 1,
+        "doubleSpaced": 2,
+        "singleSpacedWordsPerPage": 500,
+        "doubleSpacedWordsPerPage": 250
+      },
+      "stageBuffer": {
+        "percent": 85,
+        "usableWords": 425,
+        "usableTime": "3 min 16 sec",
+        "fullTime": "3 min 51 sec"
+      },
+      "sampleScript": [
+        {
+          "at": "0:00",
+          "words": 59,
+          "text": "Good morning. I have five minutes and one subject, which is the difference between a team that knows the plan and a team that can keep working when the plan stops being true. Everything I am about to say comes from one week in November, so treat it as a story with a lesson attached rather than as policy."
+        },
+        {
+          "at": "0:27",
+          "words": 96,
+          "text": "In November our shipping window moved by two days, which is not a crisis. What became a crisis is that the two days were only in the calendar nobody reads. Three people re-planned around the original date, one person had already told a partner the new one, and by Wednesday we were spending our best hours reconciling intentions rather than doing the work. Two days of schedule change produced roughly a person-week of coordination cost, and the worst part is that every individual in that story was acting sensibly on the information they happened to have."
+        },
+        {
+          "at": "1:12",
+          "words": 63,
+          "text": "Afterwards we did not write a process document, which is the reflex, and which would have been the wrong answer. We agreed on one sentence that goes in the channel whenever anything moves: this changes your calendar, so say which calendar you mean. That is all. It works because it is a behaviour rather than a rule, and because it costs four seconds."
+        },
+        {
+          "at": "1:41",
+          "words": 76,
+          "text": "I want to be precise about why the document would have failed, because this is the part that generalises. A process document describes what an ideal person does. The sentence describes what a real person says out loud at the moment the world changed. Nobody in our team has ever been short of good intentions, and we had nine documents about change management before that week. What we lacked was one habit that survived being busy."
+        },
+        {
+          "at": "2:16",
+          "words": 68,
+          "text": "The general point is this. Resilience in a small team is not produced by having a plan, and it is not produced by having a backup plan. It is produced by everyone knowing, without asking, which version of reality is current. The team that can absorb a two-day change quietly is not the team that anticipated it. It is the team where nobody had to find out late."
+        },
+        {
+          "at": "2:47",
+          "words": 51,
+          "text": "One ask before I sit down. Next time something shifts for you, do not correct anyone privately. Post the correction in the place the work happens, in that one sentence. It feels unnecessary the first four times, and by the fifth you will notice that nobody is reconciling intentions any more."
+        },
+        {
+          "at": "3:11",
+          "words": 8,
+          "text": "Thank you, and good luck with the release."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "How long does it take to present 500 words?",
+          "a": "About 3 minutes 51 seconds at 130 words per minute, or a full 5 minutes at a slow 100 WPM. At 160 WPM the same 500 words take 3 minutes 8 seconds."
+        },
+        {
+          "q": "How many pages is 500 words?",
+          "a": "One page single-spaced or two pages double-spaced in standard manuscript formatting. It is the most common short-essay and cover-letter length, and a comfortable five-minute stand-up talk."
+        },
+        {
+          "q": "What fits into a 500-word speech?",
+          "a": "A single claim, one concrete story as evidence, one generalised lesson, and one specific ask. Anything more and the audience stops tracking which point you are on."
+        }
+      ],
+      "speakingTimeAtBusinessPace": "3 min 51 sec",
+      "translations": {}
+    },
+    {
+      "slug": "750-words",
+      "type": "words",
+      "published": false,
+      "publishedAt": null,
+      "url": "/words/750-words/",
+      "title": "750 Words: How Many Minutes to Speak or Read?",
+      "metaDescription": "750 words takes about 5 min 46 sec at 130 WPM. Compare six speaking paces, get single and double-spaced page counts, the 85% buffer, and a timed product-demo script.",
+      "h1": "750 Words",
+      "heroAnswer": "750 words takes about 5 minutes 46 seconds to speak at 130 words per minute, 7 min 30 sec at a slow 100 WPM, and 4 min 41 sec at a fast 160 WPM. Silent reading of the same text takes around 3 minutes 16 seconds, and it fills 1.5 pages single-spaced or three pages double-spaced.",
+      "homepageAnchorForms": [
+        "750 words in minutes",
+        "how long is a 750 word speech",
+        "750 word presentation timing"
+      ],
+      "durationMinutes": 5.8,
+      "wordCount": 750,
+      "sampleScriptWordCount": 354,
+      "sampleScriptIsComplete": false,
+      "sampleScriptNote": "Timed opening block of a 750-word demo talk — finish the announced interface walkthrough and closing for the full budget.",
+      "calculations": [
+        {
+          "pace": "Slow",
+          "wpm": 100,
+          "words": 750,
+          "time": "7 min 30 sec"
+        },
+        {
+          "pace": "Academic",
+          "wpm": 115,
+          "words": 750,
+          "time": "6 min 31 sec"
+        },
+        {
+          "pace": "Business",
+          "wpm": 130,
+          "words": 750,
+          "time": "5 min 46 sec"
+        },
+        {
+          "pace": "Podcast",
+          "wpm": 145,
+          "words": 750,
+          "time": "5 min 10 sec"
+        },
+        {
+          "pace": "Fast TED",
+          "wpm": 160,
+          "words": 750,
+          "time": "4 min 41 sec"
+        },
+        {
+          "pace": "Silent reading",
+          "wpm": 230,
+          "words": 750,
+          "time": "3 min 16 sec"
+        }
+      ],
+      "pageCounts": {
+        "singleSpaced": 1.5,
+        "doubleSpaced": 3,
+        "singleSpacedWordsPerPage": 500,
+        "doubleSpacedWordsPerPage": 250
+      },
+      "stageBuffer": {
+        "percent": 85,
+        "usableWords": 638,
+        "usableTime": "4 min 54 sec",
+        "fullTime": "5 min 46 sec"
+      },
+      "sampleScript": [
+        {
+          "at": "0:00",
+          "words": 67,
+          "text": "I am going to spend the next six minutes showing you exactly one thing, and I am going to resist the temptation to show you four things, because you have seen that demo before and you know how it ends. The thing I want to show you is what happens between the moment a user reports a problem and the moment someone on this team understands it."
+        },
+        {
+          "at": "0:31",
+          "words": 71,
+          "text": "Here is the report, taken from our own queue last month. A user wrote: the export is wrong on Tuesdays. That is the entire report. A good support team triages it. A good engineering team asks for a screenshot. And then, statistically, the thread goes quiet for three days, because the person who knows how to reproduce it has left the building for the week and nobody else has the context."
+        },
+        {
+          "at": "1:04",
+          "words": 84,
+          "text": "The reason the export was wrong on Tuesdays is genuinely interesting, and it is the whole point of this talk. It was not a bug in the export. It was a batch job that ran Monday night and, when it collided with a public holiday that moved to Tuesday, produced a file with a header row for a column nobody had asked for. The export code was correct. The schedule was wrong. The user was describing a symptom two systems away from the cause."
+        },
+        {
+          "at": "1:42",
+          "words": 72,
+          "text": "Now imagine this instead. Every report carries, automatically, the last twelve minutes of the client event log, the schedule state at the moment of the error, and the identity of the job that most recently touched the data. The person reading the ticket sees a causal neighbourhood instead of a sentence. In our trials, that is what collapsed the median time to a useful diagnosis from three days to about four hours."
+        },
+        {
+          "at": "2:16",
+          "words": 60,
+          "text": "I will take that further in a moment, but first let me show you the actual interface, because I think the argument changes when you can see how little it asks of the user. Nothing here requires a new client, and the reason I will explain in the last minute is the part that took us longest to get right."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "How many minutes is 750 words?",
+          "a": "About 5 minutes 46 seconds at 130 words per minute. At 100 WPM it takes 7 minutes 30 seconds, and at 160 WPM it takes 4 minutes 41 seconds."
+        },
+        {
+          "q": "How many pages is 750 words?",
+          "a": "About 1.5 pages single-spaced or 3 pages double-spaced. Double-spaced is the better choice for rehearsal, since the notes you make while running through it will add time you have not yet counted."
+        },
+        {
+          "q": "Is 750 words enough for a presentation?",
+          "a": "It is enough for a six-minute talk with one claim, one demonstration, and one closing ask. It is also the standard length of many short-form assignments and 500-800 word conference abstracts."
+        }
+      ],
+      "speakingTimeAtBusinessPace": "5 min 46 sec",
+      "translations": {}
+    },
+    {
+      "slug": "1000-words",
+      "type": "words",
+      "published": false,
+      "publishedAt": null,
+      "url": "/words/1000-words/",
+      "title": "1,000 Words: Speaking Time, Reading Time and Pages",
+      "metaDescription": "1,000 words takes about 7 min 42 sec at 130 WPM and 10 min at 100 WPM. Full pace chart, page counts, the 85% buffer rule and a timed TED-style sample talk.",
+      "h1": "1,000 Words",
+      "heroAnswer": "1,000 words takes about 7 minutes 42 seconds to speak at 130 words per minute. At a slow 100 WPM it fills exactly 10 minutes; at a fast 160 WPM it runs 6 min 15 sec, and it reads silently in about 4 min 21 sec. That is two pages single-spaced or four pages double-spaced.",
+      "homepageAnchorForms": [
+        "1000 words in minutes",
+        "how long is a 1000 word speech",
+        "1000 word speech example"
+      ],
+      "durationMinutes": 7.7,
+      "wordCount": 1000,
+      "sampleScriptWordCount": 415,
+      "sampleScriptIsComplete": false,
+      "sampleScriptNote": "Timed opening block: 415 of the 1,000 words your full script needs. Rehearse this in the teleprompter, then extend each announced section to the complete budget.",
+      "calculations": [
+        {
+          "pace": "Slow",
+          "wpm": 100,
+          "words": 1000,
+          "time": "10 min 0 sec"
+        },
+        {
+          "pace": "Academic",
+          "wpm": 115,
+          "words": 1000,
+          "time": "8 min 42 sec"
+        },
+        {
+          "pace": "Business",
+          "wpm": 130,
+          "words": 1000,
+          "time": "7 min 42 sec"
+        },
+        {
+          "pace": "Podcast",
+          "wpm": 145,
+          "words": 1000,
+          "time": "6 min 54 sec"
+        },
+        {
+          "pace": "Fast TED",
+          "wpm": 160,
+          "words": 1000,
+          "time": "6 min 15 sec"
+        },
+        {
+          "pace": "Silent reading",
+          "wpm": 230,
+          "words": 1000,
+          "time": "4 min 21 sec"
+        }
+      ],
+      "pageCounts": {
+        "singleSpaced": 2,
+        "doubleSpaced": 4,
+        "singleSpacedWordsPerPage": 500,
+        "doubleSpacedWordsPerPage": 250
+      },
+      "stageBuffer": {
+        "percent": 85,
+        "usableWords": 850,
+        "usableTime": "6 min 32 sec",
+        "fullTime": "7 min 42 sec"
+      },
+      "sampleScript": [
+        {
+          "at": "0:00",
+          "words": 89,
+          "text": "I want to tell you about the most useful thing my grandfather ever said to me, which was also, technically, an error. He was a carpenter, and when I was eleven I asked him how he knew a joint would hold. He said: because I cut it slow. It is not the answer. Plenty of slow cuts fail, and plenty of fast ones hold. It is also the most useful thing I know about expertise, and I am going to spend these seven minutes arguing that it is true."
+        },
+        {
+          "at": "0:41",
+          "words": 67,
+          "text": "Start with what is wrong with the sentence, because we should be honest about the advice we inherit. Cutting slowly does not cause a joint to hold. Careful layout, dry timber, a sharp blade and an understanding of grain direction cause a joint to hold, and slow cutting is downstream of all of those. It is a symptom of competence rather than a method for producing it."
+        },
+        {
+          "at": "1:12",
+          "words": 93,
+          "text": "Now here is why I keep it anyway. When you watch someone do a skilled thing badly, the almost-invariable marker is speed. Not the wrong speed, the premature speed. A surgeon moving too fast for the tissue, a driver braking late, a presenter sprinting through a slide nobody has finished reading. In each case the failure is not that the person lacks knowledge. It is that they have stopped sampling the world, and they stopped because they were already committed to the next action before the current one had finished telling them something."
+        },
+        {
+          "at": "1:55",
+          "words": 63,
+          "text": "So the sentence is not about slow. It is about the loop. Expertise is a short loop: act, read what happened, adjust. What people call intuition is usually a loop so fast that the reading step has gone unconscious, which is why experts cannot explain themselves and why, occasionally, they are confidently wrong in a room full of people who cannot prove it."
+        },
+        {
+          "at": "2:24",
+          "words": 83,
+          "text": "The practical consequence, and this is the only thing I would like you to take away, is that the way you get better at something is not primarily by learning more about it. It is by shortening the loop and by keeping the read step conscious a little longer than feels natural. Cut slow enough to see what the wood is doing. Speak slow enough to hear whether the room is with you. Ship small enough to read what the users actually did."
+        },
+        {
+          "at": "3:02",
+          "words": 20,
+          "text": "My grandfather never wrote this down. He had forty years of loops and one sentence, which was enough. Thank you."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "How long does it take to speak 1,000 words?",
+          "a": "About 7 minutes 42 seconds at 130 words per minute, 10 minutes exactly at a slow 100 WPM, and 6 minutes 15 seconds at a fast 160 WPM."
+        },
+        {
+          "q": "How many pages is 1,000 words?",
+          "a": "Two pages single-spaced or four pages double-spaced in standard manuscript format. Four double-spaced pages is a common printed handout for a TED-style eight-minute talk."
+        },
+        {
+          "q": "What should a 1,000-word speech contain?",
+          "a": "One idea, three supports, and a single closing instruction. Written to the 85 percent buffer, you have roughly 850 usable words, so choose the three supports you can defend if someone questions one of them."
+        }
+      ],
+      "speakingTimeAtBusinessPace": "7 min 42 sec",
+      "translations": {}
+    },
+    {
+      "slug": "1500-words",
+      "type": "words",
+      "published": false,
+      "publishedAt": null,
+      "url": "/words/1500-words/",
+      "title": "1,500 Words: How Many Minutes Is That to Speak?",
+      "metaDescription": "1,500 words takes about 11 min 32 sec at 130 WPM and 15 min at 100 WPM. Six-pace chart, page counts, 85% stage buffer, and a timed academic presentation excerpt.",
+      "h1": "1,500 Words",
+      "heroAnswer": "1,500 words takes about 11 minutes 32 seconds to speak at 130 words per minute. At a measured academic 100 WPM it fills 15 minutes; at a fast 160 WPM it takes 9 min 23 sec, and reads silently in about 6 min 31 sec. Expect three single-spaced pages, or six pages double-spaced.",
+      "homepageAnchorForms": [
+        "1500 words in minutes",
+        "how long is a 1500 word presentation",
+        "1500 word speech timing"
+      ],
+      "durationMinutes": 11.5,
+      "wordCount": 1500,
+      "sampleScriptWordCount": 349,
+      "sampleScriptIsComplete": false,
+      "sampleScriptNote": "Timed opening block of a 1,500-word academic presentation — the three findings and proposed replication complete the budget.",
+      "calculations": [
+        {
+          "pace": "Slow",
+          "wpm": 100,
+          "words": 1500,
+          "time": "15 min 0 sec"
+        },
+        {
+          "pace": "Academic",
+          "wpm": 115,
+          "words": 1500,
+          "time": "13 min 3 sec"
+        },
+        {
+          "pace": "Business",
+          "wpm": 130,
+          "words": 1500,
+          "time": "11 min 32 sec"
+        },
+        {
+          "pace": "Podcast",
+          "wpm": 145,
+          "words": 1500,
+          "time": "10 min 21 sec"
+        },
+        {
+          "pace": "Fast TED",
+          "wpm": 160,
+          "words": 1500,
+          "time": "9 min 23 sec"
+        },
+        {
+          "pace": "Silent reading",
+          "wpm": 230,
+          "words": 1500,
+          "time": "6 min 31 sec"
+        }
+      ],
+      "pageCounts": {
+        "singleSpaced": 3,
+        "doubleSpaced": 6,
+        "singleSpacedWordsPerPage": 500,
+        "doubleSpacedWordsPerPage": 250
+      },
+      "stageBuffer": {
+        "percent": 85,
+        "usableWords": 1275,
+        "usableTime": "9 min 48 sec",
+        "fullTime": "11 min 32 sec"
+      },
+      "sampleScript": [
+        {
+          "at": "0:00",
+          "words": 59,
+          "text": "Thank you. I have been given fifteen minutes, and I am going to use about two of them on what our result does not claim, because in this literature that has become the part reviewers ask about. Then I will describe the design, present the three findings, and finish with the replication work we are proposing for next year."
+        },
+        {
+          "at": "0:27",
+          "words": 80,
+          "text": "The short version is this. Across four cohorts and nearly nine thousand records, we found a consistent, modest association between the scheduling format of a course and the retention rate at ninety days. The effect is real, it survives our controls, and it is roughly a third of the size that the strongest prior claim in this space would predict. That last number is the one I care about, because it changes what a department should actually do on Monday."
+        },
+        {
+          "at": "1:04",
+          "words": 89,
+          "text": "Two things our result does not claim. It does not claim causation, and the reason is structural rather than a matter of effort: we cannot randomise students into scheduling formats without confounding the timetable with advisor availability, which we have tried and failed to control in two specifications. And it does not claim that the effect is uniform across disciplines. In STEM cohorts we see roughly twice the size of the effect we see in humanities cohorts, and at our sample size that difference is suggestive rather than established."
+        },
+        {
+          "at": "1:45",
+          "words": 72,
+          "text": "The design, briefly. We used existing institutional records, so there was no intervention and no demand effect, which is the strength and also the ceiling. Scheduling format was coded from the registrar system rather than self-reported, attrition was handled by a conservative imputation that we will put in the appendix, and the ninety-day window was chosen because the six-month window is contaminated by term breaks in ways our previous work showed clearly."
+        },
+        {
+          "at": "2:18",
+          "words": 49,
+          "text": "The first finding is the headline association. The second is the discipline split. The third is the one nobody expected and which I would like to spend a little time on, because it may be the most actionable result in the paper even though we cannot yet explain it."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "How many minutes is 1,500 words?",
+          "a": "About 11 minutes 32 seconds at 130 words per minute, and 15 minutes exactly at a slow academic 100 WPM. At a fast 160 WPM, 1,500 words take 9 minutes 23 seconds."
+        },
+        {
+          "q": "How many pages is 1,500 words?",
+          "a": "Three pages single-spaced or six pages double-spaced. Six double-spaced pages is the standard printed form of a fifteen-minute conference paper and leaves room for margin notes."
+        },
+        {
+          "q": "Is 1,500 words a lot to present?",
+          "a": "It is a full talk rather than a slot. Above about twelve minutes you need an explicit structure that the audience can hear, so announce your sections at the start and recap at each transition."
+        }
+      ],
+      "speakingTimeAtBusinessPace": "11 min 32 sec",
+      "translations": {}
+    },
+    {
+      "slug": "2000-words",
+      "type": "words",
+      "published": false,
+      "publishedAt": null,
+      "url": "/words/2000-words/",
+      "title": "2,000 Words: Speech Time, Reading Time and Page Count",
+      "metaDescription": "2,000 words takes about 15 min 23 sec at 130 WPM and 20 min at 100 WPM. Compare six paces, see page counts and the 85% buffer, and rehearse a timed keynote excerpt.",
+      "h1": "2,000 Words",
+      "heroAnswer": "2,000 words takes about 15 minutes 23 seconds to speak at 130 words per minute, 20 minutes at a slow 100 WPM, and 12 minutes 30 seconds at a brisk 160 WPM. Silently, 2,000 words read in about 8 min 42 seconds. Written out it is four single-spaced pages or eight double-spaced pages.",
+      "homepageAnchorForms": [
+        "2000 words in minutes",
+        "how long does 2000 words take to present",
+        "2000 word keynote length"
+      ],
+      "durationMinutes": 15.4,
+      "wordCount": 2000,
+      "sampleScriptWordCount": 441,
+      "sampleScriptIsComplete": false,
+      "sampleScriptNote": "Timed opening block of a 2,000-word leadership keynote — the announced reviews and closing complete the budget.",
+      "calculations": [
+        {
+          "pace": "Slow",
+          "wpm": 100,
+          "words": 2000,
+          "time": "20 min 0 sec"
+        },
+        {
+          "pace": "Academic",
+          "wpm": 115,
+          "words": 2000,
+          "time": "17 min 23 sec"
+        },
+        {
+          "pace": "Business",
+          "wpm": 130,
+          "words": 2000,
+          "time": "15 min 23 sec"
+        },
+        {
+          "pace": "Podcast",
+          "wpm": 145,
+          "words": 2000,
+          "time": "13 min 48 sec"
+        },
+        {
+          "pace": "Fast TED",
+          "wpm": 160,
+          "words": 2000,
+          "time": "12 min 30 sec"
+        },
+        {
+          "pace": "Silent reading",
+          "wpm": 230,
+          "words": 2000,
+          "time": "8 min 42 sec"
+        }
+      ],
+      "pageCounts": {
+        "singleSpaced": 4,
+        "doubleSpaced": 8,
+        "singleSpacedWordsPerPage": 500,
+        "doubleSpacedWordsPerPage": 250
+      },
+      "stageBuffer": {
+        "percent": 85,
+        "usableWords": 1700,
+        "usableTime": "13 min 5 sec",
+        "fullTime": "15 min 23 sec"
+      },
+      "sampleScript": [
+        {
+          "at": "0:00",
+          "words": 65,
+          "text": "There is a version of this talk that is about leadership, and I am not going to give it to you, because you have heard it and it is not what I have learned. The version I am going to give you is about the three years after a good decision, which is where most organisations quietly lose the thing they thought they had bought."
+        },
+        {
+          "at": "0:30",
+          "words": 65,
+          "text": "I ran a division of about ninety people for four years. The first year was the decision year, and it felt like progress because it was legible. We chose a strategy, we said no to things, we moved people, and the numbers responded, because the numbers always respond in the first year to simply paying attention. That response is the most misleading reward in management."
+        },
+        {
+          "at": "1:00",
+          "words": 97,
+          "text": "By year three, the strategy had become the org chart. This is the mechanism I want to name, because once you can see it you can spot it in any institution. A decision creates a structure. The structure creates routines. The routines were designed to serve the decision, and then the routines outlived it, and now they defend themselves. Every quarter I found myself arguing for something not because it was the right move but because changing it would mean admitting that a process three people depend on was built for a world that had already gone."
+        },
+        {
+          "at": "1:45",
+          "words": 67,
+          "text": "The second thing that happens in year three is that the people who joined because of the decision start leaving because of the routines. They were hired for the strategy, and the strategy is now six forms and a weekly meeting whose only purpose is to confirm that the meeting happened. We call this culture decay and then blame individuals for it, which is comfortable and useless."
+        },
+        {
+          "at": "2:16",
+          "words": 100,
+          "text": "What helped was not inspiring. Once a quarter, we picked two routines and asked one question: if we were starting today with what we know, would we build this? The answer was usually no, and the cost of acting on the answer was far higher than the cost of asking, because someone had to explain to a person whose week was organised around that routine why it was ending. We did it anyway, eleven times in two years, and I would do it again on the first year rather than the third, which is the whole argument of this talk."
+        },
+        {
+          "at": "3:02",
+          "words": 47,
+          "text": "So the remainder of this session is a practical one. I am going to walk through the three reviews that would have caught this earlier, the one that we tried and abandoned, and what a good decision looks like when you plan for its own expiry date."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "How long does 2,000 words take to present?",
+          "a": "About 15 minutes 23 seconds at 130 words per minute, or 20 minutes at a slow 100 WPM. At a fast 160 WPM the same script takes 12 minutes 30 seconds."
+        },
+        {
+          "q": "How many pages is 2,000 words?",
+          "a": "Four pages single-spaced, or eight pages double-spaced in standard manuscript format. Printed keynote cards for 2,000 words usually run to eight double-spaced pages, which is two thin card bundles."
+        },
+        {
+          "q": "What is the 85% buffer for a 2,000-word script?",
+          "a": "Write to roughly 1,700 usable words, about 13 minutes of reading, and keep the remaining minutes for pauses, movement and audience response. Live delivery is consistently slower than a solo rehearsal at a desk."
+        }
+      ],
+      "speakingTimeAtBusinessPace": "15 min 23 sec",
+      "translations": {}
+    }
+  ]
+}
