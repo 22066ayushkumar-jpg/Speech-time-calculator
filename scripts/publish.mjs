@@ -121,11 +121,40 @@ function trustLine(ui) {
   return ui.footer.trust.split('{name}').map(escapeHtml).join(anchor);
 }
 
+/* ---------------------------------------------------------------- rich text */
+
+// Author-written data may use **bold** and [label](/url); everything else is escaped.
+function rich(text, home) {
+  return escapeHtml(text)
+    .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
+    .replace(/\[([^\]]+)\]\((\/[^)]*)\)/g, (match, label, href) => `<a href="${href === '/' ? home : href}">${label}</a>`);
+}
+function plainRich(text) {
+  return String(text).replace(/\*\*([^*]+)\*\*/g, '$1').replace(/\[([^\]]+)\]\(([^)]*)\)/g, '$1');
+}
+function unitCount(value, loc, plural, singular) {
+  const rounded = Math.round(value);
+  return `${num(rounded, loc)} ${rounded === 1 ? singular : plural}`;
+}
+
+/* ------------------------------------------------------------- extra blocks */
+
+// Pages that carry a "sections" bundle render a richer article; the rest keep the original template.
+const SECTION_KEYS = ['crumbs', 'answer', 'calculator', 'matrix', 'tips', 'cta'];
+function sectionsFor(page, code) {
+  if (code === 'en' && page.sections && SECTION_KEYS.every((key) => page.sections[key])) return page.sections;
+  const t = page.translations[code];
+  const s = t && t.sections;
+  return s && SECTION_KEYS.every((key) => s[key]) ? s : null;
+}
+
 /* ---------------------------------------------------------------- rendering */
 
+function businessWpm(page) {
+  return page.calculations.find((row) => row.pace === 'Business')?.wpm ?? 130;
+}
 function speakingSeconds(page) {
-  const rate = page.calculations.find((row) => row.pace === 'Business')?.wpm ?? 130;
-  return page.wordCount / rate * 60;
+  return page.wordCount / businessWpm(page) * 60;
 }
 function pacingRows(page, loc) {
   const single = page.pageCounts.singleSpacedWordsPerPage;
@@ -136,6 +165,11 @@ function pacingRows(page, loc) {
     return `<tr><th scope="row">${label}</th><td>${num(row.words, loc)}</td><td>${escapeHtml(timeFromSeconds(row.words / row.wpm * 60, loc))}</td><td>${dec(row.words / single, loc)}</td><td>${dec(row.words / double, loc)}</td></tr>`;
   }).join('\n');
 }
+// Cards and cross-links use the short guide label when a page defines one, since the H1 can be a full question.
+function labelFor(page, code) {
+  const source = code === 'en' ? page : page.translations[code];
+  return (source && source.guideLabel) || content(page, code).h1;
+}
 function relatedLinks(page, code, db) {
   const loc = LOCALES[code];
   const others = livePagesFor(page, code, db);
@@ -144,7 +178,7 @@ function relatedLinks(page, code, db) {
     const otherText = other.type === 'minutes'
       ? fill(loc.ui.relatedWords, { words: num(other.wordCount, loc) })
       : fill(loc.ui.relatedSpoken, { time: timeFromSeconds(speakingSeconds(other), loc) });
-    return `<li><a href="${urlFor(other, code)}">${escapeHtml(content(other, code).h1)}</a><span>${escapeHtml(otherText)}</span></li>`;
+    return `<li><a href="${urlFor(other, code)}">${escapeHtml(labelFor(other, code))}</a><span>${escapeHtml(otherText)}</span></li>`;
   }).join('\n');
   return `<section class="stc-silo-related" aria-labelledby="related-heading"><h2 id="related-heading">${escapeHtml(loc.ui.relatedHeading)}</h2><ul class="stc-related-list">${items}</ul></section>`;
 }
@@ -153,11 +187,10 @@ function livePagesFor(page, code, db) {
 }
 function guideCard(page, code, index) {
   const loc = LOCALES[code];
-  const text = content(page, code);
   const detail = page.type === 'minutes'
     ? fill(loc.ui.guideMetaMinutes, { minutes: page.durationMinutes, words: num(page.wordCount, loc) })
     : fill(loc.ui.guideMetaWords, { words: num(page.wordCount, loc), time: timeFromSeconds(speakingSeconds(page), loc) });
-  return `<a class="stc-guide-card" href="${urlFor(page, code)}"><span class="stc-guide-kicker">${escapeHtml(`${loc.ui.guideKicker} ${String(index + 1).padStart(2, '0')}`)}</span><strong>${escapeHtml(text.h1)}</strong><span class="stc-guide-meta">${escapeHtml(detail)}</span></a>`;
+  return `<a class="stc-guide-card" href="${urlFor(page, code)}"><span class="stc-guide-kicker">${escapeHtml(`${loc.ui.guideKicker} ${String(index + 1).padStart(2, '0')}`)}</span><strong>${escapeHtml(labelFor(page, code))}</strong><span class="stc-guide-meta">${escapeHtml(detail)}</span></a>`;
 }
 function hreflangTags(page, code, db) {
   const locales = liveLocales(page, db);
@@ -169,25 +202,35 @@ function hreflangTags(page, code, db) {
 function jsonLd(page, code) {
   const loc = LOCALES[code];
   const text = content(page, code);
+  const sections = sectionsFor(page, code);
   const url = `${SITE}${urlFor(page, code)}`;
+  const home = `${SITE}${loc.homeUrl}`;
+  const crumbs = sections
+    ? [
+        { '@type': 'ListItem', position: 1, name: 'Speech Time Calculator', item: home },
+        { '@type': 'ListItem', position: 2, name: sections.crumbs[1], item: home },
+        { '@type': 'ListItem', position: 3, name: sections.crumbs[2], item: url }
+      ]
+    : [
+        { '@type': 'ListItem', position: 1, name: 'Speech Time Calculator', item: home },
+        { '@type': 'ListItem', position: 2, name: text.h1, item: url }
+      ];
+  const faqs = text.faqs;
   return {
     '@context': 'https://schema.org',
     '@graph': [
       {
         '@type': 'BreadcrumbList',
         '@id': `${url}#breadcrumb`,
-        itemListElement: [
-          { '@type': 'ListItem', position: 1, name: 'Speech Time Calculator', item: `${SITE}${loc.homeUrl}` },
-          { '@type': 'ListItem', position: 2, name: text.h1, item: url }
-        ]
+        itemListElement: crumbs
       },
       {
         '@type': 'FAQPage',
         '@id': `${url}#faq`,
-        mainEntity: text.faqs.map((faq) => ({
+        mainEntity: faqs.map((faq) => ({
           '@type': 'Question',
-          name: faq.q,
-          acceptedAnswer: { '@type': 'Answer', text: faq.a }
+          name: plainRich(faq.q),
+          acceptedAnswer: { '@type': 'Answer', text: plainRich(faq.a) }
         }))
       },
       {
@@ -275,10 +318,186 @@ function miniCalculatorScript(page, code) {
 </script>`;
 }
 
+function legacyMain(ctx) {
+  const { page, loc, ui, text } = ctx;
+  return `  <main class="stc-page">
+    ${ctx.breadcrumbHtml}
+    <h1 id="page-title">${escapeHtml(text.h1)}</h1>
+    <p class="stc-updated">${escapeHtml(ui.updatedLine)}</p>
+    <p class="stc-silo-hero">${escapeHtml(text.heroAnswer)} ${ctx.heroTail}</p>
+
+    <section class="stc-card stc-silo-calc" aria-labelledby="calc-heading">
+      <div class="stc-card-heading"><h2 id="calc-heading">${escapeHtml(ui.calcHeading)}</h2><span class="stc-private-tag"><span aria-hidden="true">●</span> ${escapeHtml(ui.privateTag)}</span></div>
+      <div class="stc-silo-calc-grid">
+        <label class="stc-silo-field" for="siloWords"><span>${escapeHtml(ui.wordsLabel)}</span><input id="siloWords" type="number" min="1" max="20000" step="10" value="${page.wordCount}" inputmode="numeric"></label>
+        <label class="stc-silo-field" for="siloWpm"><span>${escapeHtml(ui.paceLabel)} <output id="siloWpmOut" for="siloWpm">${escapeHtml(fill(ui.wpmUnit, { wpm: 130 }))}</output> <em>${escapeHtml(ui.paceHint)}</em></span><input class="stc-range" id="siloWpm" type="range" min="60" max="250" step="5" value="130"></label>
+      </div>
+      <p class="stc-silo-readout">${escapeHtml(ui.readoutSpeaking)}: <strong id="siloTimeOut">${escapeHtml(ctx.speakingTime)}</strong> · ${escapeHtml(ui.readoutReading)}: <strong id="siloReadOut">${escapeHtml(ctx.silentTime)}</strong> · ${escapeHtml(ui.readoutLength)}: <strong id="siloPageOut">${escapeHtml(ctx.pageCount)}</strong></p>
+    </section>
+
+    <section class="stc-silo-table" aria-labelledby="pacing-heading">
+      <h2 id="pacing-heading">${escapeHtml(ctx.pacingHeading)}</h2>
+      <div class="stc-table-wrap"><table class="stc-reference-table stc-silo-table-el"><thead><tr><th scope="col">${escapeHtml(ui.colPace)}</th><th scope="col">${escapeHtml(ui.colWords)}</th><th scope="col">${escapeHtml(ui.colTime)}</th><th scope="col">${escapeHtml(ui.colPages)}<br><span>${escapeHtml(ui.colSingle)}</span></th><th scope="col">${escapeHtml(ui.colPages)}<br><span>${escapeHtml(ui.colDouble)}</span></th></tr></thead>
+<tbody>
+${pacingRows(page, loc)}
+</tbody></table></div>
+      <p class="stc-silo-footnote">${escapeHtml(fill(ui.footnote, { single: page.pageCounts.singleSpacedWordsPerPage, double: page.pageCounts.doubleSpacedWordsPerPage }))}</p>
+    </section>
+
+    <section class="stc-info-card stc-silo-buffer" aria-labelledby="buffer-heading">
+      <div class="stc-section-kicker">${escapeHtml(ui.bufferKicker)}</div>
+      <h2 id="buffer-heading">${escapeHtml(ui.bufferHeading)}</h2>
+      <p>${ctx.bufferBody}</p>
+    </section>
+
+    ${ctx.faqBlock}
+
+    ${ctx.related}
+
+    <section class="stc-page-card stc-silo-cta">
+      <h2>${escapeHtml(ui.ctaHeading)}</h2>
+      <p>${ctx.ctaBody}</p>
+    </section>
+  </main>`;
+}
+
+// Full-article template: direct answer, scenario calculator, pacing matrix, timed script, scenario tips.
+function enrichedMain(ctx) {
+  const { loc, ui, page, sections: s } = ctx;
+  const home = loc.homeUrl;
+  const minutes = page.durationMinutes;
+  const wpm = businessWpm(page);
+  const budget = wpm * minutes;
+  const buffer = Math.round(budget * page.stageBuffer.percent / 100);
+  const options = s.calculator.scenarios
+    .map((item) => `        <option value="${item.wpm}"${item.wpm === wpm ? ' selected' : ''}>${escapeHtml(item.label)}</option>`)
+    .join('\n');
+  const columns = s.matrix.columns
+    .map((col) => `<th scope="col">${escapeHtml(col.label)}${col.sub ? `<br><span>${escapeHtml(col.sub)}</span>` : ''}</th>`)
+    .join('');
+  const single = page.pageCounts.singleSpacedWordsPerPage;
+  const double = page.pageCounts.doubleSpacedWordsPerPage;
+  const rows = s.matrix.rows.map((row) => {
+    const pages = (value) => `${dec(value, loc)} ${value.toFixed(1) === '1.0' ? ui.pageUnitOne : ui.pageUnit}`;
+    return `<tr><th scope="row">${escapeHtml(row.pace)}<br><span>${escapeHtml(fill(ui.wpmUnit, { wpm: row.wpm }))}</span></th><td>${escapeHtml(unitCount(row.words, loc, ui.wordsUnit, ui.wordUnitOne))}</td><td>${escapeHtml(unitCount(row.buffer, loc, ui.wordsUnit, ui.wordUnitOne))}</td><td>${escapeHtml(pages(row.words / single))}</td><td>${escapeHtml(pages(row.words / double))}</td><td>${escapeHtml(row.scenario)}</td></tr>`;
+  }).join('\n');
+  const tips = s.tips.items.map((tip) => `      <h3>${escapeHtml(tip.h3)}</h3>\n      <p>${rich(tip.body, home)}</p>`).join('\n');
+
+  return `  <main class="stc-page">
+    ${ctx.breadcrumbHtml}
+    <h1 id="page-title">${escapeHtml(ctx.text.h1)}</h1>
+    <p class="stc-updated">${escapeHtml(ui.updatedLine)}</p>
+
+    <section class="stc-page-card stc-silo-answer" aria-labelledby="answer-heading">
+      <h2 id="answer-heading">${escapeHtml(s.answer.heading)}</h2>
+      ${s.answer.paragraphs.map((paragraph) => `<p>${rich(paragraph, home)}</p>`).join('\n      ')}
+    </section>
+
+    <section class="stc-card stc-silo-calc" aria-labelledby="calc-heading">
+      <div class="stc-card-heading"><h2 id="calc-heading">${escapeHtml(s.calculator.heading)}</h2><span class="stc-private-tag"><span aria-hidden="true">●</span> ${escapeHtml(s.calculator.privateTag)}</span></div>
+      <div class="stc-scenario-row"><label for="siloScenario">${escapeHtml(s.calculator.scenarioLabel)}</label><select id="siloScenario">
+${options}
+        <option value="custom">${escapeHtml(s.calculator.customOption)}</option>
+      </select></div>
+      <div class="stc-silo-calc-grid">
+        <label class="stc-silo-field" for="siloWpm"><span>${escapeHtml(s.calculator.paceLabel)} <output id="siloWpmOut" for="siloWpm">${escapeHtml(fill(ui.wpmUnit, { wpm }))}</output> <em>${escapeHtml(ui.paceHint)}</em></span><input class="stc-range" id="siloWpm" type="range" min="60" max="250" step="5" value="${wpm}"></label>
+        <div class="stc-silo-field"><span>${escapeHtml(s.calculator.budgetLabel)}</span><strong class="stc-silo-budget" id="siloBudgetOut">${escapeHtml(unitCount(budget, loc, ui.wordsUnit, ui.wordUnitOne))}</strong></div>
+      </div>
+      <p class="stc-silo-readout">${escapeHtml(s.calculator.readoutBefore)} <strong id="siloBufferOut">${escapeHtml(unitCount(buffer, loc, ui.wordsUnit, ui.wordUnitOne))}</strong> ${escapeHtml(s.calculator.readoutAfter)}</p>
+    </section>
+
+    <section class="stc-silo-table stc-silo-matrix" aria-labelledby="pacing-heading">
+      <h2 id="pacing-heading">${escapeHtml(s.matrix.heading)}</h2>
+      <div class="stc-table-wrap"><table class="stc-reference-table stc-silo-table-el"><thead><tr>${columns}</tr></thead>
+<tbody>
+${rows}
+</tbody></table></div>
+      <p class="stc-silo-footnote">${escapeHtml(s.matrix.footnote)}</p>
+    </section>
+
+    <section class="stc-page-card stc-silo-tips" aria-labelledby="scenarios-heading">
+      <h2 id="scenarios-heading">${escapeHtml(s.tips.heading)}</h2>
+${tips}
+    </section>
+
+    ${ctx.related}
+
+    ${ctx.faqBlock}
+
+    <section class="stc-page-card stc-silo-cta">
+      <h2>${escapeHtml(s.cta.heading)}</h2>
+      <p>${rich(s.cta.body, home)}</p>
+    </section>
+  </main>`;
+}
+
+/* ------------------------------------------------------- teleprompter handoff */
+
+function budgetCalculatorScript(page, code) {
+  const loc = LOCALES[code];
+  const ui = loc.ui;
+  const wpm = businessWpm(page);
+  return `<script>
+  (function () {
+    var root = document.documentElement;
+    var toggle = document.getElementById('themeToggle');
+    var meta = document.getElementById('themeColorMeta');
+    var labels = ${jsonInScript({ dark: ui.darkLabel, light: ui.lightLabel, ariaDark: ui.ariaDark, ariaLight: ui.ariaLight })};
+    function applyTheme(isDark) {
+      root.dataset.theme = isDark ? 'dark' : 'light';
+      root.style.colorScheme = isDark ? 'dark' : 'light';
+      if (meta) meta.content = isDark ? '#000000' : '#f7f8f7';
+      if (!toggle) return;
+      toggle.setAttribute('aria-pressed', String(isDark));
+      toggle.setAttribute('aria-label', isDark ? labels.ariaLight : labels.ariaDark);
+      toggle.querySelector('.stc-theme-icon').textContent = isDark ? '☀' : '☾';
+      toggle.querySelector('.stc-theme-label').textContent = isDark ? labels.light : labels.dark;
+    }
+    applyTheme(root.dataset.theme === 'dark');
+    if (toggle) toggle.addEventListener('click', function () {
+      var isDark = root.dataset.theme !== 'dark';
+      applyTheme(isDark);
+      try { localStorage.setItem('stc-theme', isDark ? 'dark' : 'light'); } catch (e) {}
+    });
+
+    var L10N = ${jsonInScript({ thousands: loc.thousands, words: ui.wordsUnit, wordOne: ui.wordUnitOne, wpmUnit: ui.wpmUnit })};
+    var MINUTES = ${page.durationMinutes};
+    var BUFFER = ${page.stageBuffer.percent / 100};
+    var scenario = document.getElementById('siloScenario');
+    var wpmInput = document.getElementById('siloWpm');
+    var wpmOut = document.getElementById('siloWpmOut');
+    var budgetOut = document.getElementById('siloBudgetOut');
+    var bufferOut = document.getElementById('siloBufferOut');
+    function group(digits) { return digits.replace(/\\B(?=(\\d{3})+(?!\\d))/g, L10N.thousands); }
+    function words(n) {
+      var value = Math.round(n);
+      return group(String(value)) + ' ' + (value === 1 ? L10N.wordOne : L10N.words);
+    }
+    function update(fromScenario) {
+      var rate = Math.min(250, Math.max(60, parseInt(wpmInput.value, 10) || ${wpm}));
+      wpmOut.textContent = L10N.wpmUnit.replace(/\\{(\\w+)\\}/g, function (m, k) { return rate; });
+      budgetOut.textContent = words(rate * MINUTES);
+      bufferOut.textContent = words(rate * MINUTES * BUFFER);
+      if (!fromScenario) {
+        var match = scenario.querySelector('option[value="' + rate + '"]');
+        scenario.value = match ? String(rate) : 'custom';
+      }
+    }
+    scenario.addEventListener('change', function () {
+      if (scenario.value !== 'custom') wpmInput.value = scenario.value;
+      update(true);
+    });
+    wpmInput.addEventListener('input', function () { update(false); });
+    update(true);
+  })();
+</script>`;
+}
+
 function renderPage(page, code, db) {
   const loc = LOCALES[code];
   const ui = loc.ui;
   const text = content(page, code);
+  const sections = sectionsFor(page, code);
   const url = `${SITE}${urlFor(page, code)}`;
   const home = loc.homeUrl;
   const speakingTime = timeFromSeconds(speakingSeconds(page), loc);
@@ -301,13 +520,23 @@ function renderPage(page, code, db) {
     prompt: `<a href="${home}">${escapeHtml(ui.ctaPromptLink)}</a>`
   });
   const faqSubject = code === 'en' ? text.h1.toLowerCase() : text.h1;
-  const faqs = text.faqs.map((faq) => `<details open><summary><h3 class="stc-faq-q">${escapeHtml(faq.q)}</h3></summary><p>${escapeHtml(faq.a)}</p></details>`).join('\n');
-  const crumb = page.type === 'minutes' ? ui.guidesCrumb : ui.wordsCrumb;
+  const faqs = text.faqs.map((faq) => `<details open><summary><h3 class="stc-faq-q">${escapeHtml(faq.q)}</h3></summary><p>${rich(faq.a, home)}</p></details>`).join('\n');
+  const faqBlock = `<section class="stc-faq stc-silo-faq" aria-labelledby="faq-heading">
+      <h2 id="faq-heading">${escapeHtml((sections && sections.faqHeading) || fill(ui.faqHeading, { h1: faqSubject }))}</h2>
+${faqs}
+    </section>`;
+  const crumb = sections ? sections.crumbs[1] : page.type === 'minutes' ? ui.guidesCrumb : ui.wordsCrumb;
+  const currentCrumb = sections ? sections.crumbs[2] : text.h1;
+  const breadcrumbHtml = `<nav class="stc-breadcrumb" aria-label="Breadcrumb"><a href="${home}">${escapeHtml(ui.home)}</a><span aria-hidden="true">/</span><a href="${home}">${escapeHtml(crumb)}</a><span aria-hidden="true">/</span><span aria-current="page">${escapeHtml(currentCrumb)}</span></nav>`;
   const silentTime = timeFromSeconds(page.wordCount / 230 * 60, loc);
   const pageCount = fill(ui.lengthFormat, {
     single: dec(page.wordCount / page.pageCounts.singleSpacedWordsPerPage, loc),
     double: dec(page.wordCount / page.pageCounts.doubleSpacedWordsPerPage, loc)
   });
+  const ctx = {
+    page, loc, ui, text, sections, breadcrumbHtml, heroTail, speakingTime, silentTime, pageCount,
+    pacingHeading, bufferBody, ctaBody, faqBlock, related: relatedLinks(page, code, db)
+  };
 
   return `<!doctype html>
 <html lang="${code}" dir="ltr">
@@ -341,52 +570,11 @@ function renderPage(page, code, db) {
     <div class="stc-header-actions">${langMenu(page, code, db)}<button class="stc-theme-toggle" id="themeToggle" type="button" aria-label="${escapeHtml(ui.ariaDark)}" aria-pressed="false"><span class="stc-theme-icon" aria-hidden="true">☾</span><span class="stc-theme-label">${escapeHtml(ui.darkLabel)}</span></button></div>
   </header>
 
-  <main class="stc-page">
-    <nav class="stc-breadcrumb" aria-label="Breadcrumb"><a href="${home}">${escapeHtml(ui.home)}</a><span aria-hidden="true">/</span><a href="${home}">${escapeHtml(crumb)}</a><span aria-hidden="true">/</span><span aria-current="page">${escapeHtml(text.h1)}</span></nav>
-    <h1 id="page-title">${escapeHtml(text.h1)}</h1>
-    <p class="stc-updated">${escapeHtml(ui.updatedLine)}</p>
-    <p class="stc-silo-hero">${escapeHtml(text.heroAnswer)} ${heroTail}</p>
-
-    <section class="stc-card stc-silo-calc" aria-labelledby="calc-heading">
-      <div class="stc-card-heading"><h2 id="calc-heading">${escapeHtml(ui.calcHeading)}</h2><span class="stc-private-tag"><span aria-hidden="true">●</span> ${escapeHtml(ui.privateTag)}</span></div>
-      <div class="stc-silo-calc-grid">
-        <label class="stc-silo-field" for="siloWords"><span>${escapeHtml(ui.wordsLabel)}</span><input id="siloWords" type="number" min="1" max="20000" step="10" value="${page.wordCount}" inputmode="numeric"></label>
-        <label class="stc-silo-field" for="siloWpm"><span>${escapeHtml(ui.paceLabel)} <output id="siloWpmOut" for="siloWpm">${escapeHtml(fill(ui.wpmUnit, { wpm: 130 }))}</output> <em>${escapeHtml(ui.paceHint)}</em></span><input class="stc-range" id="siloWpm" type="range" min="60" max="250" step="5" value="130"></label>
-      </div>
-      <p class="stc-silo-readout">${escapeHtml(ui.readoutSpeaking)}: <strong id="siloTimeOut">${escapeHtml(speakingTime)}</strong> · ${escapeHtml(ui.readoutReading)}: <strong id="siloReadOut">${escapeHtml(silentTime)}</strong> · ${escapeHtml(ui.readoutLength)}: <strong id="siloPageOut">${escapeHtml(pageCount)}</strong></p>
-    </section>
-
-    <section class="stc-silo-table" aria-labelledby="pacing-heading">
-      <h2 id="pacing-heading">${escapeHtml(pacingHeading)}</h2>
-      <div class="stc-table-wrap"><table class="stc-reference-table stc-silo-table-el"><thead><tr><th scope="col">${escapeHtml(ui.colPace)}</th><th scope="col">${escapeHtml(ui.colWords)}</th><th scope="col">${escapeHtml(ui.colTime)}</th><th scope="col">${escapeHtml(ui.colPages)}<br><span>${escapeHtml(ui.colSingle)}</span></th><th scope="col">${escapeHtml(ui.colPages)}<br><span>${escapeHtml(ui.colDouble)}</span></th></tr></thead>
-<tbody>
-${pacingRows(page, loc)}
-</tbody></table></div>
-      <p class="stc-silo-footnote">${escapeHtml(fill(ui.footnote, { single: page.pageCounts.singleSpacedWordsPerPage, double: page.pageCounts.doubleSpacedWordsPerPage }))}</p>
-    </section>
-
-    <section class="stc-info-card stc-silo-buffer" aria-labelledby="buffer-heading">
-      <div class="stc-section-kicker">${escapeHtml(ui.bufferKicker)}</div>
-      <h2 id="buffer-heading">${escapeHtml(ui.bufferHeading)}</h2>
-      <p>${bufferBody}</p>
-    </section>
-
-    <section class="stc-faq stc-silo-faq" aria-labelledby="faq-heading">
-      <h2 id="faq-heading">${escapeHtml(fill(ui.faqHeading, { h1: faqSubject }))}</h2>
-${faqs}
-    </section>
-
-    ${relatedLinks(page, code, db)}
-
-    <section class="stc-page-card stc-silo-cta">
-      <h2>${escapeHtml(ui.ctaHeading)}</h2>
-      <p>${ctaBody}</p>
-    </section>
-  </main>
+${sections ? enrichedMain(ctx) : legacyMain(ctx)}
 
   <footer class="stc-footer"><a class="stc-brand" href="${home}"><span class="stc-brand-mark" aria-hidden="true">S</span><span>speechtimercalculator<span class="stc-brand-light">.com</span></span></a><nav class="stc-footer-links" aria-label="${escapeHtml(ui.footer.aria)}"><a href="/about.html">${escapeHtml(ui.footer.about)}</a><a href="/contact.html">${escapeHtml(ui.footer.contact)}</a><a href="/terms.html">${escapeHtml(ui.footer.terms)}</a></nav><span>${escapeHtml(ui.footer.tagline)}</span><a class="stc-footer-top" href="#page-title">${escapeHtml(ui.footer.backToTop)}</a><span class="stc-footer-trust">${trustLine(ui)}</span></footer>
 
-  ${miniCalculatorScript(page, code)}
+  ${sections ? budgetCalculatorScript(page, code) : miniCalculatorScript(page, code)}
 </body>
 </html>
 `;
@@ -435,9 +623,12 @@ function syncPages(db) {
 // Homepage tables reference guides by the number of words in the cell, which is locale-specific.
 function linkifyWordCounts(html, code, db) {
   const loc = LOCALES[code];
-  const targets = new Map(
-    liveTargets(db).filter((target) => target.code === code && target.page.type === 'words').map((target) => [target.page.wordCount, urlFor(target.page, code)])
-  );
+  const targets = new Map();
+  for (const target of liveTargets(db).filter((item) => item.code === code)) {
+    const href = urlFor(target.page, code);
+    const counts = target.page.type === 'words' ? [target.page.wordCount] : target.page.homepageTableWords ?? [];
+    for (const count of counts) targets.set(count, href);
+  }
   const unit = escapeRegExp(loc.ui.wordsUnit);
   const cell = new RegExp(`<td>(?:<a[^>]*>)?([\\d.,]+) ${unit}(?:</a>)?</td>`, 'g');
   return html.replace(/<tbody id="referenceTableBody">([\s\S]*?)<\/tbody>/, (whole, body) => {

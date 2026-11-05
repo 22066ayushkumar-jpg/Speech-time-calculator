@@ -30,13 +30,14 @@
     "singleSpacedWordsPerPage": 500,
     "doubleSpacedWordsPerPage": 250,
     "stageBufferPercent": 85,
-    "updatedAt": "2026-11-02"
+    "updatedAt": "2026-11-05"
   },
   "pages": [
     {
       "slug": "2-minute-speech",
       "type": "minutes",
       "published": false,
+      "publishedAt": null,
       "url": "/minutes/2-minute-speech/",
       "title": "2-Minute Speech: Word Count, Timing & Free Calculator",
       "metaDescription": "A 2-minute speech is about 260 words at 130 WPM. See the word budget at six speaking paces, the 85% stage buffer, a timed sample script, and rehearse it free in the browser.",
@@ -49,7 +50,7 @@
       ],
       "durationMinutes": 2,
       "wordCount": 260,
-      "sampleScriptWordCount": 278,
+      "sampleScriptWordCount": 301,
       "sampleScriptIsComplete": true,
       "sampleScriptNote": null,
       "calculations": [
@@ -115,16 +116,16 @@
         },
         {
           "at": "1:20",
-          "words": 37,
-          "text": "That third rule is why the number moved. Acknowledgement costs ninety seconds. It buys the customer a name, a timeline, and a reason to stay calm, and it buys you the time to fix the thing properly."
+          "words": 46,
+          "text": "That third rule is why the number moved. Acknowledgement costs ninety seconds. It buys the customer a name, a timeline, and a reason to stay calm, and it buys you the time to actually fix the thing properly instead of half-fixing it in front of them."
         },
         {
-          "at": "1:37",
-          "words": 56,
-          "text": "Here is the ask, and it is small. From Monday, the second shift takes the same three habits: acknowledge inside the hour, use the saved answers without apologising for using them, and flag urgency out loud instead of letting the queue decide. If the second shift matches the first, this becomes how the whole department works."
+          "at": "1:42",
+          "words": 70,
+          "text": "Here is the ask, and it is small. From Monday, we take the same three habits into the second shift. Acknowledge inside the hour, use the saved answers without apologising for using them, and flag urgency out loud instead of letting the queue decide. If the second shift matches the first, this becomes how the whole department works, and the forty-one hour week becomes a story we tell new starters."
         },
         {
-          "at": "2:03",
+          "at": "2:14",
           "words": 11,
           "text": "Thank you for the last eight weeks. The numbers are yours."
         }
@@ -152,12 +153,12 @@
     {
       "slug": "3-minute-speech",
       "type": "minutes",
-      "published": false,
-      "publishedAt": null,
+      "published": true,
+      "publishedAt": "2026-11-05",
       "url": "/minutes/3-minute-speech/",
-      "title": "3-Minute Speech: How Many Words and How to Time It",
-      "metaDescription": "A 3-minute speech is about 390 words at 130 WPM. Compare six speaking paces, get the page count, use the 85% buffer rule, and rehearse a timed sample script in a free teleprompter.",
-      "h1": "3-Minute Speech",
+      "title": "How Many Words is a 3-Minute Speech? (390 Words + Sample Script)",
+      "metaDescription": "A 3-minute speech is 390 words at an average 130 WPM speaking pace (300–480 words range). Calculate your exact 3-minute word count, test our 390-word sample script, and rehearse with a live teleprompter.",
+      "h1": "How Many Words is a 3-Minute Speech?",
       "heroAnswer": "A 3-minute speech is about 390 words at an average pace of 130 words per minute. At a slow, formal 100 WPM you need roughly 300 words; at 160 WPM, close to 480. Write about 330-390 words and you will land inside three minutes even with natural pauses.",
       "homepageAnchorForms": [
         "3 minute speech word count",
@@ -166,9 +167,9 @@
       ],
       "durationMinutes": 3,
       "wordCount": 390,
-      "sampleScriptWordCount": 349,
-      "sampleScriptIsComplete": false,
-      "sampleScriptNote": "Timed opening block: 349 of the 390 words your full script needs. Rehearse this in the teleprompter, then extend each announced section to the complete budget.",
+      "sampleScriptWordCount": 390,
+      "sampleScriptIsComplete": true,
+      "sampleScriptNote": null,
       "calculations": [
         {
           "pace": "Slow",
@@ -222,55 +223,834 @@
       "sampleScript": [
         {
           "at": "0:00",
-          "words": 55,
-          "text": "My name is Priya, I am joining the analytics team, and you will probably see my name on the Friday revenue report by the end of this month. Three minutes is not enough to tell you my whole career, so I will use it on the two things that actually change how we work together."
+          "words": 130,
+          "text": "Raise your hand if you have ever started a big project on Monday and quietly abandoned it by Thursday. I did exactly that for years, and I blamed my lack of discipline. Sound familiar? Many people here have felt that quiet shame. The truth is very different. Every abandoned project began as a plan so large that my brain rejected it before I ever touched it. We are taught to dream big, but we are never taught how to begin small. That missing lesson costs us books unwritten, businesses unlaunched, healthy routines unformed, and real confidence never built. Today I will give you one simple replacement for ambition: a method called the two-minute rule, which turns overwhelming goals into actions so tiny that skipping them feels sillier than doing them."
         },
         {
-          "at": "0:25",
-          "words": 92,
-          "text": "The first is where I come from. I spent five years in operations reporting, which sounds dull and is not, because it taught me that a number nobody trusts is worse than no number at all. I have rebuilt dashboards that people ignored, and I have sat in rooms where a decision stalled because two teams were quoting different versions of the same fact. So I ask uncomfortable questions about definitions before I build anything. If that makes me slightly annoying in the first fortnight, that is the job working as intended."
+          "at": "1:00",
+          "words": 130,
+          "text": "The rule is absurdly simple. Researchers who studied tiny habits tested it, and it works because it removes every excuse. Whatever habit you want to build, shrink it until it takes two minutes or less. Want to run a marathon? Your first mission is putting on your running shoes and stepping outside the front door. Want to read more books? Read a single page tonight, then close the book. The goal is not immediate progress. The goal is becoming the kind of person who shows up, because ability always follows identity, and every tiny repetition is a vote for that identity. Motivation is unreliable, but momentum is almost physical. Starting is the hardest part of any task, so make starting easy, and continuation happens almost on its own, without negotiation."
         },
         {
-          "at": "1:08",
-          "words": 74,
-          "text": "The second thing is how I like to work. I would rather show you a rough draft on day two than a polished answer on day ten. Most reporting mistakes are scope mistakes, and they are cheap to fix early and expensive to fix after the chart is on a slide in front of a director. Come and tell me what you actually need from a report, not what the ticket says you need."
-        },
-        {
-          "at": "1:42",
-          "words": 75,
-          "text": "One practical offer, because introductions should be useful rather than merely accurate. If you have a question that has been sitting in your inbox because the answer needs four tables and a judgement call, bring it to me in the first month. Those are the questions I took on this job for, and I would rather learn the business through something people actually need decided than through a tour of the dashboards that already work."
-        },
-        {
-          "at": "2:17",
-          "words": 53,
-          "text": "One small ask. If you have a metric everyone uses but nobody can define cleanly, send it to me this week. Those are the interesting problems, and I would rather inherit them now than discover them in a board pack in December. Thanks for the warm start, and see you in the channel."
+          "at": "2:00",
+          "words": 130,
+          "text": "So here is your takeaway for tomorrow morning. Pick one goal you have been avoiding all year, then ask a single question: what is the two-minute version of that goal? Write your answer on a small card, put it beside your bed, and do only that one thing tomorrow. That is your entire assignment. Not the whole marathon, just the first step. Do not worry about results, because results compound quietly while you stay busy showing up. Interest accrues silently, and the curve eventually bends. In three minutes, I cannot change your life, but in two minutes each day, you can change everything about it. Start small, start visible, and start long before you ever feel ready. Your future self is not waiting for motivation. Thank you for your time."
         }
       ],
       "faqs": [
         {
-          "q": "How many words should a 3-minute speech be?",
-          "a": "Write about 390 words if you speak at the common 130 WPM presentation pace. Slow speakers at 100 WPM need around 300 words, while fast speakers at 160 WPM can reach 480 before three minutes is up."
+          "q": "How many pages is a 3-minute speech?",
+          "a": "A 390-word script at the average 130 WPM pace is about **0.8 single-spaced pages** or **1.5 to 1.6 double-spaced pages**, set in 12 pt Arial or Times New Roman with 1-inch margins."
         },
         {
-          "q": "How long is a 3-minute speech when read silently?",
-          "a": "The same 390 words take roughly 1 minute 42 seconds to read silently at 230 WPM, which is why reading your script to yourself always feels shorter than performing it."
+          "q": "How many paragraphs is a 3-minute speech?",
+          "a": "Typically **3 to 5 paragraphs**: a 65-word intro, two 130-word body points, and a 65-word conclusion. That structure lands right on the 390-word budget at 130 words per minute."
         },
         {
-          "q": "What fits into three minutes?",
-          "a": "Three minutes comfortably holds an introduction, two supporting points, and a closing ask, or a self-introduction with one story. It is also the standard length for a table-topic speech in Toastmasters clubs."
+          "q": "How many slides do I need for a 3-minute presentation?",
+          "a": "**3 to 4 slides maximum** — 1 title or hook slide, 2 core point slides, and 1 takeaway slide. Using the 1-slide-per-minute rule keeps your visuals in step with your script instead of rushing you off the stage."
+        },
+        {
+          "q": "Is 400 words too long for a 3-minute speech?",
+          "a": "At 130 WPM, 400 words takes 3 minutes and 5 seconds without a single pause. If your delivery includes slides, applause, or audience reactions, **trim it to 330–350 words** so it still lands inside the slot."
         }
       ],
       "wordsForTargetTime": {
         "wpm": 130,
         "words": 390
       },
-      "translations": {}
+      "guideLabel": "3-Minute Speech",
+      "translations": {
+        "hi": {
+          "title": "3 मिनट के भाषण में कितने शब्द? (390 शब्द + गति-सारणी)",
+          "metaDescription": "औसत 130 WPM गति से 3 मिनट का भाषण 390 शब्द होता है (300–480 शब्द की रेंज)। अपना सटीक 3-मिनट शब्द-बजट निकालें, 85% स्टेज बफ़र और पेज-संख्या देखें, फिर ब्राउज़र में ही रिहर्सल करें।",
+          "h1": "3-मिनट का भाषण",
+          "guideLabel": "3-मिनट का भाषण",
+          "heroAnswer": "3 मिनट का भाषण औसतन 130 शब्द प्रति मिनट की गति से लगभग 390 शब्द होता है। धीमी, औपचारिक अंदाज़ में (100 WPM) करीब 300 शब्द चाहिए; 160 WPM पर 480 के आसपास। 330–390 शब्द लिखेंगे तो स्वाभाविक ठहराव के बावजूद तीन मिनट के अंदर रहेंगे।",
+          "anchorForms": [
+            "3 मिनट भाषण शब्द संख्या",
+            "3 मिनट में कितने शब्द होते हैं",
+            "3 मिनट के भाषण का उदाहरण"
+          ],
+          "faqs": [
+            {
+              "q": "3 मिनट का भाषण कितने पेज का होता है?",
+              "a": "औसत 130 WPM पर 390 शब्द की स्क्रिप्ट लगभग **0.8 सिंगल-स्पेस पेज** या **1.5 से 1.6 डबल-स्पेस पेज** होती है — 12 pt Arial या Times New Roman, 1-इंच मार्जिन में।"
+            },
+            {
+              "q": "3 मिनट के भाषण में कितने पैराग्राफ़ होते हैं?",
+              "a": "आमतौर पर **3 से 5 पैराग्राफ़**: 65 शब्द की शुरुआत, दो 130-शब्द के मुख्य बिंदु और 65 शब्द का निष्कर्ष। यही ढाँचा 130 WPM पर 390 शब्द के बजट पर ठीक बैठता है।"
+            },
+            {
+              "q": "3 मिनट के प्रेज़ेंटेशन के लिए कितनी स्लाइड चाहिए?",
+              "a": "अधिकतम **3 से 4 स्लाइड** — 1 टाइटल या हुक स्लाइड, 2 मुख्य बिंदु की स्लाइड और 1 निष्कर्ष स्लाइड। **1 स्लाइड प्रति मिनट** का नियम रखें तो विज़ुअल आपकी स्क्रिप्ट के साथ चलते हैं, आपको जल्दबाज़ी में धकेलते नहीं।"
+            },
+            {
+              "q": "3 मिनट के लिए 400 शब्द ज़्यादा तो नहीं?",
+              "a": "130 WPM पर 400 शब्द, बिना एक भी ठहराव के, 3 मिनट 5 सेकंड लेते हैं। अगर आपकी डिलीवरी में स्लाइड, तालियाँ या दर्शकों की प्रतिक्रियाएँ हैं तो **330 से 350 शब्द** तक घटाएँ ताकि बात स्लॉट के अंदर रहे।"
+            }
+          ],
+          "sections": {
+            "crumbs": [
+              "होम (स्पीच टाइम कैलकुलेटर)",
+              "भाषण-लंबाई गाइड",
+              "3-मिनट के भाषण की शब्द-संख्या"
+            ],
+            "answer": {
+              "heading": "संक्षेप में उत्तर",
+              "paragraphs": [
+                "स्वाभाविक बातचीत जैसी 130 शब्द प्रति मिनट (WPM) गति पर **3 मिनट का भाषण लगभग 390 शब्द** होता है। अगर धीमा, भावुक शादी का टोस्ट है जिसमें हँसी के लिए ठहराव आए (100 WPM), तो **300 शब्द** लक्ष्य रखें। तेज़, ऊर्जा से भरे पिच (160 WPM) के लिए **480 शब्द** तक लिख सकते हैं।",
+                "इसका मतलब आपकी असली 3-मिनट रेंज **300 से 480 शब्द** के बीच है। आपकी गति, आपकी घबराहट और दर्शकों की प्रतिक्रियाएँ औसत से ज़्यादा मायने रखती हैं — इसलिए स्क्रिप्ट फाइनल करने से पहले अपनी डिलीवरी [स्पीच टाइम कैलकुलेटर](/) से नाप लें।"
+              ]
+            },
+            "calculator": {
+              "heading": "3-मिनट शब्द-बजट कैलकुलेटर",
+              "privateTag": "तीन मिनट पर सेट",
+              "scenarioLabel": "परिदृश्य",
+              "customOption": "अपनी गति…",
+              "paceLabel": "आपकी गति:",
+              "budgetLabel": "3:00 के लिए शब्द-बजट",
+              "scenarios": [
+                {
+                  "wpm": 100,
+                  "label": "शादी का टोस्ट / बेस्ट मैम स्पीच · 100 WPM"
+                },
+                {
+                  "wpm": 115,
+                  "label": "एकेडमिक / 3-मिनट थीसिस (3MT) · 115 WPM"
+                },
+                {
+                  "wpm": 130,
+                  "label": "बिज़नेस प्रेज़ेंटेशन / क्लास टॉक · 130 WPM"
+                },
+                {
+                  "wpm": 145,
+                  "label": "पॉडकास्ट इंट्रो / कहानी सुनाना · 145 WPM"
+                },
+                {
+                  "wpm": 160,
+                  "label": "तेज़ पिच / डिबेट स्पीच · 160 WPM"
+                }
+              ],
+              "readoutBefore": "85% स्टेज बफ़र (ठहराव, तालियाँ और स्लाइड बदलना सहित):",
+              "readoutAfter": "· इससे आपके 3-मिनट के स्लॉट में करीब 15 सेकंड की जगह बचती है और समय पार नहीं होता।"
+            },
+            "matrix": {
+              "heading": "3 मिनट की गति और पेज-संख्या सारणी",
+              "columns": [
+                {
+                  "label": "बोलने की गति"
+                },
+                {
+                  "label": "3 मिनट में शब्द"
+                },
+                {
+                  "label": "85% स्टेज बफ़र",
+                  "sub": "ठहराव सहित"
+                },
+                {
+                  "label": "सिंगल-स्पेस पेज",
+                  "sub": "500 शब्द/पेज"
+                },
+                {
+                  "label": "डबल-स्पेस पेज",
+                  "sub": "250 शब्द/पेज"
+                },
+                {
+                  "label": "सबसे उपयुक्त परिदृश्य"
+                }
+              ],
+              "rows": [
+                {
+                  "wpm": 100,
+                  "words": 300,
+                  "buffer": 255,
+                  "pace": "धीमा",
+                  "scenario": "Best Man / मेड ऑफ ऑनर टोस्ट, श्रद्धांजलि"
+                },
+                {
+                  "wpm": 115,
+                  "words": 345,
+                  "buffer": 293,
+                  "pace": "संयमित",
+                  "scenario": "3-मिनट थीसिस (3MT), टेक्निकल डेमो"
+                },
+                {
+                  "wpm": 130,
+                  "words": 390,
+                  "buffer": 332,
+                  "pace": "औसत",
+                  "scenario": "क्लासरूम प्रेज़ेंटेशन, टीम अपडेट"
+                },
+                {
+                  "wpm": 145,
+                  "words": 435,
+                  "buffer": 370,
+                  "pace": "बातचीत जैसी",
+                  "scenario": "YouTube इंट्रो, कहानी सुनाना"
+                },
+                {
+                  "wpm": 160,
+                  "words": 480,
+                  "buffer": 408,
+                  "pace": "तेज़",
+                  "scenario": "स्टार्टअप पिच, डिबेट का जवाब"
+                }
+              ],
+              "footnote": "पेज-गिनती मानक मैनुस्क्रिप्ट फ़ॉर्मैट पर आधारित है: 12 pt Arial या Times New Roman, 1-इंच मार्जिन, सिंगल-स्पेस में 500 शब्द प्रति पेज और डबल-स्पेस में 250 शब्द प्रति पेज।"
+            },
+            "tips": {
+              "heading": "3 मिनट की बात कैसे ढालें (परिदृश्य के अनुसार)",
+              "items": [
+                {
+                  "h3": "3-मिनट थीसिस (3MT) और एकेडमिक पिच — 330–360 शब्द",
+                  "body": "यूनिवर्सिटी की 3MT प्रतियोगिताएँ ठीक 3:00 पर समय रोकती हैं और समय पार करने पर अयोग्य कर देती हैं, इसलिए 115 WPM की संयमित गति पर लिखें और कागज़ पर 330–360 शब्द रखें। **एक ही स्थिर स्लाइड** इस्तेमाल करें — हर क्लिक 4–6 सेकंड लेता है और आपकी नज़र दर्शकों से हट जाती है। हुक के बाद **3 सेकंड का ठहराव** लें: यह समस्या-कथन को बैठने देता है, साँस सामान्य करता है, और एड्रिनलीन की जल्दी को रोकने का सबसे सस्ता तरीका है — वही जल्दी एकेडमिक स्पीकर्स को 140+ WPM पर पहुँचाकर उनका मुख्य बिंदु बोले बिना समय खत्म कर देती है।"
+                },
+                {
+                  "h3": "शादी के टोस्ट और बेस्ट मैम स्पीच — 280–320 शब्द",
+                  "body": "टोस्ट लगभग 100 WPM पर दिया जाता है क्योंकि आप भावुक होते हैं, आँखों में आँखें डालते हैं और प्रतिक्रिया का इंतज़ार करते हैं। दर्शकों का समय भी बजट में रखें: **हँसी 3 मिनट के स्लॉट में 30–40 सेकंड खा जाती है** — एक अच्छा मज़ाक, फ़ोटो पर एक “वाह”, और “गिलास उठाइए” के बाद एक ताली आधा समय ले सकती है। 280–320 शब्द लिखें, हर हँसने वाली लाइन पर ठहराव का चिह्न लगाएँ, और आप जल्दबाज़ी नहीं, गर्मजोशी से खत्म करेंगे।"
+                },
+                {
+                  "h3": "3-मिनट प्रेज़ेंटेशन का स्लाइड नियम",
+                  "body": "**1 स्लाइड प्रति मिनट** का नियम अपनाएँ: 3 मिनट के स्लॉट में अधिकतम 3–4 स्लाइड (टाइटल या हुक, दो मुख्य बिंदु, निष्कर्ष)। मिनट से ज़्यादा स्लाइड रखने पर आपको दृश्यों का वर्णन करते रहना पड़ता है — औसत स्लाइड-रुकावट 40 सेकंड से नीचे गिरती है, बात याद रहने की क्षमता टूटती है, और चाल आप नहीं, डिक्शन चलाता है। 3 स्लाइड पर 330–390 शब्द का बजट बाँधें और ट्रांज़िशन गिनकर रिहर्सल करें।"
+                }
+              ]
+            },
+            "faqHeading": "3-मिनट भाषण से जुड़े सवाल",
+            "cta": {
+              "heading": "अपनी 3-मिनट स्क्रिप्ट का समय नापें",
+              "body": "अपना ड्राफ़्ट [स्पीच टाइम कैलकुलेटर](/) में पेस्ट करें ताकि शब्द मिनट में बदलें, 3 मिनट का लक्ष्य सेट करके अपना सटीक शब्द-बजट पाएँ, फिर [लाइव टेलीप्रॉम्प्टर और प्रैक्टिस टाइमर](/) में रिहर्सल करें। सब कुछ आपके ब्राउज़र में चलता है और कुछ भी अपलोड नहीं होता।"
+            }
+          }
+        },
+        "de": {
+          "title": "3-Minuten-Rede: Wie viele Wörter? (390 Wörter + Pacing-Tabelle)",
+          "metaDescription": "Eine 3-Minuten-Rede hat bei durchschnittlichen 130 WPM etwa 390 Wörter (Spanne 300–480). Rechnen Sie Ihr exaktes 3-Minuten-Wortbudget, sehen Sie den 85-%-Bühnenpuffer und die Seitenzahlen — und proben Sie im Browser.",
+          "h1": "3-Minuten-Rede",
+          "guideLabel": "3-Minuten-Rede",
+          "heroAnswer": "Eine 3-Minuten-Rede umfasst bei gleichmäßigen 130 Wörtern pro Minute etwa 390 Wörter. Langsam und förmlich mit 100 WPM genügen rund 300 Wörter; bei flotten 160 WPM sind es etwa 480. Mit 330–390 Wörtern bleiben Sie auch mit natürlichen Pausen sicher innerhalb der drei Minuten.",
+          "anchorForms": [
+            "3 Minuten Rede Wortanzahl",
+            "wie viele Wörter in 3 Minuten",
+            "3-Minuten-Rede Beispiel"
+          ],
+          "faqs": [
+            {
+              "q": "Wie viele Seiten hat eine 3-Minuten-Rede?",
+              "a": "Ein 390-Wörter-Skript sind bei 130 WPM etwa **0,8 Seiten einzeilig** oder **1,5 bis 1,6 Seiten zweizeilig** — in 12 pt Arial oder Times New Roman mit 2,54 cm Rand."
+            },
+            {
+              "q": "Wie viele Absätze hat eine 3-Minuten-Rede?",
+              "a": "Üblich sind **3 bis 5 Absätze**: ein Einstieg mit 65 Wörtern, zwei Hauptpunkte mit je 130 Wörtern, ein Schluss mit 65 Wörtern. Diese Struktur trifft das 390-Wörter-Budget bei 130 WPM genau."
+            },
+            {
+              "q": "Wie viele Folien brauche ich für einen 3-Minuten-Vortrag?",
+              "a": "Maximal **3 bis 4 Folien**: 1 Titel- oder Hook-Folie, 2 Folien für die Kernaussagen, 1 Takeaway. Nach der **Regel „eine Folie pro Minute“** bleibt das Visual im Takt Ihres Skripts, statt Sie von der Bühne zu drängen."
+            },
+            {
+              "q": "Sind 400 Wörter zu lang für drei Minuten?",
+              "a": "Bei 130 WPM brauchen 400 Wörter 3 Minuten und 5 Sekunden — ohne eine einzige Pause. Kommen Folien, Applaus oder Publikumsreaktionen dazu, **kürzen Sie auf 330 bis 350 Wörter**, damit die Rede ins Zeitfenster passt."
+            }
+          ],
+          "sections": {
+            "crumbs": [
+              "Start (Rede-Zeit-Rechner)",
+              "Ratgeber zu Rede-Längen",
+              "Wortanzahl für die 3-Minuten-Rede"
+            ],
+            "answer": {
+              "heading": "Die kurze Antwort",
+              "paragraphs": [
+                "Bei einem natürlichen Erzähltempo von 130 Wörtern pro Minute (WPM) ist **eine 3-Minuten-Rede rund 390 Wörter** lang. Für einen langsamen, gefühlvollen Hochzeitstoast mit Pausen für Lacher (100 WPM) schreiben Sie **300 Wörter**. Für einen schnellen, energiegeladenen Pitch (160 WPM) sind bis zu **480 Wörter** drin.",
+                "Ihre realistische 3-Minuten-Spanne liegt also zwischen **300 und 480 Wörtern**. Ihr Tempo, Ihre Nervosität und wie oft das Publikum reagiert, zählen mehr als der Durchschnitt — messen Sie Ihre eigene Rede mit dem [Rede-Zeit-Rechner](/), bevor Sie das Skript festzurren."
+              ]
+            },
+            "calculator": {
+              "heading": "Wortbudget-Rechner für 3 Minuten",
+              "privateTag": "Auf 3 Minuten festgelegt",
+              "scenarioLabel": "Szenario",
+              "customOption": "Eigene Pace…",
+              "paceLabel": "Ihre Pace:",
+              "budgetLabel": "Wortbudget für 3:00",
+              "scenarios": [
+                {
+                  "wpm": 100,
+                  "label": "Hochzeitstoast / Best-Man-Rede · 100 WPM"
+                },
+                {
+                  "wpm": 115,
+                  "label": "Akademisch / 3-Minuten-Thesis (3MT) · 115 WPM"
+                },
+                {
+                  "wpm": 130,
+                  "label": "Präsentation im Job / Vortrag im Seminar · 130 WPM"
+                },
+                {
+                  "wpm": 145,
+                  "label": "Podcast-Intro / Storytelling · 145 WPM"
+                },
+                {
+                  "wpm": 160,
+                  "label": "Schneller Pitch / Debatte · 160 WPM"
+                }
+              ],
+              "readoutBefore": "85-%-Bühnenpuffer (mit Pausen, Applaus und Folienwechseln):",
+              "readoutAfter": "· So bleiben in Ihrem 3-Minuten-Fenster etwa 15 Sekunden Luft — statt eines knappen Overruns."
+            },
+            "matrix": {
+              "heading": "Tempo- und Seitenzahlen-Matrix für 3 Minuten",
+              "columns": [
+                {
+                  "label": "Sprechtempo"
+                },
+                {
+                  "label": "Wörter in 3 Minuten"
+                },
+                {
+                  "label": "85-%-Bühnenpuffer",
+                  "sub": "mit Pausen"
+                },
+                {
+                  "label": "Seiten einzeilig",
+                  "sub": "500 Wörter/S."
+                },
+                {
+                  "label": "Seiten zweizeilig",
+                  "sub": "250 Wörter/S."
+                },
+                {
+                  "label": "Passt für"
+                }
+              ],
+              "rows": [
+                {
+                  "wpm": 100,
+                  "words": 300,
+                  "buffer": 255,
+                  "pace": "Langsam",
+                  "scenario": "Trauzeuge- oder Brautjungfern-Toast, Trauerrede"
+                },
+                {
+                  "wpm": 115,
+                  "words": 345,
+                  "buffer": 293,
+                  "pace": "Bedächtig",
+                  "scenario": "3-Minuten-Thesis (3MT), technisches Demo"
+                },
+                {
+                  "wpm": 130,
+                  "words": 390,
+                  "buffer": 332,
+                  "pace": "Durchschnitt",
+                  "scenario": "Vortrag im Seminar, Team-Update"
+                },
+                {
+                  "wpm": 145,
+                  "words": 435,
+                  "buffer": 370,
+                  "pace": "Gesprächig",
+                  "scenario": "YouTube-Intro, Storytelling"
+                },
+                {
+                  "wpm": 160,
+                  "words": 480,
+                  "buffer": 408,
+                  "pace": "Schnell",
+                  "scenario": "Startup-Pitch, Debattenerwiderung"
+                }
+              ],
+              "footnote": "Die Seitenzahlen rechnen mit dem üblichen Manuskriptformat: 12 pt Arial oder Times New Roman, 2,54 cm Rand, 500 Wörter pro einzeiliger und 250 Wörter pro zweizeiliger Seite."
+            },
+            "tips": {
+              "heading": "Drei Minuten aufbauen — nach Szenario",
+              "items": [
+                {
+                  "h3": "Die 3-Minuten-Thesis (3MT) und der akademische Pitch — 330–360 Wörter",
+                  "body": "3MT-Wettbewerbe an Hochschulen stoppen exakt bei 3:00 und disqualifizieren bei Überschreitung. Schreiben Sie deshalb aufs bedächtige Tempo von 115 WPM und halten Sie 330–360 Wörter auf dem Papier. Nutzen Sie **eine statische Folie** — jeder Klick kostet 4–6 Sekunden und lenkt den Blick vom Publikum ab. Machen Sie nach dem Hook **3 Sekunden Pause**: Das lässt die Problemstellung wirken, stabilisiert die Atmung und ist der billigste Trick gegen das Adrenalin-Hetzen, das akademische Redner auf 140+ WPM treibt, sodass sie vor ihrem Kernargument die Zeit verlieren."
+                },
+                {
+                  "h3": "Hochzeitstoast und Best-Man-Rede — 280–320 Wörter",
+                  "body": "Ein Toast liegt bei rund 100 WPM, weil Sie bewegt sind, Blickkontakt halten und auf Reaktionen warten. Kalkulieren Sie das Publikum ein: **Lachen frisst 30–40 Sekunden Ihres 3-Minuten-Fensters** — ein guter Witz, ein „Aww“ über das Foto und ein Applaus nach „Erhebt die Gläser“ halbiert die Zeit. Schreiben Sie 280–320 Wörter, markieren Sie jede Pointe mit einer Pausenmarke, und Sie enden warm statt gehetzt."
+                },
+                {
+                  "h3": "Die Folienregel für drei Minuten",
+                  "body": "Bleiben Sie bei der **Regel „eine Folie pro Minute“**: In ein 3-Minuten-Fenster passen maximal 3–4 Folien (Titel oder Hook, zwei Kernaussagen, Takeaway). Mehr Folien als Minuten zwingen Sie zur Bilder-Erklärung — die Verweildauer pro Folie fällt unter 40 Sekunden, das Publikum behält weniger, und am Ende bestimmt das Deck Ihr Tempo statt Sie. Bauen Sie Ihr Wortbudget um 3 Folien mit 330–390 Wörtern und proben Sie inklusive der Übergänge."
+                }
+              ]
+            },
+            "faqHeading": "Fragen zur 3-Minuten-Rede",
+            "cta": {
+              "heading": "Messen Sie Ihr eigenes 3-Minuten-Skript",
+              "body": "Fügen Sie Ihren Entwurf in den [Rede-Zeit-Rechner](/) ein, stellen Sie 3 Minuten ein und erhalten Sie Ihr exaktes Wortbudget. Proben Sie danach im [Live-Teleprompter mit Übungs-Timer](/). Alles läuft im Browser, nichts wird hochgeladen."
+            }
+          }
+        },
+        "es": {
+          "title": "¿Cuántas Palabras Tiene un Discurso de 3 Minutos? (390 Palabras)",
+          "metaDescription": "Un discurso de 3 minutos son 390 palabras al ritmo medio de 130 WPM (rango de 300–480). Calcula tu presupuesto exacto para 3 minutos, revisa el buffer del 85% y las páginas que ocupas, y ensaya en el navegador.",
+          "h1": "Discurso de 3 minutos",
+          "guideLabel": "Discurso de 3 minutos",
+          "heroAnswer": "Un discurso de 3 minutos ronda las 390 palabras a un ritmo estable de 130 palabras por minuto. A un ritmo lento y formal de 100 WPM bastan unas 300 palabras; a 160 WPM te acercas a las 480. Escribe 330–390 palabras y entrarás en los tres minutos incluso con las pausas naturales.",
+          "anchorForms": [
+            "palabras de un discurso de 3 minutos",
+            "cuántas palabras en 3 minutos",
+            "ejemplo de discurso de 3 minutos"
+          ],
+          "faqs": [
+            {
+              "q": "¿Cuántas páginas ocupa un discurso de 3 minutos?",
+              "a": "Un guion de 390 palabras a 130 WPM son unas **0,8 páginas a espacio simple** o **1,5 a 1,6 páginas a espacio doble**, en Arial o Times New Roman de 12 pt con márgenes de 2,54 cm."
+            },
+            {
+              "q": "¿Cuántos párrafos tiene un discurso de 3 minutos?",
+              "a": "Normalmente **3 a 5 párrafos**: una introducción de 65 palabras, dos ideas centrales de 130 palabras cada una y una conclusión de 65. Esa estructura clava el presupuesto de 390 palabras a 130 WPM."
+            },
+            {
+              "q": "¿Cuántas diapositivas necesito para una presentación de 3 minutos?",
+              "a": "**3 o 4 diapositivas como máximo**: 1 de título o gancho, 2 de ideas centrales y 1 de cierre. Con la **regla de una diapositiva por minuto** el visual va al ritmo de tu guion, en lugar de sacarte del escenario."
+            },
+            {
+              "q": "¿400 palabras es demasiado para 3 minutos?",
+              "a": "A 130 WPM, 400 palabras tardan 3 minutos y 5 segundos sin una sola pausa. Si tu intervención lleva diapositivas, aplausos o reacciones del público, **recorta a 330–350 palabras** para que quepa en el turno."
+            }
+          ],
+          "sections": {
+            "crumbs": [
+              "Inicio (Calculador de Tiempo de Discurso)",
+              "Guías de duración",
+              "Palabras de un discurso de 3 minutos"
+            ],
+            "answer": {
+              "heading": "La respuesta corta",
+              "paragraphs": [
+                "A un ritmo natural de conversación de 130 palabras por minuto (WPM), **un discurso de 3 minutos son unas 390 palabras**. Si es un brindis de boda pausado y emotivo, con huecos para las risas (100 WPM), apunta a **300 palabras**. Para un pitch rápido y enérgico (160 WPM), caben hasta **480 palabras**.",
+                "Eso deja tu rango real para 3 minutos entre **300 y 480 palabras**. Tu ritmo, tus nervios y cada reacción del público pesan más que la media: mide tu propia entrega con el [calculador de tiempo de discurso](/) antes de cerrar el guion."
+              ]
+            },
+            "calculator": {
+              "heading": "Calculadora de presupuesto para 3 minutos",
+              "privateTag": "Fijada en 3 minutos",
+              "scenarioLabel": "Escenario",
+              "customOption": "Ritmo propio…",
+              "paceLabel": "Tu ritmo:",
+              "budgetLabel": "Presupuesto de palabras para 3:00",
+              "scenarios": [
+                {
+                  "wpm": 100,
+                  "label": "Brindis de boda / discurso del padrino · 100 WPM"
+                },
+                {
+                  "wpm": 115,
+                  "label": "Académico / Tesis de 3 Minutos (3MT) · 115 WPM"
+                },
+                {
+                  "wpm": 130,
+                  "label": "Presentación de negocio / clase · 130 WPM"
+                },
+                {
+                  "wpm": 145,
+                  "label": "Intro de pódcast / storytelling · 145 WPM"
+                },
+                {
+                  "wpm": 160,
+                  "label": "Pitch rápido / debate · 160 WPM"
+                }
+              ],
+              "readoutBefore": "Buffer de escenario del 85% (con pausas, aplausos y cambios de diapositiva):",
+              "readoutAfter": "· Así te quedan unos 15 segundos de aire en tu turno de 3 minutos, en vez de pasarte del tiempo."
+            },
+            "matrix": {
+              "heading": "Matriz de ritmo y páginas para 3 minutos",
+              "columns": [
+                {
+                  "label": "Ritmo"
+                },
+                {
+                  "label": "Palabras en 3 minutos"
+                },
+                {
+                  "label": "Buffer del 85%",
+                  "sub": "con pausas"
+                },
+                {
+                  "label": "Páginas espacio simple",
+                  "sub": "500 pal./pág."
+                },
+                {
+                  "label": "Páginas espacio doble",
+                  "sub": "250 pal./pág."
+                },
+                {
+                  "label": "Mejor para"
+                }
+              ],
+              "rows": [
+                {
+                  "wpm": 100,
+                  "words": 300,
+                  "buffer": 255,
+                  "pace": "Lento",
+                  "scenario": "Brindis del padrino o dama de honor, elogio fúnebre"
+                },
+                {
+                  "wpm": 115,
+                  "words": 345,
+                  "buffer": 293,
+                  "pace": "Pausado",
+                  "scenario": "Tesis de 3 Minutos (3MT), demo técnico"
+                },
+                {
+                  "wpm": 130,
+                  "words": 390,
+                  "buffer": 332,
+                  "pace": "Medio",
+                  "scenario": "Presentación en clase, actualización de equipo"
+                },
+                {
+                  "wpm": 145,
+                  "words": 435,
+                  "buffer": 370,
+                  "pace": "Conversacional",
+                  "scenario": "Intro de YouTube, storytelling"
+                },
+                {
+                  "wpm": 160,
+                  "words": 480,
+                  "buffer": 408,
+                  "pace": "Rápido",
+                  "scenario": "Pitch de startup, contraargumento en debate"
+                }
+              ],
+              "footnote": "El conteo de páginas usa el formato de manuscrito estándar: Arial o Times New Roman de 12 pt, márgenes de 2,54 cm, 500 palabras por página a espacio simple y 250 a espacio doble."
+            },
+            "tips": {
+              "heading": "Cómo estructurar una charla de 3 minutos (por escenario)",
+              "items": [
+                {
+                  "h3": "La Tesis de 3 Minutos (3MT) y el pitch académico — 330–360 palabras",
+                  "body": "Los concursos 3MT universitarios cronometran exactamente 3:00 y descalifican si te pasas, así que escribe al ritmo pausado de 115 WPM y deja 330–360 palabras en el papel. Usa **una sola diapositiva fija**: cada clic se come 4–6 segundos y te aparta la mirada del público. Después del gancho, **sostén 3 segundos de silencio**: deja caer el planteamiento del problema, te reordena la respiración y es la forma más barata de cortar esa prisa de adrenalina que lleva a los ponentes académicos a 140+ WPM y les deja el punto central fuera de tiempo."
+                },
+                {
+                  "h3": "Brindis de boda y discurso del padrino — 280–320 palabras",
+                  "body": "Un brindis se dice a unos 100 WPM porque estás emocionado, buscas miradas y esperas reacciones. Reserva tiempo para el público: **las risas se comen 30–40 segundos de un turno de 3 minutos** — un buen chiste, un “ahh” con la foto y una ronda de aplausos tras “brindemos” pueden llevarte media intervención. Escribe 280–320 palabras, marca una pausa en cada línea graciosa y cerrarás con calidez, no con prisa."
+                },
+                {
+                  "h3": "La regla de diapositivas para 3 minutos",
+                  "body": "Aplica la **regla de una diapositiva por minuto**: un turno de 3 minutos aguanta como mucho 3–4 diapositivas (título o gancho, dos ideas centrales, cierre). Más diapositivas que minutos te obliga a ir narrando lo que aparece en pantalla — la permanencia media por diapositiva cae por debajo de 40 segundos, la retención se desploma y el que marca el ritmo es el deck, no tú. Ajusta tu presupuesto a 3 diapositivas y 330–390 palabras, y ensaya contando los cambios."
+                }
+              ]
+            },
+            "faqHeading": "Preguntas sobre el discurso de 3 minutos",
+            "cta": {
+              "heading": "Cronometra tu propio guion de 3 minutos",
+              "body": "Pega tu borrador en el [calculador de tiempo de discurso](/) para convertir palabras en minutos, fija el objetivo de 3 minutos y obtén tu presupuesto exacto. Después ensaya en el [teleprompter en vivo con cronómetro](/). Todo funciona en tu navegador y no se sube nada."
+            }
+          }
+        },
+        "pt": {
+          "title": "Quantas Palavras Tem um Discurso de 3 Minutos? (390 Palavras)",
+          "metaDescription": "Um discurso de 3 minutos tem 390 palavras ao ritmo médio de 130 WPM (faixa de 300–480). Calcule o seu orçamento exato para 3 minutos, veja o buffer de 85% e a contagem de páginas, e ensaie no navegador.",
+          "h1": "Discurso de 3 minutos",
+          "guideLabel": "Discurso de 3 minutos",
+          "heroAnswer": "Um discurso de 3 minutos tem cerca de 390 palavras a um ritmo constante de 130 palavras por minuto. Devagar e formal, a 100 WPM, 500 palavras bastam; a 160 WPM você chega perto de 480. Escreva entre 330 e 390 palavras e cairá nos três minutos mesmo com as pausas naturais.",
+          "anchorForms": [
+            "palavras de um discurso de 3 minutos",
+            "quantas palavras em 3 minutos",
+            "exemplo de discurso de 3 minutos"
+          ],
+          "faqs": [
+            {
+              "q": "Quantas páginas tem um discurso de 3 minutos?",
+              "a": "Um roteiro de 390 palavras a 130 WPM ocupa cerca de **0,8 páginas em espaço simples** ou **1,5 a 1,6 páginas em espaço duplo**, em Arial ou Times New Roman 12 pt com margens de 2,54 cm."
+            },
+            {
+              "q": "Quantos parágrafos tem um discurso de 3 minutos?",
+              "a": "Em geral **3 a 5 parágrafos**: uma abertura de 65 palavras, dois pontos centrais de 130 palavras cada e um fecho de 65. Essa estrutura enche certinho o orçamento de 390 palavras a 130 WPM."
+            },
+            {
+              "q": "Quantos slides preciso para uma apresentação de 3 minutos?",
+              "a": "**No máximo 3 a 4 slides**: 1 de título ou gancho, 2 dos pontos centrais e 1 de fechamento. Com a **regra de um slide por minuto**, o visual acompanha o seu roteiro em vez de apressar você para sair do palco."
+            },
+            {
+              "q": "400 palavras é longo demais para 3 minutos?",
+              "a": "A 130 WPM, 400 palavras levam 3 minutos e 5 segundos sem uma única pausa. Se a sua fala tiver slides, aplausos ou reações da plateia, **corte para 330 a 350 palavras** para caber no tempo."
+            }
+          ],
+          "sections": {
+            "crumbs": [
+              "Início (Calculador de Tempo de Fala)",
+              "Guias de duração",
+              "Palavras de um discurso de 3 minutos"
+            ],
+            "answer": {
+              "heading": "A resposta curta",
+              "paragraphs": [
+                "Num ritmo natural de conversa, de 130 palavras por minuto (WPM), **um discurso de 3 minutos tem cerca de 390 palavras**. Se for um brinde de casamento lento e emocionado, com espaço para as risadas (100 WPM), mire **300 palavras**. Para um pitch rápido e cheio de energia (160 WPM), cabem até **480 palavras**.",
+                "Ou seja: a sua faixa real para 3 minutos fica entre **300 e 480 palavras**. O seu ritmo, o seu nervosismo e a frequência com que a plateia reage importam mais que a média — meça a sua entrega no [calculador de tempo de fala](/) antes de fechar o roteiro."
+              ]
+            },
+            "calculator": {
+              "heading": "Calculadora de orçamento para 3 minutos",
+              "privateTag": "Travado em 3 minutos",
+              "scenarioLabel": "Cenário",
+              "customOption": "Ritmo próprio…",
+              "paceLabel": "Seu ritmo:",
+              "budgetLabel": "Orçamento de palavras para 3:00",
+              "scenarios": [
+                {
+                  "wpm": 100,
+                  "label": "Brinde de casamento / discurso do padrinho · 100 WPM"
+                },
+                {
+                  "wpm": 115,
+                  "label": "Acadêmico / Tese de 3 Minutos (3MT) · 115 WPM"
+                },
+                {
+                  "wpm": 130,
+                  "label": "Apresentação de trabalho / aula · 130 WPM"
+                },
+                {
+                  "wpm": 145,
+                  "label": "Abertura de podcast / storytelling · 145 WPM"
+                },
+                {
+                  "wpm": 160,
+                  "label": "Pitch rápido / debate · 160 WPM"
+                }
+              ],
+              "readoutBefore": "Buffer de palco de 85% (com pausas, aplausos e troca de slide):",
+              "readoutAfter": "· Assim sobram uns 15 segundos de folga na sua janela de 3 minutos, em vez de estourar o tempo."
+            },
+            "matrix": {
+              "heading": "Matriz de ritmo e páginas para 3 minutos",
+              "columns": [
+                {
+                  "label": "Ritmo de fala"
+                },
+                {
+                  "label": "Palavras em 3 minutos"
+                },
+                {
+                  "label": "Buffer de 85%",
+                  "sub": "com pausas"
+                },
+                {
+                  "label": "Páginas espaço simples",
+                  "sub": "500 pal./pág."
+                },
+                {
+                  "label": "Páginas espaço duplo",
+                  "sub": "250 pal./pág."
+                },
+                {
+                  "label": "Melhor cenário"
+                }
+              ],
+              "rows": [
+                {
+                  "wpm": 100,
+                  "words": 300,
+                  "buffer": 255,
+                  "pace": "Lento",
+                  "scenario": "Brinde do padrinho ou dama de honra, elogio fúnebre"
+                },
+                {
+                  "wpm": 115,
+                  "words": 345,
+                  "buffer": 293,
+                  "pace": "Pausado",
+                  "scenario": "Tese de 3 Minutos (3MT), demonstração técnica"
+                },
+                {
+                  "wpm": 130,
+                  "words": 390,
+                  "buffer": 332,
+                  "pace": "Médio",
+                  "scenario": "Apresentação em sala, atualização de equipe"
+                },
+                {
+                  "wpm": 145,
+                  "words": 435,
+                  "buffer": 370,
+                  "pace": "Conversacional",
+                  "scenario": "Abertura de YouTube, storytelling"
+                },
+                {
+                  "wpm": 160,
+                  "words": 480,
+                  "buffer": 408,
+                  "pace": "Rápido",
+                  "scenario": "Pitch de startup, réplica de debate"
+                }
+              ],
+              "footnote": "A contagem de páginas segue o formato padrão de manuscrito: Arial ou Times New Roman 12 pt, margens de 2,54 cm, 500 palavras por página em espaço simples e 250 em espaço duplo."
+            },
+            "tips": {
+              "heading": "Como estruturar uma fala de 3 minutos (por cenário)",
+              "items": [
+                {
+                  "h3": "A Tese de 3 Minutos (3MT) e o pitch acadêmico — 330–360 palavras",
+                  "body": "Os concursos 3MT das universidades cronometram exatamente 3:00 e desclassificam quem estoura, então escreva para o ritmo pausado de 115 WPM e mantenha 330–360 palavras no papel. Use **um único slide fixo** — cada clique rouba 4 a 6 segundos e descola o seu olhar da plateia. Depois do gancho, **segure 3 segundos de silêncio**: isso deixa o problema assentar, reorganiza a respiração e é o jeito mais barato de cortar aquela pressa de adrenalina que leva palestrantes acadêmicos a 140+ WPM e os deixa sem tempo para o ponto central."
+                },
+                {
+                  "h3": "Brindes de casamento e discurso do padrinho — 280–320 palavras",
+                  "body": "Um brinde é dito a cerca de 100 WPM porque você está emocionado, faz contato visual e espera as reações. Coloque a plateia no orçamento: **as risadas comem 30 a 40 segundos de uma janela de 3 minutos** — uma boa piada, um “ahh” diante da foto e uma salva de palmas depois de “ao noivo e à noiva” podem levar metade do tempo. Escreva 280–320 palavras, marque uma pausa em cada frase engraçada e você termina com calor, não com afobação."
+                },
+                {
+                  "h3": "A regra de slides para 3 minutos",
+                  "body": "Aplique a **regra de um slide por minuto**: uma janela de 3 minutos sustenta no máximo 3 a 4 slides (título ou gancho, dois pontos centrais, fechamento). Mais slides do que minutos obriga você a sair narrando o que está na tela — o tempo médio por slide cai abaixo de 40 segundos, a retenção desaba e quem dita o ritmo é o deck, não você. Feche o orçamento em 3 slides com 330–390 palavras e ensaie contando as transições."
+                }
+              ]
+            },
+            "faqHeading": "Perguntas sobre o discurso de 3 minutos",
+            "cta": {
+              "heading": "Cronometre o seu roteiro de 3 minutos",
+              "body": "Cole o seu rascunho no [calculador de tempo de fala](/) para converter palavras em minutos, defina a meta de 3 minutos e receba o orçamento exato. Depois ensaie no [teleprompter ao vivo com cronômetro](/). Tudo roda no seu navegador e nada é enviado."
+            }
+          }
+        }
+      },
+      "sections": {
+        "crumbs": [
+          "Home (Speech Time Calculator)",
+          "Speech Length Guides",
+          "3-Minute Speech Word Count"
+        ],
+        "answer": {
+          "heading": "The short answer",
+          "paragraphs": [
+            "A **3-minute speech is approximately 390 words** at a natural conversational pace of 130 words per minute (WPM). If you are giving a slow, emotional wedding toast with pauses for laughter (100 WPM), aim for **300 words**. For a fast, energetic pitch (160 WPM), write up to **480 words**.",
+            "That puts your realistic 3-minute range between **300 and 480 words**. Your pace, your nerves, and how often the audience reacts matter more than the average — so measure your own delivery with the [speech time calculator](/) before you lock the script."
+          ]
+        },
+        "calculator": {
+          "heading": "3-Minute Word Budget Calculator",
+          "privateTag": "Locked to 3 minutes",
+          "scenarioLabel": "Scenario",
+          "customOption": "Custom pace…",
+          "paceLabel": "Your pace:",
+          "budgetLabel": "Word budget for 3:00",
+          "scenarios": [
+            {
+              "wpm": 100,
+              "label": "Wedding Toast / Best Man Speech · 100 WPM"
+            },
+            {
+              "wpm": 115,
+              "label": "Academic / 3-Minute Thesis (3MT) · 115 WPM"
+            },
+            {
+              "wpm": 130,
+              "label": "Business Presentation / Class Talk · 130 WPM"
+            },
+            {
+              "wpm": 145,
+              "label": "Podcast Intro / Storytelling · 145 WPM"
+            },
+            {
+              "wpm": 160,
+              "label": "Fast Pitch / Debate Speech · 160 WPM"
+            }
+          ],
+          "readoutBefore": "85% stage buffer (with pauses, applause & slide changes):",
+          "readoutAfter": "· This leaves your 3-minute slot ~15 seconds of breathing room instead of a timed overrun."
+        },
+        "matrix": {
+          "heading": "3-minute pacing & page-count matrix",
+          "rows": [
+            {
+              "pace": "Slow",
+              "wpm": 100,
+              "words": 300,
+              "buffer": 255,
+              "scenario": "Best Man / Maid of Honor Toast, Eulogy"
+            },
+            {
+              "pace": "Deliberate",
+              "wpm": 115,
+              "words": 345,
+              "buffer": 293,
+              "scenario": "3-Minute Thesis (3MT), Technical Demo"
+            },
+            {
+              "pace": "Average",
+              "wpm": 130,
+              "words": 390,
+              "buffer": 332,
+              "scenario": "Classroom Presentation, Team Update"
+            },
+            {
+              "pace": "Conversational",
+              "wpm": 145,
+              "words": 435,
+              "buffer": 370,
+              "scenario": "YouTube Intro, Storytelling"
+            },
+            {
+              "pace": "Fast",
+              "wpm": 160,
+              "words": 480,
+              "buffer": 408,
+              "scenario": "Startup Pitch, Debate Rebuttal"
+            }
+          ],
+          "footnote": "Page counts use standard manuscript formatting: 12 pt Arial or Times New Roman, 1-inch margins, 500 words per single-spaced page and 250 words per double-spaced page.",
+          "columns": [
+            {
+              "label": "Speaking Speed"
+            },
+            {
+              "label": "Words in 3 Minutes"
+            },
+            {
+              "label": "85% Stage Buffer",
+              "sub": "with pauses"
+            },
+            {
+              "label": "Single-Spaced Pages",
+              "sub": "500 w/p"
+            },
+            {
+              "label": "Double-Spaced Pages",
+              "sub": "250 w/p"
+            },
+            {
+              "label": "Best Scenario"
+            }
+          ]
+        },
+        "tips": {
+          "heading": "How to structure a 3-minute talk (by scenario)",
+          "items": [
+            {
+              "h3": "The 3-Minute Thesis (3MT) & academic pitch — 330–360 words",
+              "body": "University 3MT competitions time you at exactly 3:00 and disqualify overruns, so write to the 115 WPM deliberate pace and keep 330–360 words on the page. Use **one static slide** — every click steals 4–6 seconds and pulls your eye off the audience. After your hook, hold a **3-second pause**: it lets the problem statement land, resets your breathing, and is the single cheapest way to stop the adrenaline-driven rush that makes academic speakers hit 140+ WPM and run out of time before their methods point."
+            },
+            {
+              "h3": "Wedding toasts & best man speeches — 280–320 words",
+              "body": "A toast is delivered at roughly 100 WPM because you are emotional, making eye contact, and waiting for reactions. Budget for the audience: **laughter consumes 30–40 seconds of a 3-minute slot** — one good joke, one round of \"aww\" at the photo, and one applause beat after \"raise your glasses\" can eat half your time. Write 280–320 words, mark each laugh line with a pause cue, and you will finish warm instead of hurried."
+            },
+            {
+              "h3": "The 3-minute presentation slide rule",
+              "body": "Apply the **1-slide-per-minute rule**: a 3-minute slot supports a maximum of 3–4 slides (title/hook, two core points, takeaway). More slides than minutes forces you to narrate visually — average slide dwell time drops below 40 seconds, retention collapses, and the deck, not you, ends up pacing the talk. Build your word budget around 3 slides at 330–390 words and rehearse with the transitions counted in."
+            }
+          ]
+        },
+        "faqHeading": "3-minute speech FAQs",
+        "cta": {
+          "heading": "Time your own 3-minute script",
+          "body": "Paste your draft into the [speech time calculator](/) to convert words to minutes, set the 3-minute target to get your exact word budget, then rehearse in the [live teleprompter and practice timer](/). Everything runs in your browser and nothing is uploaded."
+        }
+      },
+      "homepageTableWords": [
+        300
+      ]
     },
     {
       "slug": "5-minute-speech",
       "type": "minutes",
       "published": true,
-      "publishedAt": "2026-11-02",
+      "publishedAt": "2026-11-01",
       "url": "/minutes/5-minute-speech/",
       "title": "5-Minute Speech: Word Count, Timing Chart & Free Teleprompter Rehearsal",
       "metaDescription": "A 5-minute speech is about 650 words at 130 WPM. See exact timings at six speaking paces, page counts, the 85% stage buffer, then rehearse a real timed script in the free browser teleprompter.",
@@ -283,8 +1063,8 @@
       ],
       "durationMinutes": 5,
       "wordCount": 650,
-      "sampleScriptWordCount": 643,
-      "sampleScriptIsComplete": true,
+      "sampleScriptWordCount": 531,
+      "sampleScriptIsComplete": false,
       "sampleScriptNote": null,
       "calculations": [
         {
@@ -364,21 +1144,16 @@
         },
         {
           "at": "2:44",
-          "words": 112,
-          "text": "There is a third thing, and it is the part nobody rehearses. The first sixty seconds sets your own physiology as much as theirs. When you open on a fact you are certain of, your shoulders drop, your pitch settles, and you stop scanning the room for permission. When you open on an apology, you are telling your body that you are in danger, and then your voice does the rest of the damage for you. I have watched experienced speakers lose a good five minutes to a bad first sentence, not because the audience was harsh but because the speaker had already decided the talk was a favour they were asking."
-        },
-        {
-          "at": "3:36",
           "words": 72,
           "text": "So here is what I would like you to do this week, and it takes ten minutes. Write down your first sentence as it stands today. Then cross out anything that apologises, hedges, or introduces your credentials. Replace it with one specific thing your audience does not already know, stated in under fifteen words. Read it aloud twice. If the second reading makes you want to keep going, you have an opening."
         },
         {
-          "at": "4:09",
+          "at": "3:18",
           "words": 83,
           "text": "Two cautions, because this is not a trick. Do not open with a fact you cannot pay off, or you have bought attention with a loan you will not repay. And do not perform enthusiasm you do not feel; audiences smell that faster than they smell apologies. Curiosity works. Certainty that you have earned works. Rehearsal is what tells them apart, so say the first sixty seconds out loud five times, and let the rest of the five minutes take care of itself."
         },
         {
-          "at": "4:48",
+          "at": "3:56",
           "words": 20,
           "text": "You have more than enough time. You only have to spend the first minute like you know it. Thank you."
         }
@@ -523,7 +1298,7 @@
       "wordCount": 910,
       "sampleScriptWordCount": 294,
       "sampleScriptIsComplete": false,
-      "sampleScriptNote": "Timed opening block: 294 of the 910 words your full script needs. Rehearse this in the teleprompter, then extend each announced section to the complete budget.",
+      "sampleScriptNote": null,
       "calculations": [
         {
           "pace": "Slow",
@@ -1223,9 +1998,9 @@
       ],
       "durationMinutes": 1.9,
       "wordCount": 250,
-      "sampleScriptWordCount": 219,
+      "sampleScriptWordCount": 196,
       "sampleScriptIsComplete": false,
-      "sampleScriptNote": "Timed opening block: 219 of the 250 words your full script needs. Rehearse this in the teleprompter, then extend each announced section to the complete budget.",
+      "sampleScriptNote": null,
       "calculations": [
         {
           "pace": "Slow",
@@ -1284,11 +2059,11 @@
         },
         {
           "at": "0:45",
-          "words": 85,
-          "text": "He did it in a week, told nobody for a month, and when it finally came up he said it was not his idea because the night shift had obviously been asking for it for years. That is the part I want you to remember tonight. Not the board. The fact that he listened long enough to be embarrassed about the delay, and then fixed it without needing to be seen fixing it, which is a rarer combination than any of us admits out loud."
+          "words": 62,
+          "text": "He did it in a week, told nobody for a month, and when it finally came up he said it was not his idea because the night shift had obviously been asking for it for years. That is the part I want you to remember tonight. Not the board. The fact that he listened long enough to be embarrassed about the delay."
         },
         {
-          "at": "1:24",
+          "at": "1:14",
           "words": 36,
           "text": "So: to Martin, who has retired from the building but not from noticing things. May the next forty years be as useful and as quiet as you would like them to be. Please raise a glass."
         }
@@ -1327,9 +2102,9 @@
       ],
       "durationMinutes": 3.8,
       "wordCount": 500,
-      "sampleScriptWordCount": 421,
+      "sampleScriptWordCount": 324,
       "sampleScriptIsComplete": false,
-      "sampleScriptNote": "Timed opening block: 421 of the 500 words your full script needs. Rehearse this in the teleprompter, then extend each announced section to the complete budget.",
+      "sampleScriptNote": null,
       "calculations": [
         {
           "pace": "Slow",
@@ -1388,31 +2163,26 @@
         },
         {
           "at": "0:27",
-          "words": 96,
-          "text": "In November our shipping window moved by two days, which is not a crisis. What became a crisis is that the two days were only in the calendar nobody reads. Three people re-planned around the original date, one person had already told a partner the new one, and by Wednesday we were spending our best hours reconciling intentions rather than doing the work. Two days of schedule change produced roughly a person-week of coordination cost, and the worst part is that every individual in that story was acting sensibly on the information they happened to have."
+          "words": 75,
+          "text": "In November our shipping window moved by two days, which is not a crisis. What became a crisis is that the two days were only in the calendar nobody reads. Three people re-planned around the original date, one person had already told a partner the new one, and by Wednesday we were spending our best hours reconciling intentions rather than doing the work. Two days of schedule change produced roughly a person-week of coordination cost."
         },
         {
-          "at": "1:12",
+          "at": "1:02",
           "words": 63,
           "text": "Afterwards we did not write a process document, which is the reflex, and which would have been the wrong answer. We agreed on one sentence that goes in the channel whenever anything moves: this changes your calendar, so say which calendar you mean. That is all. It works because it is a behaviour rather than a rule, and because it costs four seconds."
         },
         {
-          "at": "1:41",
-          "words": 76,
-          "text": "I want to be precise about why the document would have failed, because this is the part that generalises. A process document describes what an ideal person does. The sentence describes what a real person says out loud at the moment the world changed. Nobody in our team has ever been short of good intentions, and we had nine documents about change management before that week. What we lacked was one habit that survived being busy."
-        },
-        {
-          "at": "2:16",
+          "at": "1:31",
           "words": 68,
           "text": "The general point is this. Resilience in a small team is not produced by having a plan, and it is not produced by having a backup plan. It is produced by everyone knowing, without asking, which version of reality is current. The team that can absorb a two-day change quietly is not the team that anticipated it. It is the team where nobody had to find out late."
         },
         {
-          "at": "2:47",
+          "at": "2:02",
           "words": 51,
           "text": "One ask before I sit down. Next time something shifts for you, do not correct anyone privately. Post the correction in the place the work happens, in that one sentence. It feels unnecessary the first four times, and by the fifth you will notice that nobody is reconciling intentions any more."
         },
         {
-          "at": "3:11",
+          "at": "2:26",
           "words": 8,
           "text": "Thank you, and good luck with the release."
         }
@@ -1567,7 +2337,7 @@
       "wordCount": 1000,
       "sampleScriptWordCount": 415,
       "sampleScriptIsComplete": false,
-      "sampleScriptNote": "Timed opening block: 415 of the 1,000 words your full script needs. Rehearse this in the teleprompter, then extend each announced section to the complete budget.",
+      "sampleScriptNote": null,
       "calculations": [
         {
           "pace": "Slow",

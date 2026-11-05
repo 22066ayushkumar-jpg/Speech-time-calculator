@@ -122,6 +122,12 @@
 .stc-related-list a:hover{text-decoration:underline}
 .stc-related-list span{display:block;margin-top:3px;color:var(--stc-muted);font-size:13px}
 .stc-silo-cta h2{margin-top:0}
+.stc-silo-answer{border-left:3px solid var(--stc-accent)}
+.stc-silo-answer p strong{color:var(--stc-ink)}
+.stc-silo-budget{color:var(--stc-accent);font-size:26px;line-height:1.15;font-weight:800;font-variant-numeric:tabular-nums}
+.stc-silo-matrix .stc-reference-table{min-width:780px}
+.stc-silo-matrix td:last-child{white-space:normal;text-align:left;min-width:190px;color:var(--stc-muted)}
+.stc-silo-tips p strong{color:var(--stc-ink)}
 .stc-guide-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:10px;margin-bottom:30px}
 .stc-guide-card{display:grid;gap:4px;padding:15px;border:1px solid var(--stc-line);border-radius:11px;background:var(--stc-panel);box-shadow:var(--stc-shadow);text-decoration:none;transition:transform .15s,border-color .15s}
 .stc-guide-card:hover{transform:translateY(-2px);border-color:var(--stc-accent)}
@@ -130,4 +136,4 @@
 .stc-guide-meta{color:var(--stc-muted);font-size:13px}
 .stc-table-guide{color:var(--stc-accent-strong);text-decoration:none;border-bottom:1px solid var(--stc-accent-soft)}
 .stc-table-guide:hover{text-decoration:underline}
-@media(max-width:640px){.stc-silo-calc-grid{grid-template-columns:1fr;align-items:start}.stc-silo-buffer p{font-size:15px}}
+@media(max-width:640px){.stc-silo-calc-grid{grid-template-columns:1fr;align-items:start}.stc-silo-buffer p{font-size:15px}.stc-silo-budget{font-size:22px}}
