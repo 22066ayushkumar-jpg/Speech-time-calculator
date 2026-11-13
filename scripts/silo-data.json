@@ -1002,8 +1002,8 @@
     {
       "slug": "2-minute-speech",
       "type": "minutes",
-      "published": false,
-      "publishedAt": null,
+      "published": true,
+      "publishedAt": "2026-11-14",
       "url": "/minutes/2-minute-speech/",
       "title": "How Many Words is a 2-Minute Speech? (260 Words + Sample Script)",
       "metaDescription": "A 2-minute speech is about 260 words at 130 WPM. See the word budget at six speaking paces, the 85% stage buffer, 0.5 single-spaced pages, and a timed sample script you can rehearse free in the browser.",

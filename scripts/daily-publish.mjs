@@ -12,7 +12,7 @@
 //  * If the queue is empty it reports and exits 0 rather than failing a cron.
 
 import { execFileSync } from 'node:child_process';
-import { existsSync, readFileSync } from 'node:fs';
+import { existsSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -22,8 +22,14 @@ const ROOT = dirname(dirname(fileURLToPath(import.meta.url)));
 const SITE = 'https://speechtimercalculator.com';
 const DRY = process.argv.includes('--dry-run');
 
+// Under cron, `node` is not on PATH, so a bare `node` spawn fails with ENOENT.
+// Resolve the interpreter that is actually running this file and reuse it.
+const NODE = process.execPath;
+
 const run = (cmd, args, opts = {}) =>
   execFileSync(cmd, args, { cwd: ROOT, encoding: 'utf8', stdio: opts.quiet ? 'pipe' : 'inherit', ...opts });
+
+const runNode = (args, opts = {}) => run(NODE, args, opts);
 
 // Local date, not UTC: a 07:00 IST job must stamp the IST calendar date.
 function localDate(date = new Date()) {
@@ -107,7 +113,7 @@ async function main() {
 
   // Rebuild from source FIRST so the queue head is read from the data that will
   // actually ship. Reading it before the rebuild can test the wrong page.
-  step('build data', () => run('node', ['scripts/build-all-silo-pages.mjs'], { quiet: true }));
+  step('build data', () => runNode(['scripts/build-all-silo-pages.mjs'], { quiet: true }));
 
   const db = loadDb();
   const next = db.pages.find((page) => !page.published);
@@ -120,24 +126,34 @@ async function main() {
   console.log(`Next in queue: ${next.slug}  (${next.url})\n`);
 
   if (DRY) {
-    step('publish state', () =>
-      run('node', ['scripts/publish.mjs', '--slug', next.slug], { quiet: true }));
-    const problems = verifyLocal(next);
-    if (problems.length) {
-      console.log('\n[DRY RUN] verification problems:');
-      problems.forEach((problem) => console.log('  •', problem));
-      process.exitCode = 1;
-      return;
+    // publish.mjs has no dry-run mode: running it flips `published` to true and
+    // regenerates HTML. So snapshot the data file, let it run, then restore — a
+    // dry run must never leave the queue advanced.
+    const dataPath = join(ROOT, 'scripts', 'silo-data.json');
+    const snapshot = readFileSync(dataPath, 'utf8');
+    try {
+      step('publish state', () =>
+        runNode(['scripts/publish.mjs', '--slug', next.slug], { quiet: true }));
+      const problems = verifyLocal(next);
+      if (problems.length) {
+        console.log('\n[DRY RUN] verification problems:');
+        problems.forEach((problem) => console.log('  •', problem));
+        process.exitCode = 1;
+        return;
+      }
+      console.log(`\n[DRY RUN] ${next.slug} would publish cleanly in ${LOCALE_CODES.length} locales.`);
+      console.log('No commit, no push.');
+    } finally {
+      writeFileSync(dataPath, snapshot);
+      console.log('[DRY RUN] silo-data.json restored (queue not advanced).');
     }
-    console.log(`\n[DRY RUN] ${next.slug} would publish cleanly in ${LOCALE_CODES.length} locales.`);
-    console.log('No commit, no push.');
     return;
   }
 
   const page = next;
 
   step(`publish ${page.slug}`, () =>
-    run('node', ['scripts/publish.mjs', '--slug', page.slug], { quiet: true }));
+    runNode(['scripts/publish.mjs', '--slug', page.slug], { quiet: true }));
 
   step('verify local output', () => {
     const problems = verifyLocal(page);
