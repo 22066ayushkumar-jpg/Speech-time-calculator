@@ -3870,8 +3870,8 @@
     {
       "slug": "10-minute-speech",
       "type": "minutes",
-      "published": false,
-      "publishedAt": null,
+      "published": true,
+      "publishedAt": "2026-11-21",
       "url": "/minutes/10-minute-speech/",
       "title": "How Many Words is a 10-Minute Speech? (1,300 Words + Sample Script)",
       "metaDescription": "A 10-minute speech is about 1,300 words at 130 WPM. See the word budget at six speaking paces, the 85% stage buffer, 2.6 single-spaced pages, and a timed sample script you can rehearse free in the browser.",
@@ -4820,8 +4820,8 @@
     {
       "slug": "15-minute-speech",
       "type": "minutes",
-      "published": false,
-      "publishedAt": null,
+      "published": true,
+      "publishedAt": "2026-11-21",
       "url": "/minutes/15-minute-speech/",
       "title": "How Many Words is a 15-Minute Speech? (1,950 Words + Sample Script)",
       "metaDescription": "A 15-minute speech is about 1,950 words at 130 WPM. See the word budget at six speaking paces, the 85% stage buffer, 3.9 single-spaced pages, and a timed sample script you can rehearse free in the browser.",
